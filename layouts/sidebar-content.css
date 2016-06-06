@@ -6,15 +6,8 @@
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
-.content-area {
-    width: 100%;
-    float: right;
-    margin-right: -380px;
-    padding-right: 380px;
-}
-
 .site-main {
-    background: #b2b2b2;
+    background: #D7D3C9;
 }
 
 .site-content .widget-area {
@@ -24,7 +17,6 @@
     background: #fff;
     background: hsl(0, 0%, 100%);
 }
-
 .site-footer {
     clear: both;
     width: 100%;
@@ -43,4 +35,42 @@
     max-width: 78rem;
     padding: 0 4rem;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1540px) {
+    .content-area {
+        float: right;
+        width: 100%;
+        margin-left: -380px;
+    }
+}
+
+@media screen and (min-width: 1160px) and (max-width: 1980px) {
+    .content-area {
+        width: 100%;
+        float: right;
+        margin-right: -380px;
+        padding-right: 380px;
+    }
+    
+    .entry-header,
+    .entry-content,
+    .entry-meta,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation { 
+        margin-right: 0; 
+    }
+    
+}
+
+@media screen and (max-width: 1159px) {  
+    .site-content .widget-area {
+        width: auto;
+        max-width: 780px;
+        float: none;
+        margin: 1em auto 0;
+    }
 }

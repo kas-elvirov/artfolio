@@ -63,19 +63,13 @@ function artfolio_setup() {
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+	add_theme_support( 'post-formats', array( 'aside' ) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'artfolio_custom_background_args', array(
+	/*add_theme_support( 'custom-background', apply_filters( 'artfolio_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
-	) ) );
+	) ) );*/
 }
 endif;
 add_action( 'after_setup_theme', 'artfolio_setup' );
@@ -88,7 +82,7 @@ add_action( 'after_setup_theme', 'artfolio_setup' );
  * @global int $content_width
  */
 function artfolio_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'artfolio_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'artfolio_content_width', 700 );
 }
 add_action( 'after_setup_theme', 'artfolio_content_width', 0 );
 

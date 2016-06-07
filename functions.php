@@ -116,6 +116,10 @@ function artfolio_scripts() {
 
         wp_enqueue_style( 'artfolio-fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
         
+        wp_enqueue_script( 'artfolio-superfish', get_template_directory_uri() . '/js/superfish.js', array('jquery'), '20160503', true );
+        
+        wp_enqueue_script( 'artfolio-superfish-configuration', get_template_directory_uri() . '/js/superfish-configuration.js', array('artfolio-superfish'), '20160601', true );
+        
 	wp_enqueue_script( 'artfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'artfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

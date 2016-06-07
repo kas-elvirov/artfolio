@@ -24,9 +24,9 @@ function artfolio_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'artfolio_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'width'                  => 1280,
+		'height'                 => 700,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'artfolio_header_style',
 	) ) );
 }

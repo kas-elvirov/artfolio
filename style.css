@@ -752,6 +752,11 @@ a:active {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.header-image img {
+    display: block;
+    margin: 0 auto;
+}
+
 .site-header {
     border-bottom: 13px solid #3B9C61;
 }
@@ -785,7 +790,7 @@ a:active {
 .header-box {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
     background-color: #006699;
 }

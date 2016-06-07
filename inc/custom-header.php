@@ -56,11 +56,14 @@ function artfolio_header_style() {
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 	?>
-		.site-title,
-		.site-description {
+		.header-box {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}
+                
+                .site-header {
+                    border-bottom: none;
+                }
 	<?php
 		// If the user has set a custom color for the text use that.
 		else :

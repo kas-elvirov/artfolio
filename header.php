@@ -36,6 +36,13 @@
                     <?php if (is_single() || is_page()) {
                         the_title( '<h1 class="site-title" style="color:#fff">', '</h1>' );
                     } ?>
+                    
+                    <?php
+                    $description = get_bloginfo( 'description', 'display' );
+                    if ( $description || is_customize_preview() ) : ?>
+                            <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                    <?php
+                    endif; ?>
 
                     <?php
                     if ( is_front_page() && is_home() ) : ?>
@@ -44,12 +51,8 @@
                             <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
                     <?php
                     endif;
-
-                    $description = get_bloginfo( 'description', 'display' );
-                    if ( $description || is_customize_preview() ) : ?>
-                            <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-                    <?php
-                    endif; ?>
+                    ?>
+                    
                 </div><!-- .header-box -->
             </div><!-- .site-branding -->
 	</header><!-- #masthead -->

@@ -28,12 +28,14 @@
 					'clip': 'rect(1px, 1px, 1px, 1px)',
 					'position': 'absolute'
 				} );
+                                $( '.site-header' ).css( 'border-bottom', 'none' );
 			} else {
 				$( '.header-box, .site-branding, .site-title a, .site-description' ).css( {
 					'clip': 'auto',
                                         'color': to,
 					'position': 'relative'
 				} );
+                                $( '.site-header' ).css( 'border-bottom', '13px solid #3B9C61' );
 			}
 		} );
 	} );

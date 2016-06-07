@@ -48,14 +48,42 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
 }
 
 body {
-	margin: 0;
+	background: #fff;
 }
 
 article,
@@ -269,8 +297,8 @@ select,
 textarea {
 	color: #65625D;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
@@ -549,16 +577,19 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	display: block;
-        position: absolute;
-	clear: both;
-	float: left;
-	width: 100%;
-        z-index: 200;
+    position: relative;
+    float: left;
+    width: 100%;
+    display: block;
+    clear: both;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background: #65625D;
+    background: hsl(0, 0%, 19%);
 }
 
 .main-navigation ul {
-	display: none;
+/*	display: none;*/
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -570,19 +601,31 @@ a:active {
 }
 
 .main-navigation a {
-	display: block;
-	text-decoration: none;
-        color: #fff;
+    display: block;
+    padding: 1.3em 1em;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    line-height: 1.3em;
+    color: #D3D3D3;
+/*    color: hsl(0, 0%, 100%);*/
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+        padding: 0;
+        background: #65625D;
+/*        background: hsl(0, 0%, 30%);*/
 }
+/*.main-navigation ul ul {
+    left: 0;
+    display: none;
+    
+}*/
 
 .main-navigation ul ul ul {
 	left: -999em;
@@ -593,20 +636,16 @@ a:active {
 	width: 200px;
 }
 
-.main-navigation ul ul li {
-
+.main-navigation li:hover > a {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #3B9C61;
+/*    background: hsl(0, 0%, 30%);*/
 }
 
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
+.main-navigation ul ul a:hover {
+    background: #75BA8E;
+/*    background: hsl(0, 0%, 19%);*/
 }
 
 .main-navigation ul li:hover > ul,
@@ -621,9 +660,25 @@ a:active {
 
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a,
-.main-navigation .current-menu-ancestor > a {
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover {
+    background: #F1EEE9;
+    color: #313131;
+    color: hsl(0, 0%, 19%);
 }
+
+.main-navigation .current_page_ancestor {
+    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);
+}
+
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+} 
 
 /* Small menu. */
 .menu-toggle,

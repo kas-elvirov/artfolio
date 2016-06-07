@@ -25,6 +25,10 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'artfolio' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'artfolio' ); ?></button>
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            </nav><!-- #site-navigation -->
             <?php if ( get_header_image() && ('blank' == get_header_textcolor()) ) : ?>
                 <div class="header-image">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -34,10 +38,6 @@
             <?php endif; // End header image check. ?>
             
 
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'artfolio' ); ?></button>
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-            </nav><!-- #site-navigation -->
             
             <?php 
                 if ( get_header_image() && !('blank' == get_header_textcolor()) ) { 

@@ -28,6 +28,7 @@
             <nav id="site-navigation" class="main-navigation" role="navigation">
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'artfolio' ); ?></button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                    <?php artfolio_social_menu(); ?>
             </nav><!-- #site-navigation -->
             <?php if ( get_header_image() && ('blank' == get_header_textcolor()) ) : ?>
                 <div class="header-image">

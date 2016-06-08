@@ -1185,12 +1185,63 @@ input[type="search"] {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+    margin: 0 0 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
-/* Make sure select elements fit in widgets. */
+.widget-title {
+    margin-bottom: 1em;    
+    font-size: 24px;
+    font-size: 2.4rem;
+    border-bottom: 2px solid #000;
+}
+
+.widget a {
+    font-weight: 700;
+    color: #000;
+/*    color: hsl(0, 0%, 0%);*/
+}
+
+.widget ul,
+.widget ol {
+    padding: 0;
+    margin: -1em 0 0;
+    list-style-type: none;
+}
+
+.widget li { padding: 1em 0 0; }
+
+.widget li ul,
+.widget li ol { margin-top: 0; }
+
+.widget li li { margin-left: 1.5em; }
+
+/* Make sure select elements fit in widgets */
 .widget select {
 	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+.footer-widgets { margin: 0 auto; }
+
+.footer-widgets .widget-title,
+.footer-widgets .widget a:hover {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    border-color: #fff;
+    border-color: hsl(0, 0%, 100%);
+}
+
+.footer-widgets .widget {
+    float: left;
+    width: 320px;
+    margin: 0 4rem 8rem 4rem;
 }
 
 /*--------------------------------------------------------------

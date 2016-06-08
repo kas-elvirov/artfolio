@@ -904,9 +904,10 @@ a:active {
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
-	height: 1px;
+        right: 0;
+/*	height: 1px;
 	width: 1px;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 
 .screen-reader-text:focus {
@@ -1061,6 +1062,32 @@ a:active {
 }
 
 /* Header search */
+.search-toggle {
+    float: right;
+    width: 54px;
+    height: 54px;
+    padding: 12px;
+    margin-right: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+    background: #3B9C61;
+/*    background: hsl(0, 0%, 30%);*/
+}
+
+@media screen and (max-width: 600px) {
+    .search-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+}
+    
 
 input[type="search"] {
     box-sizing: border-box;

@@ -455,7 +455,7 @@ input[type="submit"] {
     padding: 1em 2em;
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: 'Lato';
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     line-height: 1;
     color: hsl(0, 0%, 100%);
@@ -510,7 +510,7 @@ input[type="password"],
 input[type="search"],
 textarea {
     padding: 8px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
     border: 1px solid #ccc;
 }
@@ -1350,4 +1350,29 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+/*    color: hsl(0, 0%, 100%);*/
+    background: #65625D;
+/*    background: hsl(0, 0%, 19%);*/
+}
+
+.site-footer a {
+    color: #fff;
+/*    color: hsl(0, 0%, 100%);*/
+}
+
+.site-info { 
+    text-align: center; 
 }

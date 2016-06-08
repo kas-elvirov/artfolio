@@ -7,6 +7,121 @@
  * @package Artfolio
  */
 
+// Widget for recent posts
+class artfolio_recent_posts extends WP_Widget {
+
+    function __construct() {
+        
+        parent::__construct(
+            // Widget ID
+            'artfolio_widget', 
+
+            // Name of the widget
+            __('Artfolio recent posts', 'artfolio_widget_domain'), 
+
+            // Description of the widget
+            array( 'description' => __( 'Custom widget for recent posts with image and description', 'artfolio_widget_domain' ), ) 
+        );
+        
+    }
+
+
+    // Open code for widget
+    public function widget( $args, $instance ) {
+        
+        $title = apply_filters( 'widget_title', $instance['title'] );
+        $number = apply_filters( 'widget_number', absint( $instance['number']  ));
+        
+        
+        echo $args['before_widget'];
+        
+            if ( ! empty( $title ) ) {
+                echo $args['before_title'] . $title . $args['after_title'];
+            }
+            
+        $art_recent_posts = new WP_Query();
+        $art_recent_posts->query('showposts='.$number);
+
+        while ($art_recent_posts->have_posts()) {
+            $art_recent_posts->the_post();
+            ?>
+                <ul>
+                    <li>
+                        <a href="<?php esc_url( the_permalink() ); ?>">
+                            <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
+                        </a>
+                        <h4>
+                            <a href="<?php esc_url( the_permalink() ); ?>">
+                                <?php esc_html(the_title());?>
+                           </a>
+                        </h4>
+                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+                                <?php esc_html( the_author() ); ?>
+                        </a>
+                        <p><?php the_time( 'F jS, Y' ); ?></p>
+                    </li>
+                </ul>
+            <?php
+        } 
+
+            
+        echo $args['after_widget'];
+    }
+
+    // Close code for widget
+    public function form( $instance ) {
+        
+        if ( isset( $instance[ 'number' ] ) ) {
+            $number = $instance[ 'number' ];
+        } else {
+            $number = 5;
+        }
+        
+        if ( isset( $instance[ 'title' ] ) ) {
+            $title = $instance[ 'title' ];
+        } else {
+            $title = __( 'Recent posts', 'artfolio_widget_domain' );
+        }
+        
+        // For administration console
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+        
+        <p>
+            <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:' ); ?></label>
+            <input class="tiny-text" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" />
+        </p>
+
+        <?php 
+    }
+
+    // Widget update
+    public function update( $new_instance, $old_instance ) {
+        
+        $instance = array();
+        
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        
+        $instance['number'] = ( ! empty( $new_instance['number'] ) ) ? strip_tags( $new_instance['number'] ) : 5;
+        
+        return $instance;
+        
+    }
+    
+} // end class recent_posts
+
+// Widget registration
+function artfolio_widget_recentposts() {
+	register_widget( 'artfolio_recent_posts' );
+}
+
+add_action( 'widgets_init', 'artfolio_widget_recentposts' );
+
+
+
 if ( ! function_exists( 'artfolio_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -41,6 +156,9 @@ function artfolio_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+        
+        // set_post_thumbnail_size( 200, 170, true ); // Sets the Post Main Thumbnails 
+        add_image_size( 'artfolio-recent-thumbnails', 100, 100, true ); // Sets Recent Posts Thumbnails
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

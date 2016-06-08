@@ -585,7 +585,7 @@ a:active {
 /*    clear: both;*/
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    background: #65625D;
+    background: #231E1A;
 /*    background: hsl(0, 0%, 19%);*/
 }
 
@@ -1012,12 +1012,27 @@ a:active {
     text-align: center;
     background: #65625D;
 }
-.header-box {
+.title-box {
     display: block;
     width: 100%;
     height: 500px;
     margin: 0 auto;
     background-color: rgba(35,30,26,0.7);
+    text-align: center;
+}
+
+.site-description {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #3B9C61;
+    margin: 0;
+    padding-top: 8rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    
 }
 
 .site-title {
@@ -1025,26 +1040,12 @@ a:active {
     font-size: 48px;
     font-size: 4.8rem;
     line-height: normal;
-    padding-bottom: 1rem;
     padding-top: 4rem;
+    padding-bottom: 8rem;
     margin: 0;
 }
 
-.site-description {
-    display: inline-block;
-    font-weight: 100;
-    font-size: 16px;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: #3B9C61;
-    margin: 0;
-    padding-top: 4rem;
-    width: 100%;
-    
-}
 
-
-                    
 .site-branding a { 
     text-decoration: none; 
 }
@@ -1053,10 +1054,53 @@ a:active {
     color: #fff;
     color: hsl(0, 0%, 100%);
 }
+
+/* Landing menu */
+.menu-landing {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.menu-landing ul {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.menu-landing li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-landing a {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    color: #fff;
+    text-decoration: none;
+    padding:  1.6rem 3.2rem;
+    border-radius: 4rem;
+    margin: 0 .8rem;
+    transition: background-color .2s;
+}
+
+.menu-landing a:hover {
+    background-color: #3B9C61;
+}
+
+.menu-landing li:nth-child(2) a:hover {
+    background-color: #E98E1B;
+}
+
                     
 /* Header responsive */
 @media screen and (max-width: 600px) {
-    .header-box {
+    .title-box {
         max-width: 100%;
         margin: 0;
     }

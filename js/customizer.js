@@ -24,13 +24,13 @@
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
-				$( '.header-box' ).css( {
+				$( '.title-box' ).css( {
 					'clip': 'rect(1px, 1px, 1px, 1px)',
 					'position': 'absolute'
 				} );
                                 $( '.site-header' ).css( 'border-bottom', 'none' );
 			} else {
-				$( '.header-box, .site-branding, .site-title a, .site-description' ).css( {
+				$( '.title-box, .site-branding, .site-title a, .site-description' ).css( {
 					'clip': 'auto',
                                         'color': to,
 					'position': 'relative'

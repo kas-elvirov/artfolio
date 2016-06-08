@@ -46,6 +46,7 @@ function artfolio_setup() {
 	register_nav_menus( array(
                 'primary' => esc_html__( 'Primary', 'artfolio' ),
                 'social' => __( 'Social Menu', 'artfolio'),
+                'landing' => __( 'Landing Menu', 'artfolio' ),
 	) );
 
 	/*

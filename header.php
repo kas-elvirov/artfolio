@@ -45,7 +45,7 @@
                     echo '<div class="site-branding">';
                 }
             ?>
-                <div class="header-box">
+                <div class="title-box">
 
                     <?php if (is_single() || is_page()) {
                         the_title( '<h1 class="site-title" style="color:#fff">', '</h1>' );
@@ -57,6 +57,7 @@
                             <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
                     <?php
                     endif; ?>
+                            
 
                     <?php
                     if ( is_front_page() && is_home() ) : ?>
@@ -66,27 +67,33 @@
                     <?php
                     endif;
                     ?>
+                            
+                    <?php artfolio_landing_menu(); ?>
 
-                </div><!-- .header-box -->
+                </div><!-- .title-box -->
+                
+                
+                
             </div><!-- .site-branding -->
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'artfolio' ); ?></button>
-                
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                
-                <div class="search-toggle">
-                    <i class="fa fa-search"></i>
-                    <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'artfolio' ); ?></a>
-                </div>
-                
-                <?php artfolio_social_menu(); ?>
-        </nav><!-- #site-navigation -->
 
-        <div id="search-container" class="search-box-wrapper clear">
-            <div class="search-box clear">
-                <?php get_search_form(); ?>
-            </div>
-        </div> 
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'artfolio' ); ?></button>
+
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+                    <div class="search-toggle">
+                        <i class="fa fa-search"></i>
+                        <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'artfolio' ); ?></a>
+                    </div>
+
+                    <?php artfolio_social_menu(); ?>
+            </nav><!-- #site-navigation -->
+
+            <div id="search-container" class="search-box-wrapper clear">
+                <div class="search-box clear">
+                    <?php get_search_form(); ?>
+                </div>
+            </div> 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

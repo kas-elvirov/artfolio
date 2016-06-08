@@ -143,4 +143,18 @@ function artfolio_social_menu() {
 	);
     }
 }
-   
+
+function artfolio_landing_menu() {
+    if ( has_nav_menu( 'landing' ) ) {
+	wp_nav_menu(
+		array(
+			'theme_location'  => 'landing',
+			'container'       => 'div',
+			'container_id'    => 'menu-landing',
+			'container_class' => 'menu-landing',
+			'depth'           => 1,
+			'fallback_cb'     => '',
+		)
+	);
+    }
+}

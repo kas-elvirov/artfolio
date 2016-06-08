@@ -1098,7 +1098,7 @@ a:active {
     text-decoration: none;
     padding:  1.6rem 3.2rem;
     border-radius: 4rem;
-    margin: 0 .8rem;
+    margin: .8rem .8rem;
     transition: background-color .2s;
 }
 

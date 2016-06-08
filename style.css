@@ -1021,6 +1021,19 @@ a:active {
     text-align: center;
 }
 
+.header-box-single {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(35,30,26,0.7);
+    text-align: center;
+}
+
+.header-box-single .site-title {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
 .site-description {
     display: inline-block;
     font-weight: 400;

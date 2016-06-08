@@ -45,30 +45,40 @@
                     echo '<div class="site-branding">';
                 }
             ?>
-                <div class="header-box">
+            
+                <?php if (is_single() || is_page()) {?> 
+                    <div class="header-box-single">
+                <?php } else { ?>
+                    <div class="header-box">
+                <?php } ?>
+                
 
                     <?php if (is_single() || is_page()) {
                         the_title( '<h1 class="site-title" style="color:#fff">', '</h1>' );
-                    } ?>
+                    } else { ?>
 
-                    <?php
-                    $description = get_bloginfo( 'description', 'display' );
-                    if ( $description || is_customize_preview() ) : ?>
-                            <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-                    <?php
-                    endif; ?>
-                            
+                        <?php
+                        $description = get_bloginfo( 'description', 'display' );
+                        if ( $description || is_customize_preview() ) : ?>
+                                <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                        <?php
+                        endif; ?>
 
-                    <?php
-                    if ( is_front_page() && is_home() ) : ?>
-                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                    <?php else : ?>
-                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                    <?php
-                    endif;
-                    ?>
+
+                        <?php
+                        if ( is_front_page() && is_home() ) : ?>
+                                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        <?php else : ?>
+                                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                        <?php
+                        endif;
+                        ?>
+
+                        <?php artfolio_landing_menu(); ?>
+                    
+                    <?php } ?>
                             
-                    <?php artfolio_landing_menu(); ?>
+                    
 
                 </div><!-- .header-box -->
                 

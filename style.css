@@ -1285,6 +1285,18 @@ input[type="search"] {
     margin: 0 4rem 8rem 4rem;
 }
 
+
+/* Footer widgets responsive */
+@media screen and (max-width: 879px) {
+    #footer-widgets { width: 100%!important; }
+    
+    .footer-widgets .widget {
+        float: none;
+        width: 100%;
+        margin: 0 0 8rem;
+    }
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

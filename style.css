@@ -1039,6 +1039,7 @@ a:active {
     color: #3B9C61;
     margin: 0;
     padding-top: 4rem;
+    width: 100%;
     
 }
 
@@ -1095,7 +1096,7 @@ input[type="search"] {
 }
 
 .search-box-wrapper {
-    display: block;
+    display: none;
     position: relative;
 /*    z-index: 2;*/
     width: 100%;

@@ -45,7 +45,7 @@
                     echo '<div class="site-branding">';
                 }
             ?>
-                <div class="title-box">
+                <div class="header-box">
 
                     <?php if (is_single() || is_page()) {
                         the_title( '<h1 class="site-title" style="color:#fff">', '</h1>' );
@@ -70,7 +70,7 @@
                             
                     <?php artfolio_landing_menu(); ?>
 
-                </div><!-- .title-box -->
+                </div><!-- .header-box -->
                 
                 
                 

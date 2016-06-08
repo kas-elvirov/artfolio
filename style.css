@@ -1012,7 +1012,7 @@ a:active {
     text-align: center;
     background: #65625D;
 }
-.title-box {
+.header-box {
     display: block;
     width: 100%;
     height: 500px;
@@ -1100,7 +1100,7 @@ a:active {
                     
 /* Header responsive */
 @media screen and (max-width: 600px) {
-    .title-box {
+    .header-box {
         max-width: 100%;
         margin: 0;
     }

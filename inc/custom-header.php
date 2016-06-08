@@ -56,7 +56,7 @@ function artfolio_header_style() {
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 	?>
-		.title-box {
+		.header-box {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}

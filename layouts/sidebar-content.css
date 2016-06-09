@@ -6,9 +6,15 @@
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
-.site-main {
-    background: #D7D3C9;
+.site-content {
+    padding-bottom: 4em;
+    background: #F1EEE9;
 }
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+} 
 
 .site-content .widget-area {
     width: 380px;
@@ -24,7 +30,6 @@
 
 .entry-header,
 .entry-content,
-.entry-meta,
 .entry-footer,
 .tag-links,
 .post-navigation,
@@ -55,7 +60,6 @@
     
     .entry-header,
     .entry-content,
-    .entry-meta,
     .entry-footer,
     .tag-links,
     .post-navigation,

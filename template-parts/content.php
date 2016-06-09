@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="index-box">
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
@@ -19,16 +20,24 @@
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
-                   <?php 
-                        if ( has_post_thumbnail() ) {
-                            echo '<div class="single-post-thumbnail clear">';
-                            echo the_post_thumbnail('small-thumbnails');
-                            echo '</div>';
+		<div class="entry-meta">
+                    <?php artfolio_posted_on(); ?>
+                    <?php 
+                        if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
+                            echo '<span class="comments-link">';
+                            comments_popup_link( __( 'Leave a comment', 'artfolio' ), __( '1 Comment', 'artfolio' ), __( '% Comments', 'artfolio' ) );
+                            echo '</span>';
                         }
                     ?>
-		<div class="entry-meta">
-			<?php artfolio_posted_on(); ?>
+                    <?php edit_post_link( __( 'Edit', 'artfolio' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
+               <?php 
+                    if ( has_post_thumbnail() ) {
+                        echo '<div class="single-post-thumbnail clear">';
+                        echo the_post_thumbnail('small-thumbnails');
+                        echo '</div>';
+                    }
+                ?>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
@@ -49,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php artfolio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+    </div> <!-- .index-box -->
 </article><!-- #post-## -->

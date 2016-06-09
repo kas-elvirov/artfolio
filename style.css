@@ -1676,20 +1676,22 @@ object {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
-
 .wp-caption img[class*="wp-image-"] {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
-
 .wp-caption-text {
 	text-align: center;
 }
+.wp-caption .wp-caption-text {
+    padding: 0.8075em 1em;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+    background: #F1EEE9;
+/*    background: hsl(0, 0%, 90%);*/
+}
+   
 
 /*--------------------------------------------------------------
 ## Galleries

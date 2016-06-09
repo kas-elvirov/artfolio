@@ -158,3 +158,31 @@ function artfolio_landing_menu() {
 	);
     }
 }
+
+/**
+ * Display navigation to next/previous post when applicable.
+ *
+ * @return void
+ */
+function artfolio_post_navigation() {
+	// Don't print empty markup if there's nowhere to navigate.
+	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
+	$next     = get_adjacent_post( false, '', false );
+
+	if ( ! $next && ! $previous ) {
+		return;
+	}
+	?>
+	<nav class="navigation post-navigation" role="navigation">
+            <div class="post-nav-box clear">
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'artfolio' ); ?></h1>
+		<div class="nav-links">
+			<?php
+				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post:', 'artfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post:', 'artfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+			?>
+		</div><!-- .nav-links -->
+            </div><!-- .post-nav-box -->
+	</nav><!-- .navigation -->
+	<?php
+}

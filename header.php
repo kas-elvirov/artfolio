@@ -38,11 +38,19 @@
             
 
             
-            <?php 
-                if ( get_header_image() && !('blank' == get_header_textcolor()) ) { 
-                    echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">'; 
+            <?php
+                
+                if ( ( is_single() || is_page() ) && has_post_thumbnail() ) {
+                    echo '<div class="site-branding header-background-image" style="background-image: url(' . get_the_post_thumbnail_url() . ')">';
+                
+                    
                 } else {
-                    echo '<div class="site-branding">';
+                
+                    if ( get_header_image() && !('blank' == get_header_textcolor()) ) { 
+                        echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">'; 
+                    } else {
+                        echo '<div class="site-branding">';
+                    }
                 }
             ?>
             

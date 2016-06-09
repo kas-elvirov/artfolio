@@ -1683,13 +1683,56 @@ object {
 .wp-caption-text {
 	text-align: center;
 }
-.wp-caption .wp-caption-text {
+.wp-caption .wp-caption-text,
+.gallery-caption {
     padding: 0.8075em 1em;
     font-size: 14px;
     font-size: 1.4rem;
     font-family: 'Merriweather', serif;
     background: #F1EEE9;
 /*    background: hsl(0, 0%, 90%);*/
+}
+
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+
+.site-main .gallery-item {
+    position: relative;    
+    max-width:100%;
+    float: left;
+    margin-right: 3.333333333%;
+    margin-bottom: 3rem;
+    background: #65625D;
+    overflow: hidden;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 50%;
+    width: 100%;
+    padding: 6px 8px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-color: hsla(27, 15%, 12%, .8);
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-caption { 
+    opacity: 1; 
+}
+
+.site-main .gallery a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
 }
    
 

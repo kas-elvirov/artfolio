@@ -957,6 +957,19 @@ a:active {
 	margin-right: auto;
 }
 
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+    .alignleft {
+        margin-left: -160px; 
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { 
+        margin-right: -160px; 
+    }
+}
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/

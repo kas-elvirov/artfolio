@@ -29,6 +29,14 @@
                             echo '</span>';
                         }
                     ?>
+                    <?php
+                        /* translators: used between list items, there is a space after the comma */
+                        $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
+
+                        if ( artfolio_categorized_blog() ) {
+                            echo '<div class="category-list">' . $category_list . '</div>';
+                        }
+                    ?>
                     <?php edit_post_link( __( 'Edit', 'artfolio' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
                <?php 

@@ -1476,10 +1476,10 @@ input[type="search"] {
 
 /* Meta */
 .category-list {
-    margin: 1.3em 0 1em;
+/*    margin: 1.3em 0 1em;*/
     font-family: 'Merriweather', serif;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .category-list a {
@@ -1583,10 +1583,9 @@ input[type="search"] {
     .byline,
     .posted-on,
     .post-author,
-    .comments-link {
-        display: block;
-        margin-bottom: 1em;
-        
+    .comments-link,
+    .category-list {
+        display: block;       
     }
     .single .posted-on,
     .single .comments-link a {

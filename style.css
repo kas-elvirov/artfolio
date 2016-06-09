@@ -1049,6 +1049,14 @@ a:active {
     -webkit-background-size: cover!important;
 }
 
+.header-background-image-for-single {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover!important;
+    -moz-background-size: cover!important;
+    -webkit-background-size: cover!important;
+}
+
 .site-header {
     border-top: 13px solid #3B9C61;
 }

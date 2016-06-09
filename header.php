@@ -41,7 +41,9 @@
             <?php
                 
                 if ( ( is_single() || is_page() ) && has_post_thumbnail() ) {
-                    echo '<div class="site-branding header-background-image" style="background-image: url(' . get_the_post_thumbnail_url() . ')">';
+                    echo '<div class="site-branding header-background-image-for-single" style="background-image: url(' . 
+                            get_the_post_thumbnail_url( null, 'large-thumbnails' ) . 
+                            '); background-repeat:no-repeat; background-size: cover">';
                 
                     
                 } else {

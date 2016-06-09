@@ -157,8 +157,9 @@ function artfolio_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
         
-        // set_post_thumbnail_size( 200, 170, true ); // Sets the Post Main Thumbnails 
         add_image_size( 'artfolio-recent-thumbnails', 100, 100, true ); // Sets Recent Posts Thumbnails
+        add_image_size( 'large-thumbnails', 1280, 220, true ); // Sets Large post thumbnails for header in single post section
+        add_image_size( 'small-thumbnails', 780, 300, true ); // Sets Small post thumbnails for posts in index post section
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

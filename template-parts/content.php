@@ -19,6 +19,13 @@
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
+                   <?php 
+                        if ( has_post_thumbnail() ) {
+                            echo '<div class="single-post-thumbnail clear">';
+                            echo the_post_thumbnail('small-thumbnails');
+                            echo '</div>';
+                        }
+                    ?>
 		<div class="entry-meta">
 			<?php artfolio_posted_on(); ?>
 		</div><!-- .entry-meta -->

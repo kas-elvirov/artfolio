@@ -32,7 +32,7 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			artfolio_paging_nav();
 
 		else :
 

@@ -17,7 +17,7 @@
 }
 
 .site-content .widget-area {
-    width: 380px;
+    width: 420px;
     float: right;
     padding: 4rem;
     background: #fff;
@@ -38,7 +38,7 @@
     position: relative;
     max-width: 780px;
     max-width: 78rem;
-/*    padding: 0 4rem;*/
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@
     .content-area {
         float: left;
         width: 100%;
-        margin-right: -380px;
+        margin-right: -420px;
     }
 }
 
@@ -80,8 +80,8 @@
     .content-area {
         width: 100%;
         float: left;
-        margin-left: -380px;
-        padding-left: 380px;
+        margin-left: -420px;
+        padding-left: 420px;
     }
     
     .entry-header,

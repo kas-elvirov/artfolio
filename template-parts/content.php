@@ -42,7 +42,9 @@
                <?php 
                     if ( has_post_thumbnail() ) {
                         echo '<div class="single-post-thumbnail clear">';
-                        echo the_post_thumbnail('small-thumbnails');
+                            echo '<a href="' . get_permalink() . '" title="' . __('Click to read ', 'artfolio') . get_the_title() . '" rel="bookmark">';
+                                echo the_post_thumbnail('small-thumbnails');
+                            echo '</a>';
                         echo '</div>';
                     }
                 ?>

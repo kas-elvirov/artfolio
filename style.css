@@ -1954,7 +1954,7 @@ object {
 /* Featured Images */
 
 .single-post-thumbnail { 
-    background: #b2b2b2 url(images/pattern.svg) repeat; 
+    background-color: #b2b2b2; 
 }
 
 .single-post-thumbnail img {

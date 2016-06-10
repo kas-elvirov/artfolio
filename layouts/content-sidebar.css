@@ -114,3 +114,11 @@
         padding: 0 2rem;
     }
 }
+
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: #D3D3D3;
+} 

@@ -929,6 +929,30 @@ a:active {
     margin: 0 1em;
 }
 
+.paging-navigation ul {
+    margin: 0;
+}
+
+.paging-navigation li { display: inline; }
+
+a.page-numbers,
+span.page-numbers {
+     padding: .3em .7em;
+     color: #333;
+     color: hsl(0, 0%, 20%);
+}
+
+a:hover.page-numbers {
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.paging-navigation .current {
+    font-weight: bold;
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

@@ -1697,23 +1697,33 @@ blockquote.alignright {
 	display: none;
 }
 
-.home .content-aside {
+.home .content-aside,
+.search .content-aside,
+.error404 .content-aside {
     background-image: url(images/noise.svg);
     text-align: center;
     border-bottom: none;
     color: #F1B05E;
 }
-.home .content-aside .entry-footer {
+.home .content-aside .entry-footer,
+.search .content-aside .entry-footer,
+.error404 .content-aside .entry-footer {
     color: #fff;
 }
 
-.home .content-aside .entry-footer a {
+.home .content-aside .entry-footer a,
+.search .content-aside .entry-footer a,
+.error404 .content-aside .entry-footer a {
     color: #75BA8E;
 }
-.home .content-aside .posted-on {
+.home .content-aside .posted-on,
+.search .posted-on,
+.error404 .posted-on {
     display: inline;
 }
-.home .content-aside .post-author {
+.home .content-aside .post-author,
+.search .post_format-post-format-aside .post-author,
+.error404 .post_format-post-format-aside .post-author {
     display: none;
 }
 

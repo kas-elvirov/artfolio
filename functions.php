@@ -131,6 +131,10 @@ if ( ! function_exists( 'artfolio_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function artfolio_setup() {
+    
+        // This theme styles the visual editor to resemble the theme style.
+        $font_url = 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic';
+        add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.

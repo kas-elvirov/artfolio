@@ -244,7 +244,7 @@ function artfolio_scripts() {
         if (is_page_template('template-pages/page-nosidebar.php')) {
             wp_enqueue_style( 'artfolio-layout-style' , get_template_directory_uri() . '/layouts/nosidebar.css');
         } else {
-            wp_enqueue_style( 'artfolio-layout-style' , get_template_directory_uri() . '/layouts/sidebar-content.css');
+            wp_enqueue_style( 'artfolio-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css');
         }
         
         

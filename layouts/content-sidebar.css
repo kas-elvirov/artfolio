@@ -38,7 +38,7 @@
     position: relative;
     max-width: 780px;
     max-width: 78rem;
-    padding: 0 2rem;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@
     .index-box { 
         margin-right: 0; 
     }
-    
+       
 }
 
 @media screen and (max-width: 1159px) {  
@@ -103,5 +103,14 @@
         max-width: 780px;
         float: none;
         margin: 1em auto 0;
+    }
+    .entry-header,
+    .entry-content,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation {
+        padding: 0 2rem;
     }
 }

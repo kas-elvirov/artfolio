@@ -1825,6 +1825,11 @@ Index and Archive
 
 .continue-reading i { margin-left: .5em; }
 
+.sticky-post {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

@@ -12,14 +12,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
     <header class="entry-header">
-        <?php
-            /* translators: used between list items, there is a space after the comma */
-            $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
-
-            if ( artfolio_categorized_blog() ) {
-                echo '<div class="category-list">' . $category_list . '</div>';
-            }
-        ?>
         
         <?php
         if ( is_single() ) {
@@ -39,6 +31,14 @@
                     echo '</span>';
                 }
             ?>
+            <?php
+            /* translators: used between list items, there is a space after the comma */
+            $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
+
+            if ( artfolio_categorized_blog() ) {
+                echo '<div class="category-list">' . $category_list . '</div>';
+            }
+        ?>
         </div><!-- .entry-meta -->
         
         <?php

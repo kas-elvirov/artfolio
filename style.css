@@ -1688,9 +1688,33 @@ blockquote.alignright {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
+.format-aside .entry-content {
+    margin-top: 1em;
+}
+
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+}
+
+.home .content-aside {
+    background-image: url(images/noise.svg);
+    text-align: center;
+    border-bottom: none;
+    color: #F1B05E;
+}
+.home .content-aside .entry-footer {
+    color: #fff;
+}
+
+.home .content-aside .entry-footer a {
+    color: #75BA8E;
+}
+.home .content-aside .posted-on {
+    display: inline;
+}
+.home .content-aside .post-author {
+    display: none;
 }
 
 /*--------------------------------------------------------------

@@ -52,20 +52,23 @@
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'artfolio' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+//			the_content( sprintf(
+//				/* translators: %s: Name of current post. */
+//				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'artfolio' ), array( 'span' => array( 'class' => array() ) ) ),
+//				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+//			) );
+                    the_excerpt();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artfolio' ),
-				'after'  => '</div>',
-			) );
+//                    wp_link_pages( array(
+//                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artfolio' ),
+//                            'after'  => '</div>',
+//                    ) );
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-	</footer><!-- .entry-footer -->
+	<footer class="entry-footer continue-reading">
+            <?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'artfolio') . get_the_title() . '" rel="bookmark">Continue Reading' . '<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>'; ?>
+        </footer><!-- .entry-footer -->
+        
     </div> <!-- .index-box -->
 </article><!-- #post-## -->

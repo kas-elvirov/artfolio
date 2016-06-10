@@ -1356,7 +1356,6 @@ input[type="search"] {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-
 /* Typography */
 .entry-title {
     margin: 0 0 2rem;
@@ -1556,9 +1555,6 @@ input[type="search"] {
 .single .byline,
 .group-blog .byline {
 	display: inline;
-}
-.entry-content {
-    border-bottom: 6px solid #65625D;
 }
 
 .page-content,
@@ -1787,6 +1783,19 @@ ol.children { list-style-type: none; }
     background: #75BA8E;
     background: hsl(100, 39%, 57%);
 }
+
+/*--------------------------------------------------------------
+Index and Archive
+--------------------------------------------------------------*/
+
+.continue-reading {
+    margin: 0 4rem;
+    font-weight: 900;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.continue-reading i { margin-left: .5em; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

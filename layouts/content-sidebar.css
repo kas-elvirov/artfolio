@@ -48,10 +48,10 @@
     max-width: 78rem;
     /*padding: 1em 0 2em;*/
     padding: 0 0 1em;
-    border-bottom: 3px dashed #65625D;
     margin: 0 auto 2em;
     background: #fff;
     background: hsl(0, 0%, 100%);
+    border-bottom: 12px solid #65625D;
 }
 
 .index-box blockquote.alignleft,
@@ -123,4 +123,8 @@
     margin-bottom: 2em;
     list-style-type: none;
     border-bottom: 12px solid #65625D;
-} 
+}
+
+.search-no-results .page-header {
+    border-bottom: none;
+}

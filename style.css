@@ -695,9 +695,9 @@ a:active {
     background-color: #65625D;
 }
 
-@media screen and (max-width: 600px) {
-	.menu-toggle {
-            display: block;
+@media screen and (max-width: 600px) { 
+        .menu-toggle {
+            display: inline-block;
             height: 3.75em;
             padding: 0 1em;
             font-weight: normal;
@@ -707,7 +707,7 @@ a:active {
             text-decoration: none;
             line-height: 3.75em;
             color: white;
-/*            width: 100%;*/
+            border-radius: 0;
             background-color: #65625D;
 	}
         
@@ -723,6 +723,11 @@ a:active {
 	.main-navigation ul {
             display: none;
             padding-left: 0;
+	}
+        
+        .menu-all-pages-container ul li {
+            background-color: #231E1A;
+            z-index: 1000;
 	}
         
 	.main-navigation li { 

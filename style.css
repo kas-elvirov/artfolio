@@ -939,19 +939,23 @@ a:active {
 a.page-numbers,
 span.page-numbers {
      padding: .3em .7em;
-     color: #333;
-     color: hsl(0, 0%, 20%);
+     color: #231E1A;
+/*     color: hsl(0, 0%, 20%);*/
+     
+     
 }
 
 a:hover.page-numbers {
-    color: #231E1A;
-    color: hsl(0, 0%, 0%);
+    background-color: #3B9C61;
+    color: #fff;
+/*    color: hsl(0, 0%, 0%);*/
 }
 
 .paging-navigation .current {
     font-weight: bold;
-    color: #231E1A;
-    color: hsl(0, 0%, 0%);
+    color: #D7D3C9;
+/*    color: hsl(0, 0%, 0%);*/
+    background-color: #3B9C61;
 }
 
 /*--------------------------------------------------------------

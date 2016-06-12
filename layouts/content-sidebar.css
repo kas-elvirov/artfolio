@@ -125,6 +125,10 @@
     border-bottom: 12px solid #65625D;
 }
 
+.paging-navigation {
+    border-bottom: none;
+}
+
 .search-no-results .page-header {
     border-bottom: none;
 }

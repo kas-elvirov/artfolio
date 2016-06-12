@@ -1421,6 +1421,14 @@ transition: color .3s;
     margin-bottom: 0;
 }
 
+.attachment-artfolio-recent-thumbnails {
+    transition: border-radius .3s;
+}
+
+.attachment-artfolio-recent-thumbnails:hover {
+    border-radius: 50%;
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -2081,7 +2089,7 @@ object {
 /* Featured Images */
 
 .single-post-thumbnail { 
-    background-color: #b2b2b2; 
+    background-color: #b2b2b2;
 }
 
 .single-post-thumbnail img {

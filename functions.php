@@ -199,6 +199,16 @@ function artfolio_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );*/
+        
+        /*
+	 * Enable support for Custom logo.
+	 * See http://codex.wordpress.org/Function_Reference/add_theme_support#Custom_Logo
+	 */
+        add_theme_support( 'custom-logo', array(
+            'height'      => 130,
+            'width'       => 130,
+            'flex-width' => false,
+        ) );
 }
 endif;
 add_action( 'after_setup_theme', 'artfolio_setup' );

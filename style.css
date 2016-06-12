@@ -1121,18 +1121,19 @@ a:hover.page-numbers {
     padding-bottom: 8rem;
 }
 
-.site-description {
+.custom-logo {
     display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: #3B9C61;
-    margin: 0;
-    padding-top: 8rem;
-    margin-bottom: 4rem;
-    width: 100%;
-    
+    position: relative;
+    border-radius: 50%;
+    margin-top: 4rem;
+    border: 2px solid  #3B9C61;
+    transition: border-color .3s;
+    transition: border-width .3s;
+}
+
+.custom-logo:hover {
+    border-color: #E98E1B;
+    border-width: 6px;
 }
 
 .site-title {
@@ -1141,10 +1142,22 @@ a:hover.page-numbers {
     font-size: 4.8rem;
     line-height: normal;
     padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     margin: 0;
 }
 
+.site-description {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #3B9C61;
+    margin: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+    
+}
 
 .site-branding a { 
     text-decoration: none; 
@@ -1180,7 +1193,7 @@ a:hover.page-numbers {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid white;
+    border: 1px solid #3B9C61;
     color: #fff;
     text-decoration: none;
     padding:  1.6rem 3.2rem;
@@ -1191,10 +1204,16 @@ a:hover.page-numbers {
 
 .menu-landing a:hover {
     background-color: #3B9C61;
+    border-color: #fff;
+}
+
+.menu-landing li:nth-child(2) a {
+    border-color: #E98E1B;
 }
 
 .menu-landing li:nth-child(2) a:hover {
     background-color: #E98E1B;
+    border-color: #fff;
 }
 
                     

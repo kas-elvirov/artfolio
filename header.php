@@ -24,8 +24,6 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'artfolio' ); ?></a>
 
-
-        
 	<header id="masthead" class="site-header" role="banner">
             
             <?php if ( get_header_image() && ('blank' == get_header_textcolor()) ) : ?>
@@ -67,14 +65,8 @@
                         the_title( '<h1 class="site-title" style="color:#fff">', '</h1>' );
                     } else { ?>
 
-                        <?php
-                        $description = get_bloginfo( 'description', 'display' );
-                        if ( $description || is_customize_preview() ) : ?>
-                                <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-                        <?php
-                        endif; ?>
 
-
+                        <?php the_custom_logo(); ?>
                         <?php
                         if ( is_front_page() && is_home() ) : ?>
                                 <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -83,6 +75,12 @@
                         <?php
                         endif;
                         ?>
+                        <?php
+                        $description = get_bloginfo( 'description', 'display' );
+                        if ( $description || is_customize_preview() ) : ?>
+                                <p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                        <?php
+                        endif; ?>
 
                         <?php artfolio_landing_menu(); ?>
                     

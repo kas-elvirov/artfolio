@@ -35,7 +35,9 @@
                                         'color': to,
 					'position': 'relative'
 				} );
-                                $( '.site-header' ).css( 'border-bottom', '13px solid #3B9C61' );
+                                $( '.site-header' ).css( 'border-bottom', 'none' );
+                                $( '.site-description' ).css( 'color', '#3B9C61' );
+                                $( '.site-title a' ).css( 'color', '#fff' );
 			}
 		} );
 	} );

@@ -77,7 +77,7 @@
     }
 }
 
-@media screen and (min-width: 1160px) and (max-width: 1980px) {
+@media screen and (min-width: 1250px) and (max-width: 1980px) {
     .content-area {
         width: 100%;
         float: left;
@@ -99,7 +99,7 @@
        
 }
 
-@media screen and (max-width: 1159px) {  
+@media screen and (max-width: 1249px) {  
     .site-content .widget-area {
         width: auto;
         max-width: 780px;

@@ -47,23 +47,27 @@ class artfolio_recent_posts extends WP_Widget {
             ?>
                 <ul>
                     <li>
-                        <a href="<?php esc_url( the_permalink() ); ?>">
-                            <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
-                        </a>
-                        <h4>
-                            <a href="<?php esc_url( the_permalink() ); ?>">
-                                <?php esc_html(the_title());?>
-                           </a>
-                        </h4>
-                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-                                <?php esc_html( the_author() ); ?>
-                        </a>
-                        <p><?php the_time( 'F jS, Y' ); ?></p>
+                        <?php if ( has_post_thumbnail() ) { ?>
+                            <a href="<?php esc_url( the_permalink() ); ?>" class="arp-thumbnail">
+                                <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
+                            </a>
+                        <?php } ?>
+                        <header class="arp-header"
+                            <h3>
+                                <a href="<?php esc_url( the_permalink() ); ?>" class="arp-title"><?php esc_html( the_title() ); ?></a>
+                            </h3>
+                            
+                            <div class="arp-meta">
+                                <p class="arp-time"><?php the_time( 'F jS, Y' ); ?></p>
+                                <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="arp-author">
+                                        <?php esc_html( the_author() ); ?>
+                                </a>
+                            </div>
+                        </header>
                     </li>
                 </ul>
             <?php
-        } 
-
+        }
             
         echo $args['after_widget'];
     }
@@ -95,7 +99,7 @@ class artfolio_recent_posts extends WP_Widget {
             <input class="tiny-text" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" />
         </p>
 
-        <?php 
+        <?php    
     }
 
     // Widget update

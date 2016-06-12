@@ -695,7 +695,7 @@ a:active {
     background-color: #65625D;
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 1050px) { 
         .menu-toggle {
             display: inline-block;
             height: 3.75em;
@@ -867,7 +867,7 @@ a:active {
 
 .menu-social li a[href*="yelp.com/"]::before { content: '\f1e9'; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
     #menu-social ul {
 	    position: absolute;
         top: 0;
@@ -1224,7 +1224,7 @@ a:hover.page-numbers {
 /*    background: hsl(0, 0%, 30%);*/
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
     .search-toggle {
         position: absolute;
         top: 0;

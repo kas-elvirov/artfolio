@@ -8,8 +8,8 @@
 
 .site-content {
     padding-bottom: 4em;
-/*    background: #F1EEE9 url(../images/worn-dots.png) repeat;*/
 }
+
 .single .site-content,
 .page .site-content { 
     background: #fff; 
@@ -23,6 +23,7 @@
     background: #fff;
     background: hsl(0, 0%, 100%);
 }
+
 .site-footer {
     clear: both;
     width: 100%;
@@ -106,6 +107,7 @@
         float: none;
         margin: 1em auto 0;
     }
+    
     .entry-header,
     .entry-content,
     .entry-footer,

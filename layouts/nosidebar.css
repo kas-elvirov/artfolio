@@ -36,10 +36,13 @@
     padding-bottom: 1em;
     margin-bottom: 2em;
     list-style-type: none;
-    background: #fff;
+    border-bottom: 12px solid #65625D;
 }
 
-.page-header {
-    margin-top: 1em;
-    margin-bottom: 1em;
+.paging-navigation {
+    border-bottom: none;
+}
+
+.search-no-results .page-header {
+    border-bottom: none;
 }

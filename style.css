@@ -551,17 +551,18 @@ textarea {
 a {
     text-decoration: none;	
     color: #000;
+    transition: color .3s;
 }
 
 a:visited {
     color: #181511;
-    color: hsl(0, 0%, 20%);
+/*    color: hsl(0, 0%, 20%);*/
 }
 
 a:hover,
 a:focus,
 a:active {
-    text-decoration: underline; 
+    color: #3B9C61;
 }
 
 a:focus {
@@ -1176,7 +1177,7 @@ a:hover.page-numbers {
     padding:  1.6rem 3.2rem;
     border-radius: 4rem;
     margin: .8rem .8rem;
-    transition: background-color .2s;
+    transition: background-color .3s;
 }
 
 .menu-landing a:hover {
@@ -1279,6 +1280,11 @@ input[type="search"] {
     font-weight: 700;
     color: #000;
 /*    color: hsl(0, 0%, 0%);*/
+transition: color .3s;
+}
+
+.widget a:hover {
+    color: #3B9C61;
 }
 
 .widget ul,

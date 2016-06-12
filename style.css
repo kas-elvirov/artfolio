@@ -550,7 +550,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
     text-decoration: none;	
-    color: #000;
+    color: #231E1A;
     transition: color .3s;
 }
 
@@ -944,13 +944,13 @@ span.page-numbers {
 }
 
 a:hover.page-numbers {
-    color: #000;
+    color: #231E1A;
     color: hsl(0, 0%, 0%);
 }
 
 .paging-navigation .current {
     font-weight: bold;
-    color: #000;
+    color: #231E1A;
     color: hsl(0, 0%, 0%);
 }
 
@@ -1273,12 +1273,12 @@ input[type="search"] {
     margin-bottom: 1em;    
     font-size: 24px;
     font-size: 2.4rem;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #231E1A;
 }
 
 .widget a {
     font-weight: 700;
-    color: #000;
+    color: #231E1A;
 /*    color: hsl(0, 0%, 0%);*/
 transition: color .3s;
 }
@@ -1558,7 +1558,7 @@ transition: color .3s;
 }
 
 .category-list a:hover {
-    color: #000;
+    color: #231E1A;
     color: hsl(0, 0%, 0%);
 }
 

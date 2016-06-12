@@ -27,7 +27,7 @@ img {
 }
 
 a {
-	color: #000;
+	color: #231E1A;
         color: hsl(0, 0%, 0%);
 }
 
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: right;
         font-family: 'Open Sans', sans-serif;
         font-weight: 900;
-        color: #000;
+        color: #231E1A;
         color: hsl(0, 0%, 0%);
         margin-bottom: .4em;
 }

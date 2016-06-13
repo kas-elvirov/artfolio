@@ -2040,25 +2040,17 @@ object { max-width: 100%; }
 
 
 /*--------------------------------------------------------------
-## Footer
+14.0 Footer
 --------------------------------------------------------------*/
-
 .site-footer {
     padding: 2em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
-/*    color: hsl(0, 0%, 100%);*/
     background: #65625D;
-/*    background: hsl(0, 0%, 19%);*/
 }
 
-.site-footer a {
-    color: #fff;
-/*    color: hsl(0, 0%, 100%);*/
-}
+.site-footer a { color: #fff; }
 
-.site-info { 
-    text-align: center; 
-}
+.site-info { text-align: center; }

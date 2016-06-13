@@ -45,10 +45,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	11.2 Asides
 	11.3 Comments
         11.4 Index and Archive
-# Infinite scroll
-# Media
+12.0 Infinite scroll
+13.0 Media
 	## Captions
 	## Galleries
+14.0 Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1904,7 +1905,7 @@ ol.children { list-style-type: none; }
 
 
 /*--------------------------------------------------------------
-# Infinite scroll
+12.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
@@ -1913,9 +1914,8 @@ ol.children { list-style-type: none; }
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
+.infinity-end.neverending .site-footer { display: block; }
+
 
 /*--------------------------------------------------------------
 # Media

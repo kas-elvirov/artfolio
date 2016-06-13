@@ -33,7 +33,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         5.3 Social menu
 6.0 Accessibility
 7.0 Alignments
-# Clearings
+8.0 Clearings
 # Header
 # Widgets
 # Content
@@ -1014,8 +1014,9 @@ a:hover.page-numbers {
         .alignright { margin-right: -160px; }
 }
 
+
 /*--------------------------------------------------------------
-# Clearings
+8.0 Clearings
 --------------------------------------------------------------*/
 .clear:before,
 .clear:after,
@@ -1029,9 +1030,9 @@ a:hover.page-numbers {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
+    display: table;
+    table-layout: fixed;
+    content: "";
 }
 
 .clear:after,
@@ -1040,7 +1041,7 @@ a:hover.page-numbers {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-	clear: both;
+    clear: both;
 }
 
 

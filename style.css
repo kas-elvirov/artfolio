@@ -34,7 +34,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 6.0 Accessibility
 7.0 Alignments
 8.0 Clearings
-# Header
+9.0 Header
+        9.1 Landing menu
+        9.2 Header search
 # Widgets
 # Content
 	## Posts and pages
@@ -1046,7 +1048,7 @@ a:hover.page-numbers {
 
 
 /*--------------------------------------------------------------
-# Header
+9.0 Header
 --------------------------------------------------------------*/
 .header-image img {
     display: block;
@@ -1057,54 +1059,48 @@ a:hover.page-numbers {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed!important;
-    background-size: cover!important;
-    -moz-background-size: cover!important;
     -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    background-size: cover!important;
 }
 
 .header-background-image-for-single {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover!important;
-    -moz-background-size: cover!important;
     -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    background-size: cover!important;
 }
 
-.site-header {
-    border-top: 13px solid #3B9C61;
-}
+.site-header { border-top: 13px solid #3B9C61; }
 
 .site-branding {
     text-align: center;
     background: #65625D;
 }
+
 .header-box {
-    display: block;
     width: 100%;
-    height: 500px;
     margin: 0 auto;
-    background-color: rgba(35,30,26,0.7);
+    height: 500px;
     text-align: center;
+    background-color: rgba(35,30,26,0.7);
 }
 
 .header-box-single {
-    display: block;
-    width: 100%;
     margin: 0 auto;
-    background-color: rgba(35,30,26,0.7);
+    width: 100%;
     text-align: center;
+    background-color: rgba(35,30,26,0.7);
 }
 
-.header-box-single .site-title {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
+.header-box-single .site-title { padding: 8rem 0; }
 
 .custom-logo {
     display: inline-block;
     position: relative;
-    border-radius: 50%;
     margin-top: 4rem;
+    border-radius: 50%;
     border: 2px solid  #3B9C61;
     transition: border-color .3s;
     transition: border-width .3s;
@@ -1116,26 +1112,25 @@ a:hover.page-numbers {
 }
 
 .site-title {
+    margin: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    line-height: normal;
     font-weight: 700;
     font-size: 48px;
     font-size: 4.8rem;
-    line-height: normal;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin: 0;
 }
 
 .site-description {
     display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
-    font-size: 1.6rem;
     text-transform: uppercase;
-    color: #3B9C61;
     margin: 0;
     margin-bottom: 4rem;
     width: 100%;
-    
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #3B9C61;
 }
 
 .site-branding a { 
@@ -1147,7 +1142,17 @@ a:hover.page-numbers {
     color: hsl(0, 0%, 100%);
 }
 
-/* Landing menu */
+/* Header responsive */
+@media screen and (max-width: 600px) {
+        .header-box {
+            max-width: 100%;
+            margin: 0;
+        }
+}
+
+/*--------------------------------------------------------------
+9.1 Landing menu
+--------------------------------------------------------------*/
 .menu-landing {
     display: inline-block;
     position: relative;
@@ -1167,18 +1172,18 @@ a:hover.page-numbers {
 .menu-landing a {
     display: inline-block;
     position: relative;
+    margin: 0.8rem 0.8rem;
+    padding:  1.6rem 3.2rem;
+    border: 1px solid #3B9C61;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     font-size: 16px;
     font-size: 1.6rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    border: 1px solid #3B9C61;
+    font-family: "Open Sans", sans-serif;
     color: #fff;
-    text-decoration: none;
-    padding:  1.6rem 3.2rem;
-    border-radius: 4rem;
-    margin: .8rem .8rem;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
 }
 
 .menu-landing a:hover {
@@ -1195,41 +1200,25 @@ a:hover.page-numbers {
     border-color: #fff;
 }
 
-                    
-/* Header responsive */
-@media screen and (max-width: 600px) {
-    .header-box {
-        max-width: 100%;
-        margin: 0;
-    }
-}
-
-/* Header search */
+/*--------------------------------------------------------------
+9.2 Header search
+--------------------------------------------------------------*/
 .search-toggle {
+    padding: 12px;
+    margin-right: 20px;
     float: right;
     width: 54px;
     height: 54px;
-    padding: 12px;
-    margin-right: 20px;
-    color: #fff;
     text-align: center;
     cursor: pointer;
+    color: #fff;
 }
 
 .search-toggle:hover,
 .search-toggle.active {
     background: #3B9C61;
-/*    background: hsl(0, 0%, 30%);*/
 }
 
-@media screen and (max-width: 1050px) {
-    .search-toggle {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 0;
-    }
-}
     
 
 input[type="search"] {
@@ -1240,30 +1229,37 @@ input[type="search"] {
 .search-box-wrapper {
     display: none;
     position: relative;
-/*    z-index: 2;*/
     width: 100%;
 }
 
 .search-box {
     padding: 1em;
     background: #A9A59D;
-/*    background: hsl(0, 0%, 30%);*/
 }
 
 .search-box .search-field {
-    max-width: 362px;
-    float: right;
     padding: 1rem 2rem 1rem 4rem;
+    float: right;
+    max-width: 362px;
+    border: 0;
     font-size: 20px;
     font-size: 2rem;
     background-color: #fff;
-    border: 0;
 }
 
 .error404 .search-submit,
 .search .search-submit,
 .search-box .search-submit { 
     display: none; 
+}
+
+@media screen and (max-width: 1050px) {
+        .search-toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 0;
+        }
 }
 
 /*--------------------------------------------------------------

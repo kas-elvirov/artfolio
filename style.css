@@ -47,8 +47,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         11.4 Index and Archive
 12.0 Infinite scroll
 13.0 Media
-	## Captions
-	## Galleries
+	13.1 Captions
+	13.2 Galleries
+        13.3 Featured Images
 14.0 Footer
 --------------------------------------------------------------*/
 
@@ -1918,147 +1919,119 @@ ol.children { list-style-type: none; }
 
 
 /*--------------------------------------------------------------
-# Media
+13.0 Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
+	padding: 0;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding: 0;
+	border: none;
 }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object {
-	max-width: 100%;
-}
+object { max-width: 100%; }
 
 /*--------------------------------------------------------------
-## Captions
+13.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5em;
 }
+
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
-.wp-caption-text {
-	text-align: center;
-}
+
+.wp-caption-text { text-align: center; }
+
 .wp-caption .wp-caption-text,
 .gallery-caption {
     padding: 0.8075em 1em;
     font-size: 14px;
     font-size: 1.4rem;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     background: #F1EEE9;
-/*    background: hsl(0, 0%, 90%);*/
 }
 
-.site-main .gallery {
-	margin-bottom: 1.5em;
-}
+.site-main .gallery { margin-bottom: 1.5em; }
 
 .site-main .gallery-item {
     position: relative;    
-    max-width:100%;
+    overflow: hidden;
     float: left;
+    max-width:100%;
     margin-right: 3.333333333%;
     margin-bottom: 3rem;
     background: #65625D;
-    overflow: hidden;
 }
 
 .gallery-caption {
     position: absolute;
+    padding: 6px 8px;
+    margin: 0;
     bottom: 0;
     left: 0;
     max-height: 50%;
     width: 100%;
-    padding: 6px 8px;
-    margin: 0;
-    font-size: 12px;
     line-height: 1.5;
-    color: #fff;
     text-align: left;
+    font-size: 12px;
     background-color: hsla(27, 15%, 12%, .8);
+    color: #fff;
     opacity: 0;
 }
 
-.gallery-item:hover .gallery-caption { 
-    opacity: 1; 
-}
+.gallery-item:hover .gallery-caption { opacity: 1; }
 
 .site-main .gallery a img {
-    max-width: 100%;
-    height: auto;
     display: block;
     margin: 0 auto;
+    height: auto;
+    max-width: 100%;
     border: none;
 }
    
 
 /*--------------------------------------------------------------
-## Galleries
+13.2 Galleries
 --------------------------------------------------------------*/
-.gallery {
-	margin-bottom: 1.5em;
-}
+.gallery { margin-bottom: 1.5em; }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
 }
 
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
+.gallery-columns-2 .gallery-item { max-width: 50%; }
 
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
+.gallery-columns-3 .gallery-item { max-width: 33.33%; }
 
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
+.gallery-columns-4 .gallery-item { max-width: 25%; }
 
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
+.gallery-columns-5 .gallery-item { max-width: 20%; }
 
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
+.gallery-columns-6 .gallery-item { max-width: 16.66%; }
 
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
+.gallery-columns-7 .gallery-item { max-width: 14.28%; }
 
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
+.gallery-columns-8 .gallery-item { max-width: 12.5%; }
 
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
+.gallery-columns-9 .gallery-item { max-width: 11.11%; }
 
-.gallery-caption {
-	display: block;
-}
+.gallery-caption { display: block; }
 
-
-/* Featured Images */
-
-.single-post-thumbnail { 
-    background-color: #D7D3C9;
-}
+/*--------------------------------------------------------------
+13.3 Featured Images
+--------------------------------------------------------------*/
+.single-post-thumbnail { background-color: #D7D3C9; }
 
 .single-post-thumbnail img {
     display: block;

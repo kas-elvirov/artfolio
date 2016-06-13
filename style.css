@@ -26,7 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 1.0 Normalize
 2.0 Typography
 3.0 Elements
-# Forms
+4.0 Forms
 # Navigation
 	## Links
 	## Menus
@@ -446,7 +446,7 @@ table {
 }
 
 /*--------------------------------------------------------------
-# Forms
+4.0 Forms
 --------------------------------------------------------------*/
 button,
 input[type="button"],
@@ -497,10 +497,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
 }
 
 input[type="text"],
@@ -511,12 +511,12 @@ input[type="search"],
 textarea {
     padding: 8px;
     font-family: 'Open Sans', sans-serif;
-    color: #333;
     border: 1px solid #ccc;
+    color: #333;
 }
 
 select {
-	border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 input[type="text"]:focus,
@@ -535,11 +535,11 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+    color: #111;
 }
 
 textarea {
-	width: 100%;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------

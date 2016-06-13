@@ -37,7 +37,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 9.0 Header
         9.1 Landing menu
         9.2 Header search
-# Widgets
+10.0 Widgets
+        10.1 Search widget
+        10.2 Arfolio recent posts
 # Content
 	## Posts and pages
 	## Asides
@@ -1262,33 +1264,31 @@ input[type="search"] {
         }
 }
 
+
 /*--------------------------------------------------------------
-# Widgets
+#10.0 Widgets
 --------------------------------------------------------------*/
 .widget {
     margin: 0 0 4em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
 }
 
 .widget-title {
     margin-bottom: 1em;    
+    border-bottom: 2px solid #231E1A;
     font-size: 24px;
     font-size: 2.4rem;
-    border-bottom: 2px solid #231E1A;
 }
 
 .widget a {
     font-weight: 700;
     color: #231E1A;
-/*    color: hsl(0, 0%, 0%);*/
-transition: color .3s;
+    transition: color .3s;
 }
 
-.widget a:hover {
-    color: #3B9C61;
-}
+.widget a:hover { color: #3B9C61; }
 
 .widget ul,
 .widget ol {
@@ -1297,8 +1297,7 @@ transition: color .3s;
     list-style-type: none;
 }
 
-.widget li { 
-    padding: 1em 0; }
+.widget li { padding: 1em 0; }
 
 .widget li ul,
 .widget li ol { margin-top: 0; }
@@ -1312,7 +1311,7 @@ transition: color .3s;
     float: left;
     padding-top: 2px;
     margin-left: -2.5em;
-    font-family: 'fontawesome';
+    font-family: "fontawesome";
     font-size: 14px;
     font-size: 1.4rem;
 } 
@@ -1332,13 +1331,13 @@ transition: color .3s;
 .widget_pages a {
     display: block;
     padding: 1em 0;
-    border-bottom: solid 1px #231E1A;
+    border-bottom: 1px solid #231E1A;
 }
 
 .widget_nav_menu li,
 .widget_pages li { padding-top: 0; }
 
-.widget_rss li { margin-bottom: .5em; }
+.widget_rss li { margin-bottom: 0.5em; }
 
 .widget_rss .rss-date,
 .widget_rss cite {
@@ -1351,9 +1350,11 @@ transition: color .3s;
 	max-width: 100%;
 }
 
-/* Search widget */
+/*--------------------------------------------------------------
+10.1 Search widget
+--------------------------------------------------------------*/
 .widget_search .search-submit {
-	display: none;
+    display: none;
 }
 
 .footer-widgets { margin: 0 auto; }
@@ -1375,16 +1376,19 @@ transition: color .3s;
 
 /* Footer widgets responsive */
 @media screen and (max-width: 879px) {
-    #footer-widgets { width: 100%!important; }
-    
-    .footer-widgets .widget {
-        float: none;
-        width: 100%;
-        margin: 0 0 8rem;
-    }
+        #footer-widgets { width: 100%!important; }
+
+        .footer-widgets .widget {
+            float: none;
+            width: 100%;
+            margin: 0 0 8rem;
+        }
 }
 
-/* Arfolio recent posts */
+
+/*--------------------------------------------------------------
+10.2 Arfolio recent posts
+--------------------------------------------------------------*/
 .arp-thumbnail {
     display: inline-block;
     position: relative;
@@ -1421,7 +1425,7 @@ transition: color .3s;
 }
 
 .attachment-artfolio-recent-thumbnails {
-    transition: border-radius .3s;
+    transition: border-radius 0.3s;
 }
 
 .attachment-artfolio-recent-thumbnails:hover {

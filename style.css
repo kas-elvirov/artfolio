@@ -563,7 +563,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
     text-decoration: none;	
-    transition: color .3s;
+    transition: color 0.3s;
     color: #231E1A;
 }
 
@@ -701,7 +701,7 @@ a:active {
             line-height: 3.75em;
             font-weight: normal;
             font-size: 14px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 1.4rem;
             text-decoration: none;
             background-color: #65625D;
@@ -804,64 +804,64 @@ a:active {
     vertical-align: top;
     font-family: "Fontawesome";
     font-size: 20px;
-    content: '\f0c0';
+    content: "\f0c0";
     color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
-.menu-social li a[href*="facebook.com"]::before { content: '\f09a'; }
+.menu-social li a[href*="facebook.com"]::before { content: "\f09a"; }
 
-.menu-social li a[href*="twitter.com"]::before { content: '\f099'; }
+.menu-social li a[href*="twitter.com"]::before { content: "\f099"; }
 
-.menu-social li a[href*="dribbble.com"]::before { content: '\f17d'; }
+.menu-social li a[href*="dribbble.com"]::before { content: "\f17d"; }
 
-.menu-social li a[href*="plus.google.com"]::before { content: '\f0d5'; }
+.menu-social li a[href*="plus.google.com"]::before { content: "\f0d5"; }
 
-.menu-social li a[href*="pinterest.com"]::before { content: '\f0d2'; }
+.menu-social li a[href*="pinterest.com"]::before { content: "\f0d2"; }
 
-.menu-social li a[href*="github.com"]::before { content: '\f09b'; }
+.menu-social li a[href*="github.com"]::before { content: "\f09b"; }
 
-.menu-social li a[href*="tumblr.com"]::before { content: '\f173'; }
+.menu-social li a[href*="tumblr.com"]::before { content: "\f173"; }
 
-.menu-social li a[href*="youtube.com"]::before { content: '\f167'; }
+.menu-social li a[href*="youtube.com"]::before { content: "\f167"; }
 
-.menu-social li a[href*="flickr.com"]::before { content: '\f16e'; }
+.menu-social li a[href*="flickr.com"]::before { content: "\f16e"; }
 
-.menu-social li a[href*="vimeo.com"]::before { content: '\f194'; }
+.menu-social li a[href*="vimeo.com"]::before { content: "\f194"; }
 
-.menu-social li a[href*="instagram.com"]::before { content: '\f16d'; }
+.menu-social li a[href*="instagram.com"]::before { content: "\f16d"; }
 
-.menu-social li a[href*="linkedin.com"]::before { content: '\f0e1'; }
+.menu-social li a[href*="linkedin.com"]::before { content: "\f0e1"; }
 
-.menu-social li a[href*="bitbucket.org"]::before { content: '\f171'; }
+.menu-social li a[href*="bitbucket.org"]::before { content: "\f171"; }
 
-.menu-social li a[href*="stumbleupon.com"]::before { content: '\f1a4'; }
+.menu-social li a[href*="stumbleupon.com"]::before { content: "\f1a4"; }
 
-.menu-social li a[href*="trello.com"]::before { content: '\f181'; }
+.menu-social li a[href*="trello.com"]::before { content: "\f181"; }
 
-.menu-social li a[href*="weibo.com"]::before { content: '\f18a'; }
+.menu-social li a[href*="weibo.com"]::before { content: "\f18a"; }
 
-.menu-social li a[href*="tripadvisor.com"]::before { content: '\f262'; }
+.menu-social li a[href*="tripadvisor.com"]::before { content: "\f262"; }
 
-.menu-social li a[href*="stackoverflow.com"]::before { content: '\f16c'; }
+.menu-social li a[href*="stackoverflow.com"]::before { content: "\f16c"; }
 
-.menu-social li a[href*="ok.ru"]::before { content: '\f263'; }
+.menu-social li a[href*="ok.ru"]::before { content: "\f263"; }
 
-.menu-social li a[href*="codepen.io"]::before { content: '\f1cb'; }
+.menu-social li a[href*="codepen.io"]::before { content: "\f1cb"; }
 
-.menu-social li a[href*="gitlab.com"]::before { content: '\f296'; }
+.menu-social li a[href*="gitlab.com"]::before { content: "\f296"; }
 
-.menu-social li a[href*="mixcloud.com"]::before { content: '\f289'; }
+.menu-social li a[href*="mixcloud.com"]::before { content: "\f289"; }
 
-.menu-social li a[href*="soundcloud.com"]::before { content: '\f1be'; }
+.menu-social li a[href*="soundcloud.com"]::before { content: "\f1be"; }
 
-.menu-social li a[href*="spotify.com"]::before { content: '\f1bc'; }
+.menu-social li a[href*="spotify.com"]::before { content: "\f1bc"; }
 
-.menu-social li a[href*="vk.com"]::before { content: '\f189'; }
+.menu-social li a[href*="vk.com"]::before { content: "\f189"; }
 
-.menu-social li a[href*="wikipedia.org"]::before { content: '\f266'; }
+.menu-social li a[href*="wikipedia.org"]::before { content: "\f266"; }
 
-.menu-social li a[href*="yelp.com/"]::before { content: '\f1e9'; }
+.menu-social li a[href*="yelp.com/"]::before { content: "\f1e9"; }
 
 @media screen and (max-width: 1050px) {
         #menu-social ul {
@@ -872,8 +872,8 @@ a:active {
         }
 
         #menu-social li a { 
-            padding-left:.5em;
-            padding-right: .5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
         }
 }
 
@@ -936,7 +936,7 @@ a:active {
 
 a.page-numbers,
 span.page-numbers {
-    padding: .3em .7em;
+    padding: 0.3em 0.7em;
     color: #231E1A; 
 }
 
@@ -1082,14 +1082,14 @@ a:hover.page-numbers {
     margin: 0 auto;
     height: 500px;
     text-align: center;
-    background-color: rgba(35,30,26,0.7);
+    background-color: rgba(35, 30, 26, 0.7);
 }
 
 .header-box-single {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    background-color: rgba(35,30,26,0.7);
+    background-color: rgba(35, 30, 26, 0.7);
 }
 
 .header-box-single .site-title { padding: 8rem 0; }
@@ -1100,8 +1100,8 @@ a:hover.page-numbers {
     margin-top: 4rem;
     border-radius: 50%;
     border: 2px solid  #3B9C61;
-    transition: border-color .3s;
-    transition: border-width .3s;
+    transition: border-color 0.3s;
+    transition: border-width 0.3s;
 }
 
 .custom-logo:hover {
@@ -1273,7 +1273,7 @@ input[type="search"] {
 .widget a {
     font-weight: 700;
     color: #231E1A;
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 .widget a:hover { color: #3B9C61; }
@@ -1305,7 +1305,7 @@ input[type="search"] {
 } 
 
 .widget_recent_entries li,
-.widget_recent_comments li { margin: 0 0 .5em 2.5em; }
+.widget_recent_comments li { margin: 0 0 0.5em 2.5em; }
 
 .widget_recent_entries li:before { content: "\f036"; }
 
@@ -1388,7 +1388,7 @@ input[type="search"] {
 .arp-title {
     display: block;
     position: relative;
-    margin-bottom: .5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .arp-meta {
@@ -1429,7 +1429,7 @@ input[type="search"] {
     color: #231E1A;
 }
 
-.page .entry-title { margin-top: .7em; }
+.page .entry-title { margin-top: 0.7em; }
 
 .entry-content a { text-decoration: underline; }
                     
@@ -1438,7 +1438,7 @@ input[type="search"] {
 .entry-content h3,
 .entry-content h4,
 .entry-content h5,
-.entry-content h6 { margin-bottom: .4em; }
+.entry-content h6 { margin-bottom: 0.4em; }
 
 .entry-content h1 {
     font-size: 32px;
@@ -1639,14 +1639,14 @@ input[type="search"] {
     
 }
 
-.posted-on:before { content: ' on '; }
+.posted-on:before { content: " on "; }
 
-.posted-on:after { content: '.'; }
+.posted-on:after { content: "."; }
 
 @media screen and (min-width: 1320px) {
         .single .posted-on:before,
         .single .posted-on:after {
-            content: '';
+            content: "";
         }
 }
 
@@ -1669,7 +1669,7 @@ blockquote cite {
     text-align: right;
     font-size: 18px;
     font-size: 1.8rem;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-style: normal;
 }
 
@@ -1863,7 +1863,7 @@ ol.children { list-style-type: none; }
     font-size: 1.8rem;
 }
 
-.continue-reading i { margin-left: .5em; }
+.continue-reading i { margin-left: 0.5em; }
 
 .sticky-post {
     position: absolute;
@@ -1888,7 +1888,7 @@ ol.children { list-style-type: none; }
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
+    display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
@@ -1942,7 +1942,7 @@ object { max-width: 100%; }
     position: relative;    
     overflow: hidden;
     float: left;
-    max-width:100%;
+    max-width: 100%;
     margin-right: 3.333333333%;
     margin-bottom: 3rem;
     background: #65625D;

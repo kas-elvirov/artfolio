@@ -1092,8 +1092,6 @@ a:hover.page-numbers {
     background-color: rgba(35, 30, 26, 0.7);
 }
 
-.header-box-single .site-title { padding: 8rem 0; }
-
 .custom-logo {
     display: inline-block;
     position: relative;
@@ -1111,8 +1109,7 @@ a:hover.page-numbers {
 
 .site-title {
     margin: 0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 8rem 0;
     line-height: normal;
     font-weight: 700;
     font-size: 48px;

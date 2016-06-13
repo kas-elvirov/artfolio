@@ -32,7 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	5.2 Menus
         5.3 Social menu
 6.0 Accessibility
-# Alignments
+7.0 Alignments
 # Clearings
 # Header
 # Widgets
@@ -947,6 +947,7 @@ a:hover.page-numbers {
     background-color: #3B9C61;
 }
 
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -981,39 +982,36 @@ a:hover.page-numbers {
     outline: 0;
 }
 
+
 /*--------------------------------------------------------------
-# Alignments
+7.0 Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Alignment responsive */
 @media screen and (min-width: 1320px) {
-    .alignleft {
-        margin-left: -160px; 
-    }
+        .alignleft { margin-left: -160px; }
 }
 
 @media screen and (min-width: 1820px) {
-    .alignright { 
-        margin-right: -160px; 
-    }
+        .alignright { margin-right: -160px; }
 }
 
 /*--------------------------------------------------------------

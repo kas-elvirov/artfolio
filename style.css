@@ -405,7 +405,7 @@ hr {
     border: 0;
     height: 1px;
     margin-bottom: 1.5em;
-    background-color: #ccc;
+    background-color: #D7D3C9;
 }
 
 ul,
@@ -498,7 +498,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
     padding: 3px;
-    border: 1px solid #ccc;
+    border: 1px solid #D7D3C9;
     border-radius: 3px;
     color: #666;
 }
@@ -511,12 +511,12 @@ input[type="search"],
 textarea {
     padding: 8px;
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid #ccc;
+    border: 1px solid #D7D3C9;
     color: #333;
 }
 
 select {
-    border: 1px solid #ccc;
+    border: 1px solid #D7D3C9;
 }
 
 input[type="text"]:focus,

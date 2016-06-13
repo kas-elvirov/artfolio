@@ -53,6 +53,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 14.0 Footer
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
 1.0 Normalize
 --------------------------------------------------------------*/
@@ -781,7 +782,7 @@ a:active {
             color: hsl(0, 0%, 100%);
 	}
         
-}  /*End responsive menu*/
+}  /* End responsive menu */
 
 /*--------------------------------------------------------------
 5.3 Social Menu
@@ -927,13 +928,9 @@ a:active {
     border-bottom: #D7D3C9 solid 1px;  
 }
 
-.comment-navigation i {
-    margin: 0 1em;
-}
+.comment-navigation i { margin: 0 1em; }
 
-.paging-navigation ul {
-    margin: 0;
-}
+.paging-navigation ul { margin: 0; }
 
 .paging-navigation li { display: inline; }
 
@@ -985,9 +982,7 @@ a:hover.page-numbers {
 }
 
 /* Do not show the outline on the skip link target. */
-#content[tabindex="-1"]:focus {
-    outline: 0;
-}
+#content[tabindex="-1"]:focus { outline: 0; }
 
 
 /*--------------------------------------------------------------
@@ -1047,9 +1042,7 @@ a:hover.page-numbers {
 .comment-content:after,
 .site-header:after,
 .site-content:after,
-.site-footer:after {
-    clear: both;
-}
+.site-footer:after { clear: both; }
 
 
 /*--------------------------------------------------------------
@@ -1138,9 +1131,7 @@ a:hover.page-numbers {
     color: #3B9C61;
 }
 
-.site-branding a { 
-    text-decoration: none; 
-}
+.site-branding a { text-decoration: none; }
 
 .site-title a { 
     color: #fff;
@@ -1196,9 +1187,7 @@ a:hover.page-numbers {
     border-color: #fff;
 }
 
-.menu-landing li:nth-child(2) a {
-    border-color: #E98E1B;
-}
+.menu-landing li:nth-child(2) a { border-color: #E98E1B; }
 
 .menu-landing li:nth-child(2) a:hover {
     background-color: #E98E1B;
@@ -1220,9 +1209,7 @@ a:hover.page-numbers {
 }
 
 .search-toggle:hover,
-.search-toggle.active {
-    background: #3B9C61;
-}
+.search-toggle.active { background: #3B9C61; }
 
     
 
@@ -1254,9 +1241,7 @@ input[type="search"] {
 
 .error404 .search-submit,
 .search .search-submit,
-.search-box .search-submit { 
-    display: none; 
-}
+.search-box .search-submit { display: none; }
 
 @media screen and (max-width: 1050px) {
         .search-toggle {
@@ -1349,16 +1334,12 @@ input[type="search"] {
 }
 
 /* Make sure select elements fit in widgets */
-.widget select {
-	max-width: 100%;
-}
+.widget select { max-width: 100%; }
 
 /*--------------------------------------------------------------
 10.1 Search widget
 --------------------------------------------------------------*/
-.widget_search .search-submit {
-    display: none;
-}
+.widget_search .search-submit { display: none; }
 
 .footer-widgets { margin: 0 auto; }
 
@@ -1375,7 +1356,6 @@ input[type="search"] {
     width: 320px;
     margin: 0 4rem 8rem 4rem;
 }
-
 
 /* Footer widgets responsive */
 @media screen and (max-width: 879px) {
@@ -1427,13 +1407,9 @@ input[type="search"] {
     margin-bottom: 0;
 }
 
-.attachment-artfolio-recent-thumbnails {
-    transition: border-radius 0.3s;
-}
+.attachment-artfolio-recent-thumbnails { transition: border-radius 0.3s; }
 
-.attachment-artfolio-recent-thumbnails:hover {
-    border-radius: 50%;
-}
+.attachment-artfolio-recent-thumbnails:hover { border-radius: 50%; }
 
 
 /*--------------------------------------------------------------
@@ -1821,15 +1797,6 @@ ol.children { list-style-type: none; }
     font-size: 1.4rem;
 }
 
-/* Comments responsive */
-@media screen and (max-width:600px) {    
-        .comment-list ol { margin-left: 0; }
-
-        .comment-content ol { margin-left: 1.5em; }
-
-        .comment-content,
-        .reply { margin-left: 0; }
-}
 
 .bypostauthor > .comment-body {
     position: relative;
@@ -1873,6 +1840,16 @@ ol.children { list-style-type: none; }
     color: hsl(0, 0%, 100%);
     background: #75BA8E;
     background: hsl(100, 39%, 57%);
+}
+
+/* Comments responsive */
+@media screen and (max-width:600px) {    
+        .comment-list ol { margin-left: 0; }
+
+        .comment-content ol { margin-left: 1.5em; }
+
+        .comment-content,
+        .reply { margin-left: 0; }
 }
 
 /*--------------------------------------------------------------

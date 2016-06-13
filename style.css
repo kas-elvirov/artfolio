@@ -40,10 +40,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 10.0 Widgets
         10.1 Search widget
         10.2 Arfolio recent posts
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
+11.0 Content
+	11.1 Posts and pages
+	11.2 Asides
+	11.3 Comments
 # Infinite scroll
 # Media
 	## Captions
@@ -1432,30 +1432,27 @@ input[type="search"] {
     border-radius: 50%;
 }
 
+
 /*--------------------------------------------------------------
-# Content
+11.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Posts and pages
+11.1 Posts and pages
 --------------------------------------------------------------*/
+
 /* Typography */
 .entry-title {
     margin: 2rem 0 2rem;
+    line-height: 1.3em;
     font-weight: 900;
     font-size: 40px;
     font-size: 4rem;
-    line-height: 1.3em;
     color: #231E1A;
-/*    color: hsl(0, 0%, 0%);*/
 }
 
-.page .entry-title {
-    margin-top: .7em;
-}
+.page .entry-title { margin-top: .7em; }
 
-.entry-content a { 
-    text-decoration: underline; 
-}
+.entry-content a { text-decoration: underline; }
                     
 .entry-content h1,
 .entry-content h2,
@@ -1510,59 +1507,58 @@ input[type="search"] {
 
 /* Smaller fonts for smaller screens */
 @media screen and (max-width: 680px) {
-    .entry-title {
-        font-size: 32px;
-        font-size: 3.2rem;
-        line-height: 1.3em;
-    }
-    .entry-content h1 {
-        font-size: 28px;
-        font-size: 2.8rem;
-    }
+        .entry-title {
+            font-size: 32px;
+            font-size: 3.2rem;
+            line-height: 1.3em;
+        }
+        .entry-content h1 {
+            font-size: 28px;
+            font-size: 2.8rem;
+        }
 
-    .entry-content h2 {
-        font-size: 26px;
-        font-size: 2.6rem;
-    }
+        .entry-content h2 {
+            font-size: 26px;
+            font-size: 2.6rem;
+        }
 
-    .entry-content h3 {
-        font-size: 24px;
-        font-size: 2.4rem;
-    }
+        .entry-content h3 {
+            font-size: 24px;
+            font-size: 2.4rem;
+        }
 
-    .entry-content h4 {
-        font-size: 22px;
-        font-size: 2.2rem;
-    }
+        .entry-content h4 {
+            font-size: 22px;
+            font-size: 2.2rem;
+        }
 
-    .entry-content h5 {
-        font-size: 20px;
-        font-size: 2rem;
-    }
+        .entry-content h5 {
+            font-size: 20px;
+            font-size: 2rem;
+        }
 
-    .entry-content h6 {
-        font-size: 18px;
-        font-size: 1.8rem;
-    }
+        .entry-content h6 {
+            font-size: 18px;
+            font-size: 1.8rem;
+        }
 
-    .entry-content p,
-    .entry-content ul,
-    .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
-    }
-    
-    .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.5em;
-    }
+        .entry-content p,
+        .entry-content ul,
+        .entry-content ol  {
+            font-size: 18px;
+            font-size: 1.8rem;
+        }
+
+        .entry-content blockquote p {
+            font-size: 22px;
+            font-size: 2.2rem;
+            line-height: 1.5em;
+        }
 }
 
 /* Meta */
 .category-list {
-/*    margin: 1.3em 0 1em;*/
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
     font-size: 1.4rem;
 }
@@ -1580,14 +1576,12 @@ input[type="search"] {
 .entry-meta {
     margin-bottom: 2rem;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
     font-size: 1.4rem;
 }
 
-.entry-meta a { 
-    font-weight: 600;
-}
+.entry-meta a { font-weight: 600; }
 
 .post-author {
     display: none;
@@ -1604,10 +1598,10 @@ input[type="search"] {
 .entry-footer {
     margin-top: 3rem;
     margin-bottom: 5rem;
-    font-family: 'Merriweather', serif;
+    line-height: 2em;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 2em;
 }
 
 .entry-footer ul {
@@ -1624,73 +1618,57 @@ input[type="search"] {
 .entry-footer a {
     display: inline-block;
     position: relative;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
          
-.sticky {
-	display: block;
-}
+.sticky { display: block; }
 
-.hentry {
-	margin: 0 0 2em;
-}
+.hentry { margin: 0 0 2em; }
 
 .byline,
-.updated:not(.published) {
-	display: none;
-}
+.updated:not(.published) { display: none; }
 
 .single .byline,
-.group-blog .byline {
-	display: inline;
-}
+.group-blog .byline { display: inline; }
 
 .page-content,
 .entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
+.entry-summary { margin: 1.5em 0 0; }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+    clear: both;
+    margin: 0 0 1.5em;
 }
 
-@media screen and (min-width: 1450px){    
-    .entry-meta {
-        width: 160px;
-        margin-left: -200px;
-        float: left;
-        text-align: center;
-        box-shadow: 0px 10px 5px #D7D3C9;
-    }
-       
-    .byline,
-    .posted-on,
-    .post-author,
-    .comments-link,
-    .category-list {
-        display: block;       
-    }
-    .single .posted-on,
-    .single .comments-link a {
-        white-space: nowrap;
-    }
+@media screen and (min-width: 1450px) {
+        .entry-meta {
+            width: 160px;
+            margin-left: -200px;
+            float: left;
+            text-align: center;
+            box-shadow: 0px 10px 5px #D7D3C9;
+        }
+
+        .byline,
+        .posted-on,
+        .post-author,
+        .comments-link,
+        .category-list { display: block; }
+        
+        .single .posted-on,
+        .single .comments-link a { white-space: nowrap; }
     
 }
 
-.posted-on:before {
-    content: ' on ';
-}
-.posted-on:after {
-    content: '.';
-}
+.posted-on:before { content: ' on '; }
+
+.posted-on:after { content: '.'; }
 
 @media screen and (min-width: 1320px) {
-    .single .posted-on:before,
-    .single .posted-on:after {
-        content: '';
-    }
+        .single .posted-on:before,
+        .single .posted-on:after {
+            content: '';
+        }
 }
 
 /* Blockquotes */
@@ -1702,20 +1680,18 @@ blockquote {
     border-bottom: solid 1px hsl(0, 0%, 80%);
 }
 
-blockquote em { 
-    font-style: normal; 
-}
+blockquote em { font-style: normal; }
 
 blockquote cite {
     display: block;
     margin-top: 1em;
     margin-left: 40%;
+    line-height: 1.5em;
+    text-align: right;
     font-size: 18px;
     font-size: 1.8rem;
     font-family: 'Merriweather', serif;
     font-style: normal;
-    line-height: 1.5em;
-    text-align: right;
 }
 
 blockquote.alignleft {
@@ -1735,62 +1711,53 @@ blockquote.alignright {
 /* Blockquotes responsive */
 /* Optional rules that set blockquotes to full width on smaller screens */
 @media screen and (max-width: 780px) {
-    blockquote.alignleft,
-    blockquote.alignright { width: 40%; }
+        blockquote.alignleft,
+        blockquote.alignright { width: 40%; }
 }
 
 @media screen and (max-width:600px) {
-    blockquote.alignleft,
-    blockquote.alignright {
-        width: 100%;
-        padding: 1em 1.5em 0;   
-    }
+        blockquote.alignleft,
+        blockquote.alignright {
+            width: 100%;
+            padding: 1em 1.5em 0;   
+        }
 }
 
 /*--------------------------------------------------------------
-## Asides
+11.2 Asides
 --------------------------------------------------------------*/
-.format-aside .entry-content {
-    margin-top: 1em;
-}
+.format-aside .entry-content { margin-top: 1em; }
 
 .blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
+.archive .format-aside .entry-title { display: none; }
 
 .home .content-aside,
 .search .content-aside,
 .error404 .content-aside {
-    background-image: url(images/noise.svg);
-    text-align: center;
     border-bottom: none;
+    text-align: center;
+    background-image: url(images/noise.svg);
     color: #F1B05E;
 }
+
 .home .content-aside .entry-footer,
 .search .content-aside .entry-footer,
-.error404 .content-aside .entry-footer {
-    color: #fff;
-}
+.error404 .content-aside .entry-footer { color: #fff; }
 
 .home .content-aside .entry-footer a,
 .search .content-aside .entry-footer a,
-.error404 .content-aside .entry-footer a {
-    color: #75BA8E;
-}
+.error404 .content-aside .entry-footer a { color: #75BA8E; }
+
 .home .content-aside .posted-on,
 .search .posted-on,
-.error404 .posted-on {
-    display: inline;
-}
+.error404 .posted-on { display: inline; }
+
 .home .content-aside .post-author,
 .search .post_format-post-format-aside .post-author,
-.error404 .post_format-post-format-aside .post-author {
-    display: none;
-}
+.error404 .post_format-post-format-aside .post-author { display: none; }
 
 /*--------------------------------------------------------------
-## Comments
+11.3 Comments
 --------------------------------------------------------------*/
 .comments-title {
     font-weight: 900;
@@ -1819,14 +1786,14 @@ ol.children { list-style-type: none; }
 
 .comment-author .fn {
     font-weight: 900;
-    font-family: 'Lato', sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 20px;
     font-size: 2rem;
 }
 
 .comment-metadata {
     font-size: 14px;
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
 
 .comment-content { font-size: 90%; }
@@ -1840,27 +1807,25 @@ ol.children { list-style-type: none; }
     border-bottom: solid hsl(0, 0%, 80%) 1px;
 }
 
-.comment-content a {
-	word-wrap: break-word;
-}
+.comment-content a { word-wrap: break-word; }
 
 .comment-content ol { margin-left: 1.5em; }
 
 .reply {
     font-weight: 600;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
     font-size: 1.4rem;
 }
 
 /* Comments responsive */
 @media screen and (max-width:600px) {    
-    .comment-list ol { margin-left: 0; }
-    
-    .comment-content ol { margin-left: 1.5em; }
-    
-    .comment-content,
-    .reply { margin-left: 0; }
+        .comment-list ol { margin-left: 0; }
+
+        .comment-content ol { margin-left: 1.5em; }
+
+        .comment-content,
+        .reply { margin-left: 0; }
 }
 
 .bypostauthor > .comment-body {
@@ -1880,13 +1845,13 @@ ol.children { list-style-type: none; }
 
 .comment-form {
     padding-bottom: 4rem;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     font-size: 1.6rem;
 }
 
 .comment-form textarea {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-size: 1.8rem;
 }
@@ -1898,7 +1863,7 @@ ol.children { list-style-type: none; }
 .comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
     padding: .5rem 1rem;
     margin: 1rem 0;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
@@ -1906,6 +1871,7 @@ ol.children { list-style-type: none; }
     background: #75BA8E;
     background: hsl(100, 39%, 57%);
 }
+
 
 /*--------------------------------------------------------------
 Index and Archive

@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	11.1 Posts and pages
 	11.2 Asides
 	11.3 Comments
+        11.4 Index and Archive
 # Infinite scroll
 # Media
 	## Captions
@@ -1872,14 +1873,12 @@ ol.children { list-style-type: none; }
     background: hsl(100, 39%, 57%);
 }
 
-
 /*--------------------------------------------------------------
-Index and Archive
+11.4 Index and Archive
 --------------------------------------------------------------*/
-
 .continue-reading {
-    text-align: right;
     margin: 0 4rem;
+    text-align: right;
     font-weight: 900;
     font-size: 18px;
     font-size: 1.8rem;
@@ -1896,14 +1895,14 @@ Index and Archive
 .taxonomy-description {
     padding-top: 2rem;
     margin: 2rem 0;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     border-top: 1px solid hsl(0, 0%, 75%);
     color: #231E1A;
 }
 
-.taxonomy-description p {
-    font-family: 'Open Sans', sans-serif;
-}
+.taxonomy-description p { font-family: "Open Sans", sans-serif; }
+
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

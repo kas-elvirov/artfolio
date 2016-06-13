@@ -1116,6 +1116,10 @@ a:hover.page-numbers {
     font-size: 4.8rem;
 }
 
+.home .site-title {
+    padding: 4rem 0;
+}
+
 .site-description {
     display: inline-block;
     text-transform: uppercase;

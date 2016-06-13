@@ -23,8 +23,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
+1.0 Normalize
+2.0 Typography
 # Elements
 # Forms
 # Navigation
@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Normalize
+1.0 Normalize
 --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -288,18 +288,18 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Typography
+2.0 Typography
 --------------------------------------------------------------*/
 body,
 button,
 input,
 select,
 textarea {
-	color: #65625D;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-size: 1.8rem;
-	line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #65625D;
 }
 
 h1,
@@ -308,68 +308,68 @@ h3,
 h4,
 h5,
 h6 {
-	clear: right;
-        font-weight: 900;
-        font-family: 'Merriweather', serif;
-        color: #231E1A;
-        -ms-word-break: break-word;
-        word-break: break-word;
+    clear: right;
+    font-weight: 900;
+    font-family: "Merriweather", serif;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    color: #231E1A;
 }
 
 p {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 dfn,
 cite,
 em,
 i {
-	font-style: italic;
+    font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
+    margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+    overflow: auto;
+    padding: 1.6em;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+    border-bottom: 1px dotted #666;
+    cursor: help;
 }
 
 mark,
 ins {
-	background: #FAE8D0;
-	text-decoration: none;
+    background: #FAE8D0;
+    text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 /*--------------------------------------------------------------

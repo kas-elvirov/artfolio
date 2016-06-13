@@ -7,69 +7,65 @@
  * @package Artfolio
  */
 
-// Widget for recent posts
+// Widget for recent posts with image, title, date and author
 class artfolio_recent_posts extends WP_Widget {
 
     function __construct() {
-        
-        parent::__construct(
-            // Widget ID
-            'artfolio_widget', 
+            parent::__construct(
+                // Widget ID
+                'artfolio_widget', 
 
-            // Name of the widget
-            __('Artfolio recent posts', 'artfolio_widget_domain'), 
+                // Name of the widget
+                __('Artfolio recent posts', 'artfolio'), 
 
-            // Description of the widget
-            array( 'description' => __( 'Custom widget for recent posts with image and description', 'artfolio_widget_domain' ), ) 
-        );
+                // Description of the widget
+                array( 'description' => __( 'Custom widget for recent posts with image and description', 'artfolio' ), ) 
+            );
         
     }
 
-
     // Open code for widget
     public function widget( $args, $instance ) {
-        
-        $title = apply_filters( 'widget_title', $instance['title'] );
-        $number = apply_filters( 'widget_number', absint( $instance['number']  ));
-        
-        
-        echo $args['before_widget'];
-        
-            if ( ! empty( $title ) ) {
+            $title = apply_filters( 'widget_title', $instance['title'] );
+            $number = apply_filters( 'widget_number', absint( $instance['number']  ));
+
+            echo $args['before_widget'];
+
+            if ( !empty( $title ) ) {
                 echo $args['before_title'] . $title . $args['after_title'];
             }
-            
-        $art_recent_posts = new WP_Query();
-        $art_recent_posts->query('showposts='.$number);
 
-        while ($art_recent_posts->have_posts()) {
-            $art_recent_posts->the_post();
-            ?>
-                <ul>
-                    <li>
-                        <?php if ( has_post_thumbnail() ) { ?>
-                            <a href="<?php esc_url( the_permalink() ); ?>" class="arp-thumbnail">
-                                <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
-                            </a>
-                        <?php } ?>
-                        <header class="arp-header"
-                            <h3>
-                                <a href="<?php esc_url( the_permalink() ); ?>" class="arp-title"><?php esc_html( the_title() ); ?></a>
-                            </h3>
-                            
-                            <div class="arp-meta">
-                                <p class="arp-time"><?php the_time( 'F jS, Y' ); ?></p>
-                                <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="arp-author">
-                                        <?php esc_html( the_author() ); ?>
+            $art_recent_posts = new WP_Query();
+            $art_recent_posts->query('showposts='.$number);
+
+            while ( $art_recent_posts->have_posts() ) {
+                $art_recent_posts->the_post();
+                ?>
+                    <ul>
+                        <li>
+                            <?php if ( has_post_thumbnail() ) { ?>
+                                <a href="<?php esc_url( the_permalink() ); ?>" class="arp-thumbnail">
+                                    <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
                                 </a>
-                            </div>
-                        </header>
-                    </li>
-                </ul>
-            <?php
-        }
-            
-        echo $args['after_widget'];
+                            <?php } ?>
+                            <header class="arp-header"
+                                <h3>
+                                    <a href="<?php esc_url( the_permalink() ); ?>" class="arp-title"><?php esc_html( the_title() ); ?></a>
+                                </h3>
+
+                                <div class="arp-meta">
+                                    <p class="arp-time"><?php the_time( 'F jS, Y' ); ?></p>
+                                    <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="arp-author">
+                                        <?php esc_html( the_author() ); ?>
+                                    </a>
+                                </div> <!-- .arp-header-->
+                            </header>
+                        </li>
+                    </ul>
+                <?php
+            }
+
+            echo $args['after_widget'];
     }
 
     // Close code for widget
@@ -84,7 +80,7 @@ class artfolio_recent_posts extends WP_Widget {
         if ( isset( $instance[ 'title' ] ) ) {
             $title = $instance[ 'title' ];
         } else {
-            $title = __( 'Recent posts', 'artfolio_widget_domain' );
+            $title = __( 'Recent posts', 'artfolio' );
         }
         
         // For administration console
@@ -112,7 +108,6 @@ class artfolio_recent_posts extends WP_Widget {
         $instance['number'] = ( ! empty( $new_instance['number'] ) ) ? strip_tags( $new_instance['number'] ) : 5;
         
         return $instance;
-        
     }
     
 } // end class recent_posts
@@ -139,7 +134,8 @@ function artfolio_setup() {
         // This theme styles the visual editor to resemble the theme style.
         $font_url = 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic';
         add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
-	/*
+	
+        /*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Artfolio, use a find and replace
@@ -193,12 +189,6 @@ function artfolio_setup() {
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
 	 */
 	add_theme_support( 'post-formats', array( 'aside' ) );
-
-	// Set up the WordPress core custom background feature.
-	/*add_theme_support( 'custom-background', apply_filters( 'artfolio_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );*/
         
         /*
 	 * Enable support for Custom logo.
@@ -211,6 +201,7 @@ function artfolio_setup() {
         ) );
 }
 endif;
+
 add_action( 'after_setup_theme', 'artfolio_setup' );
 
 /**
@@ -264,7 +255,6 @@ function artfolio_scripts() {
         } else {
             wp_enqueue_style( 'artfolio-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css');
         }
-        
         
         wp_enqueue_style( 'artfolio-google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic' );
 

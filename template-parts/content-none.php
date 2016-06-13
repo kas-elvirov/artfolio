@@ -22,26 +22,26 @@
 	</header>
 
 	<div class="entry-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+            <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'artfolio' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
-                        
-                <?php elseif ( is_404() ) : ?>
-                        
-                        <p><?php _e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'artfolio' ); ?></p>
-                        <?php get_search_form(); ?>
-                        
-		<?php elseif ( is_search() ) : ?>
+                <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'artfolio' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
-			<p><?php _e( 'Nothing matched your search terms. Check out the most recent articles below or try searching for something else:', 'artfolio' ); ?></p>
-			<?php get_search_form(); ?>
+            <?php elseif ( is_404() ) : ?>
 
-		<?php else : ?>
+                <p><?php _e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'artfolio' ); ?></p>
+                <?php get_search_form(); ?>
 
-			<p><?php _e( 'It seems we can’t find what you’re looking for. Perhaps searching can help.', 'artfolio' ); ?></p>
-			<?php get_search_form(); ?>
+            <?php elseif ( is_search() ) : ?>
 
-		<?php endif; ?>
+                <p><?php _e( 'Nothing matched your search terms. Check out the most recent articles below or try searching for something else:', 'artfolio' ); ?></p>
+                <?php get_search_form(); ?>
+
+            <?php else : ?>
+
+                <p><?php _e( 'It seems we can’t find what you’re looking for. Perhaps searching can help.', 'artfolio' ); ?></p>
+                <?php get_search_form(); ?>
+
+            <?php endif; ?>
 	</div><!-- .entry-content -->
     </div><!-- .index-box -->
     
@@ -60,13 +60,13 @@
 
         // The Loop
         if ( $latest_posts_query->have_posts() ) {
-                while ( $latest_posts_query->have_posts() ) {
+            while ( $latest_posts_query->have_posts() ) {
 
-                    $latest_posts_query->the_post();
-                    // Get the standard index page content
-                    get_template_part( 'template-parts/content', get_post_format() );
+                $latest_posts_query->the_post();
+                // Get the standard index page content
+                get_template_part( 'template-parts/content', get_post_format() );
 
-                }
+            }
         }
         /* Restore original Post Data */
         wp_reset_postdata();

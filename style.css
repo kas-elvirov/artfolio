@@ -1560,7 +1560,11 @@ input[type="search"] {
     font-size: 1.4rem;
 }
 
-.entry-meta a { font-weight: 600; }
+.entry-meta a { 
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
 
 .post-author {
     display: none;
@@ -1625,14 +1629,17 @@ input[type="search"] {
             margin-left: -200px;
             float: left;
             text-align: center;
-            box-shadow: 0px 10px 5px #D7D3C9;
         }
 
         .byline,
         .posted-on,
         .post-author,
         .comments-link,
-        .category-list { display: block; }
+        .category-list { 
+            display: block;
+            font-size: 12px;
+            font-size: 1.2rem;
+        }
         
         .single .posted-on,
         .single .comments-link a { white-space: nowrap; }

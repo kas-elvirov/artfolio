@@ -1547,10 +1547,7 @@ input[type="search"] {
     color: hsl(0, 0%, 10%);
 }
 
-.category-list a:hover {
-    color: #231E1A;
-    color: hsl(0, 0%, 0%);
-}
+.category-list a:hover { color: #3B9C61; }
 
 .entry-meta {
     margin-bottom: 2rem;

@@ -31,7 +31,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	5.1 Links
 	5.2 Menus
         5.3 Social menu
-# Accessibility
+6.0 Accessibility
 # Alignments
 # Clearings
 # Header
@@ -948,41 +948,37 @@ a:hover.page-numbers {
 }
 
 /*--------------------------------------------------------------
-# Accessibility
+6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-        right: 0;
-/*	height: 1px;
-	width: 1px;
-	overflow: hidden;*/
+    position: absolute !important;
+    right: 0;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    line-height: normal;
+    border-radius: 3px;
+    z-index: 100000; /* Above WP toolbar. */
+    text-decoration: none;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    background-color: #f1f1f1;
+    color: #21759b;
+    clip: auto !important;
 }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
-	outline: 0;
+    outline: 0;
 }
 
 /*--------------------------------------------------------------

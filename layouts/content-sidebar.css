@@ -47,7 +47,6 @@
 .index-box {
     max-width: 780px;
     max-width: 78rem;
-    /*padding: 1em 0 2em;*/
     padding: 0 0 1em;
     margin: 0 auto 2em;
     background: #fff;
@@ -63,61 +62,58 @@
 }
 
 @media screen and (min-width: 1820px) {
-    .index-box blockquote.alignright { padding-right: 2em; }
+        .index-box blockquote.alignright { padding-right: 2em; }
 }
 
 @media screen and (min-width: 1320px) {
-    .index-box blockquote.alignleft { padding-left: 2em; }
+        .index-box blockquote.alignleft { padding-left: 2em; }
 }
 
 @media screen and (min-width: 1540px) {
-    .content-area {
-        float: left;
-        width: 100%;
-        margin-right: -440px;
-    }
+        .content-area {
+            float: left;
+            width: 100%;
+            margin-right: -440px;
+        }
 }
 
 @media screen and (min-width: 1250px) and (max-width: 1980px) {
-    .content-area {
-        width: 100%;
-        float: left;
-        margin-left: -440px;
-        padding-left: 440px;
-    }
-    
-    .entry-header,
-    .entry-content,
-    .entry-footer,
-    .tag-links,
-    .post-navigation,
-    .comments-area,
-    .paging-navigation,
-    .index-box,
-    .page-header { 
-        margin-right: 0; 
-    }
+        .content-area {
+            width: 100%;
+            float: left;
+            margin-left: -440px;
+            padding-left: 440px;
+        }
+
+        .entry-header,
+        .entry-content,
+        .entry-footer,
+        .tag-links,
+        .post-navigation,
+        .comments-area,
+        .paging-navigation,
+        .index-box,
+        .page-header { margin-right: 0; }
        
 }
 
 @media screen and (max-width: 1249px) {  
-    .site-content .widget-area {
-        width: auto;
-        max-width: 780px;
-        float: none;
-        margin: 1em auto 0;
-    }
-    
-    .entry-header,
-    .entry-content,
-    .entry-footer,
-    .tag-links,
-    .post-navigation,
-    .comments-area,
-    .paging-navigation {
-        padding: 0 2rem;
-    }
+        .site-content .widget-area {
+            margin: 1em auto 0;
+            float: none;
+            width: auto;
+            max-width: 780px;
+        }
+
+        .entry-header,
+        .entry-content,
+        .entry-footer,
+        .tag-links,
+        .post-navigation,
+        .comments-area,
+        .paging-navigation { padding: 0 2rem; }
 }
+
 .page-header,
 .paging-navigation {
     padding-top: 1em;
@@ -127,10 +123,6 @@
     border-bottom: 12px solid #65625D;
 }
 
-.paging-navigation {
-    border-bottom: none;
-}
+.paging-navigation { border-bottom: none; }
 
-.search-no-results .page-header {
-    border-bottom: none;
-}
+.search-no-results .page-header { border-bottom: none; }

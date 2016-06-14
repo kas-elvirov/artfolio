@@ -684,7 +684,7 @@ a:active {
 .menu-toggle {
     display: none;
     cursor: pointer;
-    background-color: #65625D;
+    background-color: #231E1A;
 }
 
 .menu-toggle:focus,
@@ -704,7 +704,6 @@ a:active {
             font-family: "Open Sans", sans-serif;
             font-size: 1.4rem;
             text-decoration: none;
-            background-color: #65625D;
             color: white;
 	}
         

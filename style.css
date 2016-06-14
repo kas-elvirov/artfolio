@@ -1146,6 +1146,17 @@ a:hover.page-numbers {
         }
 }
 
+@media screen and (max-width: 370px) {
+        .home .site-title {
+            padding: 1rem 0;
+        }
+        
+        .site-description {
+            padding: 0 0 2rem 0;
+            margin-bottom: 2rem;
+        }
+}
+
 /*--------------------------------------------------------------
 9.1 Landing menu
 --------------------------------------------------------------*/

@@ -38,7 +38,7 @@
 
             <?php else : ?>
 
-                <p><?php _e( 'It seems we can’t find what you’re looking for. Perhaps searching can help.', 'artfolio' ); ?></p>
+                <p><?php _e( 'It seems we cannot find what you are looking for. Perhaps searching can help.', 'artfolio' ); ?></p>
                 <?php get_search_form(); ?>
 
             <?php endif; ?>

@@ -1,13 +1,24 @@
-=== Artfolio ===
+WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
+===========================
 
-Contributors: Artem Solovev
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+**Features**
+* Fully responsive design
+* Mobile-first
+* Recent-news widget
+* Unique design
 
-Requires at least: 4.0
-Tested up to: 4.4.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+**Contributors**: Artem Solovev
+**Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+
+## Desktop version
+![Desktop page screen](screenshot.png)
+
+*Requires at least*: 4.0
+*Tested up to*: 4.4.2
+*Stable tag*: 1.0.0
+*License*: GPLv2 or later
+*License URI*: http://www.gnu.org/licenses/gpl-2.0.html
 
 A starter theme called `Artfolio`, or `underscores`.
 

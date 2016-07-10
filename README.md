@@ -32,15 +32,13 @@ WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 
 ## Frequently Asked Questions
 
-### Does this theme support any plugins?
-
-#### Artfolio includes support for Infinite Scroll in Jetpack.
+Does this theme support any plugins?
+* Artfolio includes support for Infinite Scroll in Jetpack.
 
 
 ## Changelog
 
-#### 0.1 - June 16 2015
-##### Initial release
+* 0.1 - June 16 2015 - Initial release
 
 ## Credits
 

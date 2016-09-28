@@ -12,9 +12,13 @@ html .mceContentBody { max-width: 700px; }
 
 body {
     color: #404040;
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     line-height: 1.5;
+}
+
+html .mceContentBody {
+    max-width: none !important;
 }
 
 /* Base elements
@@ -36,7 +40,7 @@ a:visited {
 
 h1, h2, h3, h4, h5, h6 {
     clear: right;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Merriweather", serif;
     font-weight: 900;
     color: #231E1A;
     color: hsl(0, 0%, 0%);

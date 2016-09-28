@@ -1,12 +1,18 @@
 WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 ===========================
 
+**[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
 
 **Features**
 * Fully responsive design
 * Mobile-first
-* Recent-news widget
 * Unique design
+* Landing menu
+* Social menu ( 27 websites )
+* Header image
+* Header icon
+* Special recent posts widget
+
 
 
 **Contributors**: Artem Solovev
@@ -38,9 +44,12 @@ Does this theme support any plugins?
 
 ## Changelog
 
-* 0.1 - June 16 2015 - Initial release
+* 0.1.3 - Sep 28 2016 - Fixed some bugs and added Wiki docs
+* 0.1 - June 16 2016 - Initial release
 
 ## Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Header image by [Omar Yassen](https://www.instagram.com/haveyouseenomar/)
+* Icon image by [Crumbs + Pixels](https://www.iconfinder.com/Ikonografia)

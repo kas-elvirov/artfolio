@@ -3,6 +3,8 @@ WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 
 **[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
 
+**Current version: 0.1.4**
+
 **Features**
 * Fully responsive design
 * Mobile-first

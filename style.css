@@ -1837,7 +1837,28 @@ ol.children { list-style-type: none; }
     font-size: 1.4rem;
 }
 
-.comment-content { font-size: 90%; }
+.comment-content {
+    display: block;
+    position: relative;
+    font-size: 90%;
+    background-color: rgba(218, 236, 224, 0.6);
+    box-shadow: 0 1px 4px 0 rgba(218, 236, 224, .14);
+    border-radius: 0px;
+    padding: 10px;
+    z-index: 10;
+    color: #65625D !important;
+}
+
+.comment-content:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    top: -13px;
+    border-bottom: 13px solid rgba(218, 236, 224, 0.6);
+    border-left: 25px solid transparent;
+    border-right: 24px solid transparent;
+}
 
 .comment-content,
 .reply { margin-left: 70px; }
@@ -1845,7 +1866,11 @@ ol.children { list-style-type: none; }
 .comment-body {
     padding-bottom: 2em;
     margin-bottom: 2em;
-    border-bottom: solid hsl(0, 0%, 80%) 1px;
+    border: solid hsl(0, 0%, 80%) 1px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    border-radius: 0px;
+    padding: 10px;
+    z-index: 5;
 }
 
 .comment-content a { word-wrap: break-word; }

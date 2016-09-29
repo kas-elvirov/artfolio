@@ -1822,6 +1822,7 @@ ol.children { list-style-type: none; }
     display: block;
     float: left;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 .comment-author .fn {

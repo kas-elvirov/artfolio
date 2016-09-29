@@ -63,7 +63,7 @@
     <footer class="entry-footer">
         
         <?php
-            echo get_the_tag_list( '<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>', '</li></ul>' );
+            echo get_the_tag_list( '<ul><li class="tagWord">', '</li><li class="tagWord">', '</li></ul>' );
         ?>
         
         <?php edit_post_link( __( 'Edit', 'artfolio' ), '<span class="edit-link">', '</span>' ); ?>

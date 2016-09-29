@@ -1495,6 +1495,52 @@ input[type="search"] {
     line-height: 1.5em;
 }
 
+/* Tags */
+.tagWord{
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    margin:2px 2px 2px 20px;
+    box-shadow:1px 1px 0 rgba(0,0,0,.2);
+    background: #75BA8E;
+    font: normal 16px sans-serif;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.tagWord:before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 10px;
+    height: 28px;
+    border: 10px solid #fafafa;
+    background: inherit;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+    border-right-color: transparent;
+}
+
+.tagWord:after{
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    box-shadow:inset 1px 1px 0 #CCC;
+    background: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.tagWord a {
+    color: #fff;
+}
+
 /* Smaller fonts for smaller screens */
 @media screen and (max-width: 680px) {
     .entry-title {

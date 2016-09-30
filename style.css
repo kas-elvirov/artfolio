@@ -1541,6 +1541,62 @@ input[type="search"] {
     color: #fff;
 }
 
+/* For 404 page */
+
+.error404 {
+    background: url('images/sea-sunny-beach-holiday_404page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.error404 p {
+    opacity: .8;
+    font-size: 20px;
+    margin: 8px 0 38px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.error404 input {
+    border: 0;
+    outline: 0!important;
+    width: 300px;
+    padding: 14px;
+    max-width: calc(100% - 80px);
+    border-radius: 6px;
+    font-weight: 400;
+}
+
+.error404 .content-area {
+    margin: 0;
+    padding: 0;
+}
+
+.error404 .site-content {
+    padding: 0;
+}
+
+.error404Title {
+    text-align: center;
+    padding: 16px;
+    position: relative;
+    height: 100vh;
+}
+
+.error404Title h1 {
+    margin: -10px 0 -30px;
+    font-size: calc(17vw + 40px);
+    opacity: .8;
+    letter-spacing: -17px;
+    color: #fff;
+}
+
+.error404 .site {
+    background-color: rgba(233, 142, 27, .5);
+}
+
+
 /* Smaller fonts for smaller screens */
 @media screen and (max-width: 680px) {
     .entry-title {

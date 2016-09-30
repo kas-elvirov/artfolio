@@ -11,9 +11,21 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <?php get_template_part('template-parts/content', 'none'); ?>
+        <?php
+
+        if ( is_404 ) {
+            get_template_part('template-parts/content', '404');
+        } else {
+            get_template_part('template-parts/content', 'none');
+
+        }
+
+        ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
-get_footer();
+
+if ( !is_404 ) {
+    get_footer();
+}

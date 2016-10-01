@@ -1544,7 +1544,7 @@ input[type="search"] {
 /* For 404 page */
 
 .error404 {
-    background: url('images/sea-sunny-beach-holiday_404page.jpg');
+    background: url('images/page404.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

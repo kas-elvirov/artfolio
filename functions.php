@@ -43,11 +43,17 @@ class artfolio_recent_posts extends WP_Widget {
                 ?>
                     <ul>
                         <li>
-                            <?php if ( has_post_thumbnail() ) { ?>
+                            
+                               <?php if ( has_post_thumbnail() ) { ?>
                                 <a href="<?php esc_url( the_permalink() ); ?>" class="arp-thumbnail">
                                     <?php the_post_thumbnail( 'artfolio-recent-thumbnails' ); ?>
                                 </a>
-                            <?php } ?>
+                            <?php } else {?>
+                            <a href="<?php esc_url( the_permalink() ); ?>" class="arp-thumbnail imagePlugWrapper">
+                                <i class="fa fa-picture-o imagePlug" aria-hidden="true"></i>
+                            </a>
+                            <?php }?>
+
                             <header class="arp-header"
                                 <h3>
                                     <a href="<?php esc_url( the_permalink() ); ?>" class="arp-title"><?php esc_html( the_title() ); ?></a>

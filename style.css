@@ -1592,6 +1592,11 @@ input[type="search"] {
     color: #fff;
 }
 
+.error404Title a {
+    font-size: 72px;
+    color: #fff;
+}
+
 .error404 .site {
     background-color: rgba(233, 142, 27, .5);
 }

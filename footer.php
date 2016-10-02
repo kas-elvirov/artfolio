@@ -18,7 +18,7 @@
             <div class="site-info">
                     <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'artfolio' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'artfolio' ), 'WordPress' ); ?></a>
                     <span class="sep"> | </span>
-                    <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'artfolio' ), 'artfolio', '<a href="http://anart.work" rel="designer">Artem Solovev</a>' ); ?>
+                    <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'artfolio' ), 'artfolio', '<a href="https://github.com/artem-solovev" rel="designer">Artem Solovev</a>' ); ?>
             </div><!-- .site-info -->
     </footer><!-- #colophon -->
 </div><!-- #page -->

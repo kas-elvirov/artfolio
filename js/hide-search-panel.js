@@ -1,4 +1,4 @@
-/* 
+/*
  * Toggles search on and off
  */
 jQuery(document).ready(function($){

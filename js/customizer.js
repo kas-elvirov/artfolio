@@ -8,37 +8,37 @@
 
 ( function( $ ) {
 
-	// Site title and description.
-	wp.customize( 'blogname', function( value ) {
-		value.bind( function( to ) {
-			$( '.site-title a' ).text( to );
-		} );
-	} );
-	wp.customize( 'blogdescription', function( value ) {
-		value.bind( function( to ) {
-			$( '.site-description' ).text( to );
-		} );
-	} );
+    // Site title and description.
+    wp.customize( 'blogname', function( value ) {
+        value.bind( function( to ) {
+            $( '.site-title a' ).text( to );
+        } );
+    } );
+    wp.customize( 'blogdescription', function( value ) {
+        value.bind( function( to ) {
+            $( '.site-description' ).text( to );
+        } );
+    } );
 
-	// Header text color.
-	wp.customize( 'header_textcolor', function( value ) {
-		value.bind( function( to ) {
-			if ( 'blank' === to ) {
-				$( '.header-box' ).css( {
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
-				} );
-                                $( '.site-header' ).css( 'border-bottom', 'none' );
-			} else {
-				$( '.header-box, .site-branding, .site-title a, .site-description' ).css( {
-					'clip': 'auto',
-                                        'color': to,
-					'position': 'relative'
-				} );
-                                $( '.site-header' ).css( 'border-bottom', 'none' );
-                                $( '.site-description' ).css( 'color', '#3B9C61' );
-                                $( '.site-title a' ).css( 'color', '#fff' );
-			}
-		} );
-	} );
+    // Header text color.
+    wp.customize( 'header_textcolor', function( value ) {
+        value.bind( function( to ) {
+            if ( 'blank' === to ) {
+                $( '.header-box' ).css( {
+                    'clip': 'rect(1px, 1px, 1px, 1px)',
+                    'position': 'absolute'
+                } );
+                $( '.site-header' ).css( 'border-bottom', 'none' );
+            } else {
+                $( '.header-box, .site-branding, .site-title a, .site-description' ).css( {
+                    'clip': 'auto',
+                    'color': to,
+                    'position': 'relative'
+                } );
+                $( '.site-header' ).css( 'border-bottom', 'none' );
+                $( '.site-description' ).css( 'color', '#3B9C61' );
+                $( '.site-title a' ).css( 'color', '#fff' );
+            }
+        } );
+    } );
 } )( jQuery );

@@ -1,4 +1,4 @@
-/* 
+/*
  * Masonry settings to organize footer widgets
  */
 
@@ -6,11 +6,11 @@ jQuery(document).ready(function($){
     var $container = $('#footer-widgets');
     var $masonryOn;
     var $columnWidth = 400;
-    
+
     if ($(document).width() > 879) {;
-        $masonryOn = true;
-        runMasonry();
-    };
+                                    $masonryOn = true;
+                                    runMasonry();
+                                   };
 
     $(window).resize( function() {
         if ($(document).width() < 879) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
             runMasonry();
         }
     });
-    
+
     function runMasonry() {
         // initialize
         $container.masonry({
@@ -34,5 +34,5 @@ jQuery(document).ready(function($){
             isAnimated: true
         });
     };
-    
+
 });

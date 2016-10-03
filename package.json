@@ -1,0 +1,22 @@
+{
+    "name": "artfolio",
+    "version": "0.1.4",
+    "description": "WordPress theme",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+    "devDependencies" : {
+        "grunt" : "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/artem-solovev/artfolio.git"
+    },
+    "author": "Artem Solovev",
+    "license": "GNU General Public License v2 or later",
+    "bugs": {
+        "url": "https://github.com/artem-solovev/artfolio/issues"
+    }
+}

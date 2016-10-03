@@ -1,224 +1,193 @@
-# Copyright (C) 2016 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Project-Id-Version: artfolio 0.1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-03 15:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: 404.php:17
-#@ _s
-msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
-
-#: 404.php:21
-#@ _s
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr ""
-
-#: 404.php:33
-#@ _s
-msgid "Most Used Categories"
-msgstr ""
-
-#. translators: %1$s: smiley
-#: 404.php:51
-#, php-format
-#@ _s
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: comments.php:31
-#, php-format
-#@ _s
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:40
-#: comments.php:61
-#@ _s
+#: comments.php:50
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:43
-#: comments.php:64
-#@ _s
-msgid "Older Comments"
+#: comments.php:51
+msgid "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
 msgstr ""
 
-#: comments.php:44
-#: comments.php:65
-#@ _s
-msgid "Newer Comments"
+#: comments.php:52
+msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
 msgstr ""
 
-#: comments.php:78
-#@ _s
-msgid "Comments are closed."
-msgstr ""
-
-#: footer.php:18
-#@ _s
+#: footer.php:19
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:18
-#, php-format
-#@ _s
-msgid "Proudly powered by %s"
+#: functions.php:19
+msgid "Artfolio recent posts"
 msgstr ""
 
-#: footer.php:20
-#, php-format
-#@ _s
-msgid "Theme: %1$s by %2$s."
+#: functions.php:22
+msgid "Custom widget for recent posts with image and description"
 msgstr ""
 
-#: functions.php:47
-#@ _s
-msgid "Primary"
+#: functions.php:87
+msgid "Recent posts"
 msgstr ""
 
-#: functions.php:102
-#@ _s
-msgid "Sidebar"
+#: functions.php:93
+msgid "Title:"
 msgstr ""
 
-#: header.php:25
-#@ _s
-msgid "Skip to content"
+#: functions.php:98
+msgid "Number of posts to show:"
 msgstr ""
 
-#: header.php:45
-#@ _s
-msgid "Primary Menu"
+#: functions.php:175
+msgid "Social Menu"
 msgstr ""
 
-#: inc/template-tags.php:28
-#, php-format
-#@ _s
-msgctxt "post date"
-msgid "Posted on %s"
+#: functions.php:176
+msgid "Landing Menu"
 msgstr ""
 
-#: inc/template-tags.php:33
-#, php-format
-#@ _s
-msgctxt "post author"
-msgid "by %s"
+#: functions.php:240
+msgid "Footer Widgets"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:50
-#: inc/template-tags.php:56
-#@ _s
-msgid ", "
+#: functions.php:241
+msgid "Footer widgets area appears in the footer of the site."
 msgstr ""
 
-#: inc/template-tags.php:52
-#, php-format
-#@ _s
-msgid "Posted in %1$s"
-msgstr ""
-
-#: inc/template-tags.php:58
-#, php-format
-#@ _s
-msgid "Tagged %1$s"
+#: header.php:95
+msgid "Search"
 msgstr ""
 
 #: inc/template-tags.php:64
-#@ _s
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:179
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:182
+msgid "Previous Post:"
+msgstr ""
+
+#: inc/template-tags.php:183
+msgid "Next Post:"
+msgstr ""
+
+#: inc/template-tags.php:227
+msgid "&larr; Previous"
+msgstr ""
+
+#: inc/template-tags.php:228
+msgid "Next &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:236
+msgid "Posts navigation"
+msgstr ""
+
+#: node_modules/grunt-pot/test/fixtures/some-file.php:3
+msgid "I'm a translatable string."
+msgstr ""
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
+msgid "Me too"
+msgstr ""
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
+#, php-format
+msgid "I have %d apple"
+msgid_plural "I have %d apples"
+msgstr[0] ""
+msgstr[1] ""
+
+#. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
+msgid "yyyy-mm-dd"
+msgstr ""
+
+#: template-parts/content-404.php:3
+msgid ""
+"You seem to be lost. To find what you are looking for try go home or try a "
+"search"
+msgstr ""
+
+#: template-parts/content-aside.php:32 template-parts/content-search.php:25
+#: template-parts/content-single.php:30 template-parts/content.php:35
 msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:64
-#@ _s
-msgid "1 Comment"
+#: template-parts/content-aside.php:36 template-parts/content-search.php:38
+#: template-parts/content-single.php:69 template-parts/content.php:47
+msgid "Edit"
 msgstr ""
 
-#: inc/template-tags.php:64
-#@ _s
-msgid "% Comments"
+#: template-parts/content-none.php:17
+msgid "Page not available"
 msgstr ""
 
-#. translators: %s: Name of current post
-#: inc/template-tags.php:71
-#: template-parts/content-page.php:33
-#, php-format
-#@ _s
-msgid "Edit %s"
+#: template-parts/content-none.php:18
+msgid "Nothing found for <em>"
 msgstr ""
 
-#: search.php:19
-#, php-format
-#@ _s
-msgid "Search Results for: %s"
-msgstr ""
-
-#: template-parts/content-none.php:14
-#@ _s
+#: template-parts/content-none.php:19
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:21
+#: template-parts/content-none.php:27
 #, php-format
-#@ _s
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:25
-#@ _s
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:31
-#@ _s
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
 msgstr ""
 
-#: template-parts/content-page.php:22
-#: template-parts/content.php:38
-#@ _s
-msgid "Pages:"
+#: template-parts/content-none.php:36
+msgid ""
+"Nothing matched your search terms. Check out the most recent articles below "
+"or try searching for something else:"
 msgstr ""
 
-#. translators: %s: Name of current post. 
-#: template-parts/content.php:33
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we cannot find what you are looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-search.php:32 template-parts/content-single.php:36
+#: template-parts/content.php:41
+msgid ", "
+msgstr ""
+
+#: template-parts/content-search.php:46 template-parts/content.php:52
+msgid "Click to read "
+msgstr ""
+
+#: template-parts/content-search.php:59 template-parts/content.php:67
+msgid "Continue Reading "
+msgstr ""
+
+#: template-parts/content-single.php:52
 #, php-format
-#@ _s
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "_s"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-#@ _s
-msgid "http://underscores.me/"
-msgstr ""
-
-#. Description of the plugin/theme
-#@ _s
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
-msgstr ""
-
-#. Author of the plugin/theme
-#@ _s
-msgid "Automattic"
-msgstr ""
-
-#. Author URI of the plugin/theme
-#@ _s
-msgid "http://automattic.com/"
 msgstr ""

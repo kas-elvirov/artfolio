@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: artfolio 0.1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
+"POT-Creation-Date: 2016-10-03 12:47+0000\n"
+"PO-Revision-Date: 2016-10-03 12:47+0000\n"
+"Last-Translator: root <artem.solovev.lse@gmail.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: template-parts/content-search.php:46 template-parts/content.php:52
+msgid "Click to read "
+msgstr "Click to read "
+
+#: template-parts/content-search.php:59 template-parts/content.php:67
+msgid "Continue Reading "
+msgstr "Continue Reading "
+
+#: template-parts/content-single.php:52
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:50
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#: comments.php:51
+msgid "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
+msgstr "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
+
+#: comments.php:52
+msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgstr "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
+
+#: footer.php:19
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: functions.php:19
+msgid "Artfolio recent posts"
+msgstr "Artfolio recent posts"
+
+#: functions.php:22
+msgid "Custom widget for recent posts with image and description"
+msgstr "Custom widget for recent posts with image and description"
+
+#: functions.php:87
+msgid "Recent posts"
+msgstr "Recent posts"
+
+#: functions.php:93
+msgid "Title:"
+msgstr "Title:"
+
+#: functions.php:98
+msgid "Number of posts to show:"
+msgstr "Number of posts to show:"
+
+#: functions.php:175
+msgid "Social Menu"
+msgstr "Social Menu"
+
+#: functions.php:176
+msgid "Landing Menu"
+msgstr "Landing Menu"
+
+#: functions.php:240
+msgid "Footer Widgets"
+msgstr "Footer Widgets"
+
+#: functions.php:241
+msgid "Footer widgets area appears in the footer of the site."
+msgstr "Footer widgets area appears in the footer of the site."
+
+#: header.php:95
+msgid "Search"
+msgstr "Search"
+
+#: inc/template-tags.php:64
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+
+#: inc/template-tags.php:179
+msgid "Post navigation"
+msgstr "Post navigation"
+
+#: inc/template-tags.php:182
+msgid "Previous Post:"
+msgstr "Previous Post:"
+
+#: inc/template-tags.php:183
+msgid "Next Post:"
+msgstr "Next Post:"
+
+#: inc/template-tags.php:227
+msgid "&larr; Previous"
+msgstr "&larr; Previous"
+
+#: inc/template-tags.php:228
+msgid "Next &rarr;"
+msgstr "Next &rarr;"
+
+#: inc/template-tags.php:236
+msgid "Posts navigation"
+msgstr "Posts navigation"
+
+#: node_modules/grunt-pot/test/fixtures/some-file.php:3
+msgid "I'm a translatable string."
+msgstr "I'm a translatable string."
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
+msgid "Me too"
+msgstr "Me too"
+
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
+msgid "I have %d apple"
+msgid_plural "I have %d apples"
+msgstr[0] "I have %d apple"
+msgstr[1] "I have %d apples"
+
+#. TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
+#: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
+msgid "yyyy-mm-dd"
+msgstr "yyyy-mm-dd"
+
+#: template-parts/content-404.php:3
+msgid ""
+"You seem to be lost. To find what you are looking for try go home or try a "
+"search"
+msgstr ""
+"You seem to be lost. To find what you are looking for try go home or try a "
+"search"
+
+#: template-parts/content-aside.php:32 template-parts/content-search.php:25 
+#: template-parts/content-single.php:30 template-parts/content.php:35
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: template-parts/content-aside.php:36 template-parts/content-search.php:38 
+#: template-parts/content-single.php:69 template-parts/content.php:47
+msgid "Edit"
+msgstr "Edit"
+
+#: template-parts/content-none.php:17
+msgid "Page not available"
+msgstr "Page not available"
+
+#: template-parts/content-none.php:18
+msgid "Nothing found for <em>"
+msgstr "Nothing found for <em>"
+
+#: template-parts/content-none.php:19
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: template-parts/content-none.php:27
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: template-parts/content-none.php:31
+msgid ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
+msgstr ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
+
+#: template-parts/content-none.php:36
+msgid ""
+"Nothing matched your search terms. Check out the most recent articles below "
+"or try searching for something else:"
+msgstr ""
+"Nothing matched your search terms. Check out the most recent articles below "
+"or try searching for something else:"
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we cannot find what you are looking for. Perhaps searching can help."
+msgstr ""
+"It seems we cannot find what you are looking for. Perhaps searching can help."
+
+#: template-parts/content-search.php:32 template-parts/content-single.php:36 
+#: template-parts/content.php:41
+msgid ", "
+msgstr ","

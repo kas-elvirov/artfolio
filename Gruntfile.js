@@ -1,15 +1,15 @@
-module.exports = function (grunt) {
+module.exports = function ( grunt ) {
 
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( 'package.json' ),
 
         pot: {
-            options:{
+            options: {
                 text_domain: 'artfolio', //Your text domain. Produces my-text-domain.pot
                 dest: 'languages/', //directory to place the pot file
-                keywords: ['_e', '__'], //functions to look for
+                keywords: [ '_e', '__' ], //functions to look for
             },
-            files:{
+            files: {
                 src:  [ '**/*.php' ], //Parse all php files
                 expand: true,
             }
@@ -18,8 +18,7 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-pot');
+    grunt.loadNpmTasks( 'grunt-pot' );
 
-    grunt.registerTask('default', ['pot']);
-    grunt.registerTask('test', ['']);
+    grunt.registerTask( 'default', [ 'pot' ]);
 };

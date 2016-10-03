@@ -2,11 +2,6 @@
     "name": "artfolio",
     "version": "0.1.4",
     "description": "WordPress theme",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-
     "devDependencies" : {
         "grunt" : "latest",
         "grunt-pot" : "latest"

@@ -8,7 +8,8 @@
     },
 
     "devDependencies" : {
-        "grunt" : "latest"
+        "grunt" : "latest",
+        "grunt-pot" : "latest"
     },
     "repository": {
         "type": "git",

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: artfolio 0.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-03 12:42+0000\n"
-"PO-Revision-Date: 2016-10-03 12:43+0000\n"
+"POT-Creation-Date: 2016-10-09 18:10+0000\n"
+"PO-Revision-Date: 2016-10-09 18:10+0000\n"
 "Last-Translator: root <artem.solovev.lse@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru-RU\n"
@@ -13,6 +13,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
 "X-Generator: Loco - https://localise.biz/"
+
+#: template-parts/content-404.php:2
+msgid "Oops"
+msgstr "Упс"
 
 #: comments.php:50
 msgid "Comment navigation"

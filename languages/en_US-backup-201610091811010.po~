@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: artfolio 0.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-09 18:10+0000\n"
-"PO-Revision-Date: 2016-10-09 18:11+0000\n"
+"POT-Creation-Date: 2016-10-03 12:47+0000\n"
+"PO-Revision-Date: 2016-10-03 12:47+0000\n"
 "Last-Translator: root <artem.solovev.lse@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
@@ -13,9 +13,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: template-parts/content-404.php:2
-msgid "Oops"
-msgstr "Oops"
+#: template-parts/content-search.php:46 template-parts/content.php:52
+msgid "Click to read "
+msgstr "Click to read "
+
+#: template-parts/content-search.php:59 template-parts/content.php:67
+msgid "Continue Reading "
+msgstr "Continue Reading "
+
+#: template-parts/content-single.php:52
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 
 #: comments.php:50
 msgid "Comment navigation"
@@ -182,15 +190,3 @@ msgstr ""
 #: template-parts/content.php:41
 msgid ", "
 msgstr ","
-
-#: template-parts/content-search.php:46 template-parts/content.php:52
-msgid "Click to read "
-msgstr "Click to read "
-
-#: template-parts/content-search.php:59 template-parts/content.php:67
-msgid "Continue Reading "
-msgstr "Continue Reading "
-
-#: template-parts/content-single.php:52
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"

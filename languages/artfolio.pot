@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: artfolio 0.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-09 21:05+0300\n"
+"POT-Creation-Date: 2016-10-09 21:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,6 +121,10 @@ msgstr[1] ""
 #. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
 msgid "yyyy-mm-dd"
+msgstr ""
+
+#: template-parts/content-404.php:2
+msgid "Oops"
 msgstr ""
 
 #: template-parts/content-404.php:3

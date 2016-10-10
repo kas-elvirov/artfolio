@@ -3,8 +3,8 @@
     "version": "0.1.4",
     "description": "WordPress theme",
     "devDependencies" : {
-        "grunt" : "latest",
-        "grunt-pot" : "latest"
+        "grunt" : "~1.0.1",
+        "grunt-pot" : "~0.3.0"
     },
     "repository": {
         "type": "git",

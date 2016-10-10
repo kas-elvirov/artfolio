@@ -1,7 +1,8 @@
 0.0.0 / 0000-00-00
 ==================
 
-* 
+* Added editable copyright section
+* Added theme settings page
 
 
 1.2.9 / 2016-09-09

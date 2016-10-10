@@ -155,7 +155,18 @@ function artfolio_settings_add_menu() {
 
 add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 
+// Copyright setting
+function artfolio_copyright() { ?>
+<input type="text" name="copyright" id="copyright" value="<?php echo get_option( 'copyright' ); ?>" />
+<?php }
 
+function artfolio_settings_page_setup() {
+    add_settings_section( 'section', 'All Settings', null, 'theme-options' );
+    add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'section' );
+    register_setting( 'section', 'copyright' );
+}
+
+add_action( 'admin_init', 'artfolio_settings_page_setup' );
 
 
 if ( ! function_exists( 'artfolio_setup' ) ) :

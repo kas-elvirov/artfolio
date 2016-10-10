@@ -131,6 +131,32 @@ function modify_footer() {
 add_action( 'admin_footer_text', 'modify_footer' );
 
 
+/*
+
+Artfolio Global Settings
+
+*/ 
+function artfolio_settings_page() { ?>
+<div class="wrap">
+    <h1>Artfolio Settings</h1>
+    <form method="post" action="options.php">
+        <?php
+    settings_fields('section');
+    do_settings_sections('theme-options');
+    submit_button();
+        ?>
+    </form>
+</div>
+<?php }
+
+function artfolio_settings_add_menu() {
+    add_menu_page( 'Artfolio Settings', 'Artfolio Settings', 'manage_options', 'custom-settings', 'artfolio_settings_page', null, 99);
+}
+
+add_action( 'admin_menu', 'artfolio_settings_add_menu' );
+
+
+
 
 if ( ! function_exists( 'artfolio_setup' ) ) :
 /**

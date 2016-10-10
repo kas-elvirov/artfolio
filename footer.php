@@ -16,9 +16,13 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
     <?php get_sidebar( 'footer' ); ?>
     <div class="site-info">
-        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'artfolio' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'artfolio' ), 'WordPress' ); ?></a>
-        <span class="sep"> | </span>
         <span class="fa heart pulseHeart"></span>
+        <br />
+
+        <?php echo get_option( 'copyright' ); ?>
+        <br />
+
+        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'artfolio' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'artfolio' ), 'WordPress' ); ?></a>
         <span class="sep"> | </span>
         <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'artfolio' ), 'artfolio', '<a href="https://github.com/artem-solovev" rel="designer">Artem Solovev</a>' ); ?>
     </div><!-- .site-info -->

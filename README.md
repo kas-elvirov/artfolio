@@ -1,11 +1,18 @@
-WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
+<p align="center">
+<a href="https://david-dm.org/artem-solovev/artfolio" target="_blank"><img src="https://david-dm.org/artem-solovev/artfolio.svg" alt="Dependency Status"></a>
+<a href="https://david-dm.org/artem-solovev/artfolio/?type=dev" target="_blank"><img src="https://david-dm.org/artem-solovev/artfolio/dev-status.svg" alt="devDependency Status"></a>
+</p>
+___
+
+
+# WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 ===========================
 
-**[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
+## **[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
 
-**Current version: 0.1.4**
+## **Current version: 0.1.4**
 
-**Features**
+## **Features**
 * Fully responsive design
 * Mobile-first
 * Unique design
@@ -17,7 +24,7 @@ WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 
 
 
-**Contributors**: Artem Solovev
+## **Contributors**: Artem Solovev
 **Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 

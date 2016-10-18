@@ -10,7 +10,7 @@
 /*
 * Custom widget for recent posts
 */
-require get_template_directory() . '/widgets/artfolio_recent_posts.php';
+require get_template_directory() . '/widgets/artfolio-recent-posts.php';
 
 /*
 * Page for theme settings

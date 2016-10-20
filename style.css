@@ -1383,17 +1383,22 @@ input[type="search"] {
 /*--------------------------------------------------------------
 10.2 Arfolio recent posts
 --------------------------------------------------------------*/
+
+#artfolio_widget-2 li,
+.arp-header { text-align: center; }
+
 .arp-thumbnail {
     display: inline-block;
     position: relative;
-    margin-right: 1em;
+    margin-right: 0;
 }
 
 .arp-header {
-    display: inline-block;
+    display: block;
     position: relative;
-    width: 61%;
+    width: 100%;
     vertical-align: top;
+    border-bottom: 1px solid rgb(101, 98, 93);
 }
 
 .arp-title {
@@ -1405,6 +1410,7 @@ input[type="search"] {
 .arp-meta {
     display: block;
     position: relative;
+    font-size: 12px;
 }
 
 .arp-author {
@@ -1436,6 +1442,21 @@ input[type="search"] {
     font-size: 50px;
     line-height: 100px !important;
     color: #fff;
+}
+
+@media screen and ( min-width: 400px ) {
+    #artfolio_widget-2 li,
+    .arp-header { text-align: left; }
+
+    .arp-thumbnail { margin-right: 1em; }
+
+    .arp-header {
+        display: inline-block;
+        width: 61%;
+        border-bottom: none;
+    }
+
+    .arp-meta { font-size: inherit; }
 }
 
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: artfolio 0.1.4\n"
+"Project-Id-Version: artfolio 1.2.9\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-09 21:09+0300\n"
+"POT-Creation-Date: 2016-10-23 23:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,43 +30,23 @@ msgstr ""
 msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
 msgstr ""
 
-#: footer.php:19
+#: footer.php:25
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: functions.php:19
-msgid "Artfolio recent posts"
-msgstr ""
-
-#: functions.php:22
-msgid "Custom widget for recent posts with image and description"
-msgstr ""
-
-#: functions.php:87
-msgid "Recent posts"
-msgstr ""
-
-#: functions.php:93
-msgid "Title:"
-msgstr ""
-
-#: functions.php:98
-msgid "Number of posts to show:"
-msgstr ""
-
-#: functions.php:175
+#: functions.php:75
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:176
+#: functions.php:76
 msgid "Landing Menu"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:140
 msgid "Footer Widgets"
 msgstr ""
 
-#: functions.php:241
+#: functions.php:141
 msgid "Footer widgets area appears in the footer of the site."
 msgstr ""
 
@@ -194,4 +174,24 @@ msgstr ""
 #: template-parts/content-single.php:52
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: widgets/artfolio-recent-posts.php:12
+msgid "Artfolio recent posts"
+msgstr ""
+
+#: widgets/artfolio-recent-posts.php:15
+msgid "Custom widget for recent posts with image and description"
+msgstr ""
+
+#: widgets/artfolio-recent-posts.php:80
+msgid "Recent posts"
+msgstr ""
+
+#: widgets/artfolio-recent-posts.php:86
+msgid "Title:"
+msgstr ""
+
+#: widgets/artfolio-recent-posts.php:91
+msgid "Number of posts to show:"
 msgstr ""

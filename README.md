@@ -10,7 +10,7 @@ ___
 
 ## **[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
 
-## **Current version: 0.1.4**
+## **Current version: 1.2.9**
 
 ## **Features**
 * Fully responsive design

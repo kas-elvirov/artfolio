@@ -51,11 +51,6 @@ Does this theme support any plugins?
 * Artfolio includes support for Infinite Scroll in Jetpack.
 
 
-## Changelog
-
-* 0.1.3 - Sep 28 2016 - Fixed some bugs and added Wiki docs
-* 0.1 - June 16 2016 - Initial release
-
 ## Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)

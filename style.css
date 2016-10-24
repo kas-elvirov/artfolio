@@ -617,7 +617,28 @@ a:active {
     font-size: 1.4rem;
     text-decoration: none;
     color: #D3D3D3;
+    transition: all 0.5s;
 }
+
+/* Animation for buttons */
+.main-navigation .nav-menu > li > a:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 1.3em;
+    right: -5px;
+    transition: 0.5s;
+}
+
+.main-navigation .nav-menu > li:hover a {
+    padding-left: .5em;
+    padding-right: 1.5em;
+}
+
+.main-navigation .nav-menu > li:hover a:after {
+    opacity: 1;
+    right: .6em;
+} /* END: Animation for buttons */
 
 .main-navigation ul ul {
     position: absolute;

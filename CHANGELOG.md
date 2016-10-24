@@ -1,6 +1,7 @@
 0.0.0 / 0000-00-00
 ==================
 
+* [ x.1.x ] Added animation to nav buttons
 * [ x.1.x ] Added editable copyright section
 * [ x.1.x ] Added theme settings page
 

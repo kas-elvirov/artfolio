@@ -1446,7 +1446,7 @@ input[type="search"] {
 }
 
 .attachment-artfolio-recent-thumbnails,
-.imagePlugWrapper:hover { transition: border-radius 0.3s; }
+.imagePlugWrapper:hover { transition: border-radius 0.5s; }
 
 .attachment-artfolio-recent-thumbnails:hover,
 .imagePlugWrapper:hover { border-radius: 50%; }

@@ -1134,10 +1134,15 @@ a:hover.page-numbers {
     font-weight: 700;
     font-size: 48px;
     font-size: 4.8rem;
+    transition: letter-spacing 1s;
 }
 
 .single .site-title {
     background-color: rgba(35, 30, 26, 0.7);
+}
+
+.single .site-title:hover {
+    letter-spacing: 7px;
 }
 
 .site-description {

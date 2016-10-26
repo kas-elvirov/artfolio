@@ -24,6 +24,13 @@
     background: hsl(0, 0%, 100%);
 }
 
+.site-content .index-widgets {
+    display: block;
+    position: relative;
+    float: none;
+    width: 100%;
+}
+
 .site-footer {
     clear: both;
     width: 100%;
@@ -54,11 +61,24 @@
     border-bottom: 12px solid #65625D;
 }
 
+.index-widgets .index-box {
+    max-width: none;
+    margin: 0;
+}
+
 .index-box blockquote.alignleft,
 .index-box blockquote.alignright {
     background: #fff;
     background: hsl(0, 0%, 100%);
     border: none;
+}
+
+@media screen and (min-width: 1981px) {
+    .index-widgets .index-box {
+        max-width: 780px;
+        max-width: 78rem;
+        margin: 0 auto 2em;
+    }
 }
 
 @media screen and (min-width: 1820px) {

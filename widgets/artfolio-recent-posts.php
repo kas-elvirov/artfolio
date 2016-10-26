@@ -56,8 +56,16 @@ class artfolio_recent_posts extends WP_Widget {
     <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" class="arp-author">
         <?php esc_html( the_author() ); ?>
     </a>
-</div> <!-- .arp-header-->
-</header>
+</div> <!-- .arp-meta-->
+    <?php
+            /* translators: used between list items, there is a space after the comma */
+            $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
+
+            if ( artfolio_categorized_blog() ) {
+                echo '<div class="category-list">' . $category_list . '</div>';
+            }
+    ?>
+</header> <!-- .arp-header-->
 </li>
 </ul>
 <?php

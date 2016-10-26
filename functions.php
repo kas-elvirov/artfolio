@@ -65,7 +65,7 @@ function artfolio_setup() {
        */
     add_theme_support( 'post-thumbnails' );
 
-    add_image_size( 'artfolio-recent-thumbnails', 100, 100, true ); // Sets Recent Posts Thumbnails
+    add_image_size( 'artfolio-recent-thumbnails', 220, 220, true ); // Sets Recent Posts Thumbnails
     add_image_size( 'large-thumbnails', 1280, 220, true ); // Sets Large post thumbnails for header in single post section
     add_image_size( 'small-thumbnails', 780, 300, true ); // Sets Small post thumbnails for posts in index post section
 
@@ -148,7 +148,7 @@ function artfolio_widgets_init() {
 
     register_sidebar( array(
         'name'          => __( 'Index page Widgets', 'artfolio' ),
-        'description'   => __( 'Index page widgets area appears in the index page of the site.', 'artfolio' ),
+        'description'   => __( 'Index page widgets area appears in the index page of the site. Only for Artfolio Recent Posts widget.', 'artfolio' ),
         'id'            => 'sidebar-3',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget'  => '</aside>',

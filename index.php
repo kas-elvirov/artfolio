@@ -15,6 +15,9 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+
+    <?php get_sidebar( 'index' ); ?>
+
     <main id="main" class="site-main" role="main">
 
         <?php

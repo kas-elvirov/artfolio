@@ -897,6 +897,12 @@ a:active {
     }
 }
 
+footer .menu-social ul {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {

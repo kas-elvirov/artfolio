@@ -19,20 +19,33 @@ function artfolio_settings_page() { ?>
 function artfolio_settings_add_menu() {
     add_menu_page( 'Artfolio Settings', 'Artfolio Settings', 'manage_options', 'custom-settings', 'artfolio_settings_page', null, 99);
 }
-
 add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 
-// Copyright setting
+
+/*
+    Copyright setting
+*/
 function artfolio_copyright() { ?>
 <input type="text" name="copyright" id="copyright" value="<?php echo get_option( 'copyright' ); ?>" />
 <?php }
 
+/*
+    Show / hide social menu in footer
+*/
+function artfolio_footer_social_menu() { ?>
+<input type="checkbox" name="socialMenu" id="socialMenu" value="1" <?php checked( 1, get_option( 'socialMenu' ) ) ?> />
+<?php }
+
 function artfolio_settings_page_setup() {
     add_settings_section( 'section', 'All Settings', null, 'theme-options' );
-    add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'section' );
-    register_setting( 'section', 'copyright' );
-}
 
+    add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'section' );
+    add_settings_field( 'socialMenu', 'Show social-menu in footer ?', 'artfolio_footer_social_menu', 'theme-options', 'section' );
+
+    register_setting( 'section', 'copyright' );
+    register_setting( 'section', 'socialMenu' );
+}
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
+
 
 ?>

@@ -1868,7 +1868,7 @@ input[type="search"] {
     display: none;
     position: relative;
 }
-.entry-meta img {
+.post-author img {
     display: inline-block;
     position: relative;
     width: 65px;
@@ -2217,6 +2217,10 @@ ol.children { list-style-type: none; }
 }
 
 .taxonomy-description p { font-family: "Open Sans", sans-serif; }
+
+.page-title {
+    margin-bottom: 0;
+}
 
 
 /*--------------------------------------------------------------

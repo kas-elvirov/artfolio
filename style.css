@@ -1394,6 +1394,10 @@ input[type="search"] {
     margin: 0 4rem 8rem 4rem;
 }
 
+.entry-content .search-form {
+    padding: 1em;
+}
+
 /* Footer widgets responsive */
 @media screen and (max-width: 879px) {
     #footer-widgets { width: 100%!important; }

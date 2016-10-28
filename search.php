@@ -16,7 +16,10 @@ get_header(); ?>
         if ( have_posts() ) : ?>
 
         <header class="page-header">
-            <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'artfolio' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+            <h1 class="page-title"><?php echo esc_html__( 'Search Results', 'artfolio' ) ?></h1>
+            <span><?php echo 'for '.get_search_query(); ?></span>
+            <br />
+            <span><?php echo $GLOBALS['wp_query']->found_posts . ' Results found'; ?></span>
         </header><!-- .page-header -->
 
         <?php

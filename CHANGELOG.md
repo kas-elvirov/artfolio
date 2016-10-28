@@ -1,6 +1,11 @@
 0.0.0 / 0000-00-00
 ==================
 
+* [ x.x.1 ] Removed excessive elements from pages
+* [ x.x.1 ] Updated some styles
+* [ x.1.x ] Added ability show/hide social menu in footer
+* [ x.1.x ] Added social-menu in footer
+* [ x.1.x ] Added widget to index-page
 * [ x.1.x ] Added animation to nav buttons
 * [ x.1.x ] Added editable copyright section
 * [ x.1.x ] Added theme settings page

@@ -1164,6 +1164,20 @@ a:hover.page-numbers {
     letter-spacing: 7px;
 }
 
+.single .edit-link {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 10px;
+    padding: .1em 1em;
+    background-color: #A9A59D;
+    border-radius: .5em;
+    box-shadow: 3px 3px 3px #d3d3d3;
+}
+
+.single .edit-link .post-edit-link {
+    color: #fff;
+}
+
 .site-description {
     display: inline-block;
     text-transform: uppercase;
@@ -1909,6 +1923,7 @@ input[type="search"] {
 }
 
 .entry-footer ul {
+    display: block;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -1922,7 +1937,6 @@ input[type="search"] {
 .entry-footer a {
     display: inline-block;
     position: relative;
-    margin-left: 0.5rem;
 }
 
 .sticky { display: block; }

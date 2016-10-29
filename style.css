@@ -1172,6 +1172,11 @@ a:hover.page-numbers {
     background-color: #A9A59D;
     border-radius: .5em;
     box-shadow: 3px 3px 3px #d3d3d3;
+    transition: background-color .3s;
+}
+
+.single .edit-link:hover {
+    background-color: #65625D;
 }
 
 .single .edit-link .post-edit-link {

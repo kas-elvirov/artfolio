@@ -62,6 +62,7 @@
     margin: 0 auto 2em;
     background: #fff;
     background: hsl(0, 0%, 100%);
+    border-bottom: 12px solid #d3d3d3;
 }
 
 .index-widgets .index-box {

@@ -1164,24 +1164,27 @@ a:hover.page-numbers {
     letter-spacing: 7px;
 }
 
+.entry-meta .edit-link,
 .single .edit-link {
     display: inline-block;
     margin-top: 1em;
     margin-left: 10px;
     padding: .1em 1em;
     background-color: #A9A59D;
-    border-radius: .5em;
     box-shadow: 3px 3px 3px #d3d3d3;
     transition: background-color .3s;
+    transition: box-shadow .3s;
+    cursor: pointer;
 }
 
+.entry-meta .edit-link:hover,
 .single .edit-link:hover {
     background-color: #65625D;
+    box-shadow: 3px 3px 6px 3px #d3d3d3;
 }
 
-.single .edit-link .post-edit-link {
-    color: #fff;
-}
+.entry-meta .edit-link .post-edit-link,
+.single .edit-link .post-edit-link { color: #fff; }
 
 .site-description {
     display: inline-block;

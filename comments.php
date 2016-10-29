@@ -48,8 +48,8 @@ if ( post_password_required() ) {
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
     <nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
         <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'artfolio' ); ?></h1>
-        <div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-arrow-circle-o-left"></i> Older Comments', 'artfolio' ) ); ?></div>
-        <div class="nav-next"><?php next_comments_link( __( 'Newer Comments <i class="fa fa-arrow-circle-o-right"></i>', 'artfolio' ) ); ?></div>
+        <div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-long-arrow-left" aria-hidden="true"></i> Older Comments', 'artfolio' ) ); ?></div>
+        <div class="nav-next"><?php next_comments_link( __( 'Newer Comments <i class="fa fa-long-arrow-right" aria-hidden="true"></i>', 'artfolio' ) ); ?></div>
     </nav><!-- #comment-nav-below -->
     <?php
     endif; // Check for comment navigation.

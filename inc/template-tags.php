@@ -179,8 +179,8 @@ function artfolio_post_navigation() {
             <h1 class="screen-reader-text"><?php _e( 'Post navigation', 'artfolio' ); ?></h1>
             <div class="nav-links">
                 <?php
-        previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post:', 'artfolio' ) . '</div><h1>%link</h1></div>', '%title' );
-        next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post:', 'artfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+        previous_post_link( '<div class="nav-previous"><div class="nav-indicator"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> ' . __( 'Previous Post', 'artfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+        next_post_link( '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post', 'artfolio' ) . ' <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div><h1>%link</h1></div>', '%title' );
                 ?>
             </div><!-- .nav-links -->
         </div><!-- .post-nav-box -->

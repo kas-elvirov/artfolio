@@ -29,21 +29,34 @@ function artfolio_copyright() { ?>
 <input type="text" name="copyright" id="copyright" value="<?php echo get_option( 'copyright' ); ?>" />
 <?php }
 
+
 /*
     Show / hide social menu in footer
 */
 function artfolio_footer_social_menu() { ?>
 <input type="checkbox" name="socialMenu" id="socialMenu" value="1" <?php checked( 1, get_option( 'socialMenu' ) ) ?> />
-<?php }
+<?php
+}
+
+
+/*
+    Show / hide developer link in footer
+*/
+function artfolio_developer_link() { ?>
+<input type="checkbox" name="developerLink" id="developerLink" value="1" <?php checked( 1, get_option( 'developerLink' ) ) ?> />
+<?php
+}
 
 function artfolio_settings_page_setup() {
     add_settings_section( 'section', 'All Settings', null, 'theme-options' );
 
     add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'section' );
     add_settings_field( 'socialMenu', 'Show social-menu in footer ?', 'artfolio_footer_social_menu', 'theme-options', 'section' );
+    add_settings_field( 'developerLink', 'Show developer link in footer ?', 'artfolio_developer_link', 'theme-options', 'section' );
 
     register_setting( 'section', 'copyright' );
     register_setting( 'section', 'socialMenu' );
+    register_setting( 'section', 'developerLink' );
 }
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
 

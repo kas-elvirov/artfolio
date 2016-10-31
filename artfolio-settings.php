@@ -6,10 +6,11 @@
 function artfolio_settings_page() { ?>
 <div class="wrap">
     <h1>Artfolio Settings</h1>
+    <hr />
     <form method="post" action="options.php">
         <?php
-    settings_fields('section');
-    do_settings_sections('theme-options');
+    settings_fields( 'footer' );
+    do_settings_sections( 'theme-options' );
     submit_button();
         ?>
     </form>
@@ -48,15 +49,15 @@ function artfolio_developer_link() { ?>
 }
 
 function artfolio_settings_page_setup() {
-    add_settings_section( 'section', 'All Settings', null, 'theme-options' );
+    add_settings_section( 'footer', 'Footer settings', null, 'theme-options' );
 
-    add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'section' );
-    add_settings_field( 'socialMenu', 'Show social-menu in footer ?', 'artfolio_footer_social_menu', 'theme-options', 'section' );
-    add_settings_field( 'developerLink', 'Show developer link in footer ?', 'artfolio_developer_link', 'theme-options', 'section' );
+    add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'footer' );
+    add_settings_field( 'socialMenu', 'Show social-menu ?', 'artfolio_footer_social_menu', 'theme-options', 'footer' );
+    add_settings_field( 'developerLink', 'Show developer link ?', 'artfolio_developer_link', 'theme-options', 'footer' );
 
-    register_setting( 'section', 'copyright' );
-    register_setting( 'section', 'socialMenu' );
-    register_setting( 'section', 'developerLink' );
+    register_setting( 'footer', 'copyright' );
+    register_setting( 'footer', 'socialMenu' );
+    register_setting( 'footer', 'developerLink' );
 }
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
 

@@ -17,7 +17,8 @@
     <?php get_sidebar( 'footer' ); ?>
     <div class="site-info">
         <span><?php get_option( 'socialMenu' ) ? artfolio_social_menu() : "" ?></span>
-        <span class="fa heart pulseHeart"></span>
+
+        <span class="<?php get_option( 'heartAnimation' ) ? printf( 'fa heart pulseHeart' ) : "" ?>"></span>
         <br />
 
         <?php echo get_option( 'copyright' ); ?>

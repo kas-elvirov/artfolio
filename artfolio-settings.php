@@ -48,6 +48,7 @@ function artfolio_developer_link() { ?>
 <?php
 }
 
+
 /*
     Show / hide wordpress link in footer
 */
@@ -56,6 +57,16 @@ function artfolio_wordpress_link() { ?>
 <?php
 }
 
+
+/*
+    Show / hide heart in footer
+*/
+function artfolio_heart() { ?>
+<input type="checkbox" name="heartAnimation" id="heartAnimation" value="1" <?php checked( 1, get_option( 'heartAnimation' ) ) ?> />
+<?php
+}
+
+
 function artfolio_settings_page_setup() {
     add_settings_section( 'footer', 'Footer settings', null, 'theme-options' );
 
@@ -63,11 +74,13 @@ function artfolio_settings_page_setup() {
     add_settings_field( 'socialMenu', 'Show social-menu ?', 'artfolio_footer_social_menu', 'theme-options', 'footer' );
     add_settings_field( 'developerLink', 'Show developer link ?', 'artfolio_developer_link', 'theme-options', 'footer' );
     add_settings_field( 'wordpressLink', 'Show wordpress link ?', 'artfolio_wordpress_link', 'theme-options', 'footer' );
+    add_settings_field( 'heartAnimation', 'Show heart animation ?', 'artfolio_heart', 'theme-options', 'footer' );
 
     register_setting( 'footer', 'copyright' );
     register_setting( 'footer', 'socialMenu' );
     register_setting( 'footer', 'developerLink' );
     register_setting( 'footer', 'wordpressLink' );
+    register_setting( 'footer', 'heartAnimation' );
 }
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
 

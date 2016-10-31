@@ -48,16 +48,26 @@ function artfolio_developer_link() { ?>
 <?php
 }
 
+/*
+    Show / hide wordpress link in footer
+*/
+function artfolio_wordpress_link() { ?>
+<input type="checkbox" name="wordpressLink" id="wordpressLink" value="1" <?php checked( 1, get_option( 'wordpressLink' ) ) ?> />
+<?php
+}
+
 function artfolio_settings_page_setup() {
     add_settings_section( 'footer', 'Footer settings', null, 'theme-options' );
 
     add_settings_field( 'copyright', 'Copyright text', 'artfolio_copyright', 'theme-options', 'footer' );
     add_settings_field( 'socialMenu', 'Show social-menu ?', 'artfolio_footer_social_menu', 'theme-options', 'footer' );
     add_settings_field( 'developerLink', 'Show developer link ?', 'artfolio_developer_link', 'theme-options', 'footer' );
+    add_settings_field( 'wordpressLink', 'Show wordpress link ?', 'artfolio_wordpress_link', 'theme-options', 'footer' );
 
     register_setting( 'footer', 'copyright' );
     register_setting( 'footer', 'socialMenu' );
     register_setting( 'footer', 'developerLink' );
+    register_setting( 'footer', 'wordpressLink' );
 }
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
 

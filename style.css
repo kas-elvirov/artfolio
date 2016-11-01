@@ -1365,6 +1365,7 @@ input[type="search"] {
     border-top:2px solid #222222;
     opacity:0.8;
     margin-bottom: 0!important;
+    text-align: left;
 }
 
 .camera_wrap img { max-width: none!important; }

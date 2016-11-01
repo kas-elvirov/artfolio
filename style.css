@@ -1364,7 +1364,7 @@ input[type="search"] {
     z-index: 0;
     border-top:2px solid #222222;
     opacity:0.8;
-    margin-bottom: 0;
+    margin-bottom: 0!important;
 }
 
 .camera_wrap img { max-width: none!important; }

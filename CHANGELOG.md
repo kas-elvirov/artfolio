@@ -1,8 +1,12 @@
 0.0.0 / 0000-00-00
 ==================
 
+* [ 1.x.x ] Added slider
 * [ x.x.1 ] Removed excessive elements from pages
 * [ x.x.1 ] Updated some styles
+* [ x.1.x ] Added ability show/hide wordpress link menu in footer
+* [ x.1.x ] Added ability show/hide developer link menu in footer
+* [ x.1.x ] Added ability show/hide heart menu in footer
 * [ x.1.x ] Added ability show/hide social menu in footer
 * [ x.1.x ] Added social-menu in footer
 * [ x.1.x ] Added widget to index-page

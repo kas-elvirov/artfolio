@@ -199,6 +199,15 @@ function artfolio_scripts() {
 
     wp_enqueue_script( 'artfolio-masonry', get_template_directory_uri() . '/js/masonry-configuration.js', array('masonry'), '20160601', true );
 
+    /* Slider scripts */
+    wp_enqueue_script( 'artfolio-camera', get_template_directory_uri() . '/js/camera.min.js' );
+
+    wp_enqueue_script( 'artfolio-camera-configuration', get_template_directory_uri() . '/js/camera-configuration.js' );
+
+    wp_enqueue_script( 'artfolio-jquery-mobile-customized', get_template_directory_uri() . '/js/jquery.mobile.customized.min.js', array( 'jquery' ) );
+
+    wp_enqueue_script( 'artfolio-jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
+
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }

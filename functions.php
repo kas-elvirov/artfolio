@@ -7,21 +7,23 @@
  * @package Artfolio
  */
 
+
 /*
 * Custom widget for recent posts
 */
 require get_template_directory() . '/widgets/artfolio-recent-posts.php';
+
 
 /*
 * Page for theme settings
 */
 require get_template_directory() . '/artfolio-settings.php';
 
+
 // Modify Admin Footer Text
 function modify_footer() {
     echo 'Created by <a href="https://github.com/artem-solovev" target="_blank">Artem Solovev</a> in 2016. All rights reserved';
 }
-
 add_action( 'admin_footer_text', 'modify_footer' );
 
 
@@ -39,6 +41,7 @@ function artfolio_setup() {
     $font_url = 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic';
     add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
 
+
     /*
        * Make theme available for translation.
        * Translations can be filed in the /languages/ directory.
@@ -47,8 +50,10 @@ function artfolio_setup() {
        */
     load_theme_textdomain( 'artfolio', get_template_directory() . '/languages' );
 
+
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
+
 
     /*
        * Let WordPress manage the document title.
@@ -57,6 +62,7 @@ function artfolio_setup() {
        * provide it for us.
        */
     add_theme_support( 'title-tag' );
+
 
     /*
        * Enable support for Post Thumbnails on posts and pages.
@@ -69,12 +75,14 @@ function artfolio_setup() {
     add_image_size( 'large-thumbnails', 1280, 220, true ); // Sets Large post thumbnails for header in single post section
     add_image_size( 'small-thumbnails', 780, 300, true ); // Sets Small post thumbnails for posts in index post section
 
+
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus( array(
         'primary' => esc_html__( 'Primary', 'artfolio' ),
         'social' => __( 'Social Menu', 'artfolio'),
         'landing' => __( 'Landing Menu', 'artfolio' ),
     ) );
+
 
     /*
        * Switch default core markup for search form, comment form, and comments
@@ -88,11 +96,13 @@ function artfolio_setup() {
         'caption',
     ) );
 
+
     /*
        * Enable support for Post Formats.
        * See https://developer.wordpress.org/themes/functionality/post-formats/
        */
     add_theme_support( 'post-formats', array( 'aside' ) );
+
 
     /*
        * Enable support for Custom logo.
@@ -108,6 +118,7 @@ endif;
 
 add_action( 'after_setup_theme', 'artfolio_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -119,6 +130,7 @@ function artfolio_content_width() {
     $GLOBALS['content_width'] = apply_filters( 'artfolio_content_width', 700 );
 }
 add_action( 'after_setup_theme', 'artfolio_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -158,6 +170,7 @@ function artfolio_widgets_init() {
 }
 add_action( 'widgets_init', 'artfolio_widgets_init' );
 
+
 /**
  * Enqueue scripts and styles.
  */
@@ -192,25 +205,30 @@ function artfolio_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'artfolio_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
+
 
 /**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+
 /**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
 
+
 /**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
 
 /**
  * Load Jetpack compatibility file.

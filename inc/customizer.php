@@ -7,6 +7,7 @@
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
+ * Add slider support for Index page only
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */

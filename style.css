@@ -2777,13 +2777,13 @@ input[type="search"] {
     width: 60px;
     background-image: url( "images/404/spider.svg" );
     background-repeat: no-repeat;
-    -webkit-animation-name: up;
+    -webkit-animation-name: spiderAnimation;
     -webkit-animation-duration: 4s;
     -webkit-animation-iteration-count: 1;
     z-index: 100;
 }
 
-@-webkit-keyframes up {
+@-webkit-keyframes spiderAnimation {
     0% {
         top: -364px;
     }

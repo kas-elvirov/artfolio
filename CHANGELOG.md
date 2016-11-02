@@ -1,7 +1,7 @@
 0.0.0 / 0000-00-00
 ==================
 
-* [ 1.x.x ] Added slider
+* [ x.1.x ] Added slider
 * [ x.x.1 ] Removed excessive elements from pages
 * [ x.x.1 ] Updated some styles
 * [ x.1.x ] Added ability show/hide wordpress link menu in footer

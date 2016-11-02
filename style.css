@@ -2767,6 +2767,31 @@ input[type="search"] {
     opacity: 0.0;
 }
 
+.error404Title .spider {
+    display: block;
+    position: absolute;
+    padding: 0;
+    top: -30px;
+    left: 2em;
+    height: 364px;
+    width: 60px;
+    background-image: url( "images/404/spider.svg" );
+    background-repeat: no-repeat;
+    -webkit-animation-name: up;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    z-index: 100;
+}
+
+@-webkit-keyframes up {
+    0% {
+        top: -364px;
+    }
+    100% {
+        top: -30px;
+    }
+}
+
 @-webkit-keyframes pulsate {
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}

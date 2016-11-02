@@ -2783,12 +2783,38 @@ input[type="search"] {
     z-index: 100;
 }
 
+.error404Title .spiderWeb {
+    display: block;
+    position: absolute;
+    padding: 0;
+    bottom: -403px;
+    right:  -326px;
+    width: 720px;
+    height: 744px;
+    background-image: url( "images/404/spider_web.svg" );
+    background-repeat: no-repeat;
+    -webkit-animation-name: spiderWebAnimation;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+    z-index: 0;
+}
+
 @-webkit-keyframes spiderAnimation {
     0% {
         top: -364px;
     }
     100% {
         top: -30px;
+    }
+}
+
+@-webkit-keyframes spiderWebAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

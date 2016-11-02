@@ -2708,7 +2708,7 @@ input[type="search"] {
 /* For 404 page */
 
 .error404 {
-    background: url('images/page404.jpg');
+    background: url('images/404/page404.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

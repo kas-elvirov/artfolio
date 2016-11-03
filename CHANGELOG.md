@@ -1,6 +1,13 @@
 0.0.0 / 0000-00-00
 ==================
 
+* [ x.x.x ]
+
+
+1.13.11 / 2016-10-21
+==================
+
+* [ x.1.x ] Added pretty images to 404 page
 * [ x.1.x ] Added slider
 * [ x.x.1 ] Removed excessive elements from pages
 * [ x.x.1 ] Updated some styles

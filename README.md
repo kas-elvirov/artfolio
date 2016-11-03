@@ -6,6 +6,7 @@ ___
 
 
 # WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
+## **Current version: 1.13.11**
 ===========================
 
 ## **Quick links**
@@ -13,8 +14,6 @@ ___
 * **[Issues, bugs](https://github.com/artem-solovev/artfolio/issues)**
 * **[For contributors](https://github.com/artem-solovev/artfolio/wiki/For-contributors)**
 
-
-## **Current version: 1.2.9**
 
 ## **Features**
 * Slider ( responsive ) for header

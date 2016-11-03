@@ -49,6 +49,17 @@ Does this theme support any plugins?
 * [Artem Solovev](https://github.com/artem-solovev)
 
 
+## Credits
+
+* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Header image by [Omar Yassen](https://www.instagram.com/haveyouseenomar/)
+* Icon image by [Crumbs + Pixels](https://www.iconfinder.com/Ikonografia)
+
+
+===========================
+
+
 *Requires at least*: 4.0
 *Tested up to*: 4.4.2
 *Stable tag*: 1.0.0
@@ -57,11 +68,3 @@ Does this theme support any plugins?
 
 
 **Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
-
-
-## Credits
-
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
-* Header image by [Omar Yassen](https://www.instagram.com/haveyouseenomar/)
-* Icon image by [Crumbs + Pixels](https://www.iconfinder.com/Ikonografia)

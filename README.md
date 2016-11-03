@@ -21,12 +21,12 @@ ___
 * Background-image for header
 * Icon for header
 * Design
-* * Fully responsive design
-* * Mobile-first
-* * Unique design
+    * Fully responsive design
+    * Mobile-first
+    * Unique design
 * Menus
-* * Landing menu
-* * Social menu ( 27 websites )
+    * Landing menu
+    * Social menu ( 27 websites )
 * Recent posts widget ( for index page and sidebar )
 
 

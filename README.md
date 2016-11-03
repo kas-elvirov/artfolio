@@ -8,31 +8,40 @@ ___
 # WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
 ===========================
 
-## **[Wiki](https://github.com/artem-solovev/artfolio/wiki)**
+## **Quick links**
+* **[Documentation](https://github.com/artem-solovev/artfolio/wiki)**
+* **[Issues, bugs](https://github.com/artem-solovev/artfolio/issues)**
+* **[For contributors](https://github.com/artem-solovev/artfolio/wiki/For-contributors)**
+
 
 ## **Current version: 1.2.9**
 
 ## **Features**
-* Fully responsive design
-* Mobile-first
-* Unique design
-* Landing menu
-* Social menu ( 27 websites )
-* Header image
-* Header icon
-* Special recent posts widget
+* Slider ( responsive ) for header
+* Background-image for header
+* Icon for header
+* Design
+* * Fully responsive design
+* * Mobile-first
+* * Unique design
+* Menus
+* * Landing menu
+* * Social menu ( 27 websites )
+* Recent posts widget ( for index page and sidebar )
 
 
+## **Contributors**
+* [Artem Solovev](https://github.com/artem-solovev)
 
-## **Contributors**: Artem Solovev
+
 **Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 
 *Requires at least*: 4.0
 *Tested up to*: 4.4.2
 *Stable tag*: 1.0.0
-*License*: GPLv2 or later
-*License URI*: http://www.gnu.org/licenses/gpl-2.0.html
+*License*: GPLv3
+*License URI*: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 
 ## Desktop version

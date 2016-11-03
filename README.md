@@ -29,20 +29,6 @@ ___
 * Recent posts widget ( for index page and sidebar )
 
 
-## **Contributors**
-* [Artem Solovev](https://github.com/artem-solovev)
-
-
-**Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
-
-
-*Requires at least*: 4.0
-*Tested up to*: 4.4.2
-*Stable tag*: 1.0.0
-*License*: GPLv3
-*License URI*: https://www.gnu.org/licenses/gpl-3.0.en.html
-
-
 ## Desktop version
 ![Desktop page screen](screenshot.png)
 
@@ -57,6 +43,20 @@ ___
 
 Does this theme support any plugins?
 * Artfolio includes support for Infinite Scroll in Jetpack.
+
+
+## **Contributors**
+* [Artem Solovev](https://github.com/artem-solovev)
+
+
+*Requires at least*: 4.0
+*Tested up to*: 4.4.2
+*Stable tag*: 1.0.0
+*License*: GPLv3
+*License URI*: https://www.gnu.org/licenses/gpl-3.0.en.html
+
+
+**Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 
 ## Credits

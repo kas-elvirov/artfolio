@@ -1,5 +1,8 @@
 # Any changes MUST be released as a new version.
 
+#### This applies only to changes in the source code
+
+
 ## Main rules
 * All **proposals** and **questions** shall take the form of an **[issue](https://github.com/artem-solovev/artfolio/issues/new)**
 * Follow **[WordPress Codex](https://codex.wordpress.org/Developer_Documentation)**

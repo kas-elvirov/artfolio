@@ -3428,6 +3428,11 @@ object { max-width: 100%; }
 }
 
 .pulseHeart {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     -webkit-animation: pulseHeart 1s linear infinite;
     -moz-animation: pulseHeart 1s linear infinite;
     -ms-animation: pulseHeart 1s linear infinite;

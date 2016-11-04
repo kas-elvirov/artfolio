@@ -63,8 +63,7 @@ Does this theme support any plugins?
 *Requires at least*: 4.0
 *Tested up to*: 4.4.2
 *Stable tag*: 1.0.0
-*License*: GPLv3
-*License URI*: https://www.gnu.org/licenses/gpl-3.0.en.html
+*License*: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
 **Tags**: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments

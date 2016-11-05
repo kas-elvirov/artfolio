@@ -900,7 +900,7 @@ a:active {
 .menu-social li a[href*="yelp.com/"]::before { content: "\f1e9"; }
 
 @media screen and (max-width: 1050px) {
-    #menu-social ul {
+    .main-navigation #menu-social ul {
         display: block;
         position: absolute;
         top: 0;

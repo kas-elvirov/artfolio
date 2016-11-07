@@ -9,6 +9,9 @@ ___
 ## **Current version: 1.13.11**
 ===========================
 
+## Description
+Artfolio is a free responsive, accessible, high-resolution blog theme featuring custom header, slider and custom link colors, large images, logo image and easy to read typography that scales to fit all screens. Other features include keyboard accessible navigation, optional social menu at the header and footer(supports 27 social icons of the popular networks), landing menu, index, sidebar and footer widgets, aside post format and stylish recent posts widget, fully-editable footer copyright section. Artfolio will make your WordPress look beautiful everywhere.
+
 ## **Quick links**
 * **[Documentation](https://github.com/artem-solovev/artfolio/wiki)**
 * **[Issues, bugs](https://github.com/artem-solovev/artfolio/issues)**

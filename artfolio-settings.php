@@ -19,7 +19,7 @@ function artfolio_settings_page() { ?>
 <?php }
 
 function artfolio_settings_add_menu() {
-    add_menu_page( 'Artfolio Settings', 'Artfolio Settings', 'manage_options', 'custom-settings', 'artfolio_settings_page', null, 99);
+    add_theme_page( 'Artfolio Settings', 'Artfolio Settings', 'manage_options', 'custom-settings', 'artfolio_settings_page', null, 99);
 }
 add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 

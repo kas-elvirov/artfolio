@@ -215,7 +215,7 @@ function artfolio_scripts() {
 
     wp_enqueue_style( 'artfolio-google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic' );
 
-    wp_enqueue_style( 'artfolio-fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' );
+    wp_enqueue_style( 'artfolio-fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css' );
 
     wp_enqueue_script( 'artfolio-superfish', get_template_directory_uri() . '/js/superfish.js', array('jquery'), '20160503', true );
 

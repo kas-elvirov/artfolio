@@ -6,7 +6,7 @@ module.exports = function ( grunt ) {
         pot: {
             options: {
                 package_name: 'artfolio',
-                package_version: '1.14.11',
+                package_version: '1.13.12',
                 msgid_bugs_address: "https://github.com/artem-solovev/artfolio/issues",
                 text_domain: 'artfolio', //Your text domain. Produces my-text-domain.pot
                 dest: 'languages/', //directory to place the pot file

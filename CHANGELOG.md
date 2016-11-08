@@ -1,6 +1,7 @@
 00.00.00 / 0000-00-00
 ==================
 
+* [ x.x.1 ] Fixed problems with index-widget on small screens
 * [ x.x.1 ] Changed icon for sticky post
 * [ x.x.1 ] Fixed style for edit button
 

@@ -2436,14 +2436,12 @@ input[type="search"] {
 }
 
 .arp-meta {
-    display: block;
+    display: none;
     position: relative;
     font-size: 12px;
 }
 
-.arp-author {
-    display: none;
-}
+.arp-author { display: none; }
 
 .arp-time {
     display: inline-block;
@@ -2483,7 +2481,10 @@ input[type="search"] {
         border-bottom: none;
     }
 
-    .arp-meta { font-size: inherit; }
+    .arp-meta {
+        display: block;
+        font-size: inherit;
+    }
 }
 
 /* For index sidebar */
@@ -2893,8 +2894,8 @@ input[type="search"] {
 /* Meta */
 .category-list {
     font-family: "Merriweather", serif;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 10px;
+    font-size: 1rem;
 }
 
 .category-list a {

@@ -2600,6 +2600,7 @@ input[type="search"] {
 
 /* Typography */
 .entry-title {
+    display: inline-block;
     margin: 2rem 0 2rem;
     line-height: 1.3em;
     font-weight: 900;
@@ -3256,9 +3257,8 @@ ol.children { list-style-type: none; }
 .continue-reading i { margin-left: 0.5em; }
 
 .sticky-post {
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
+    margin-right: 1em;
+    color: #E98E1B;
 }
 
 .taxonomy-description {

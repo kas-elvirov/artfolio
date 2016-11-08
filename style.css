@@ -1180,6 +1180,10 @@ a:hover.page-numbers {
     cursor: pointer;
 }
 
+.post .edit-link {
+    margin-left: 0;
+}
+
 .entry-meta .edit-link:hover,
 .single .edit-link:hover {
     background-color: #65625D;

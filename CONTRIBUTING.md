@@ -1,8 +1,3 @@
-# Any changes MUST be released as a new version.
-
-#### This applies only to changes in the source code
-
-
 ## Main rules
 * All **proposals** and **questions** shall take the form of an **[issue](https://github.com/artem-solovev/artfolio/issues/new)**
 * Follow **[WordPress Codex](https://codex.wordpress.org/Developer_Documentation)**
@@ -10,7 +5,7 @@
 
 ***
 
-### After your contribution you should follow the next steps
+## To do for the release of the new version
 * Сhange the version number by following [these](https://github.com/artem-solovev/artfolio/wiki/Rules-versioning) rules in the next files
  * styles.css
  * README.md
@@ -21,4 +16,3 @@
  * `POT` files by **GRUNT** ( in command line: `npm install` --> `grunt` )
  * `translations` by **[Loco translate](https://wordpress.org/plugins/loco-translate/)**
  * remove temporary files after the plug-in make its job
- 

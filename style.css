@@ -2666,7 +2666,7 @@ input[type="search"] {
 }
 
 /* Tags */
-.tagWord{
+.tagWord {
     display: inline-block;
     position: relative;
     padding: 5px 10px;
@@ -2678,7 +2678,7 @@ input[type="search"] {
     cursor: pointer;
 }
 
-.tagWord:before{
+.entry-footer .tagWord:before {
     content: "";
     position: absolute;
     left: -20px;
@@ -2693,7 +2693,22 @@ input[type="search"] {
     border-right-color: transparent;
 }
 
-.tagWord:after{
+.page-header .tagWord:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 10px;
+    height: 28px;
+    border: 10px solid #F1EEE9;
+    background: inherit;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+    border-right-color: transparent;
+}
+
+.tagWord:after {
     content: "";
     position: absolute;
     left: -3px;

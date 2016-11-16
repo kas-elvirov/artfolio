@@ -38,7 +38,7 @@ function artfolio_customize_register( $wp_customize ) {
             $slideContentId,
             array(
                 'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'artfolio' ),
-                'sanitize_callback' => 'force_balance_tags',
+                'sanitize_callback' => 'sanitize_text_field',
             )
         );
 

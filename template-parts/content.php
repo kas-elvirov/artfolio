@@ -49,7 +49,7 @@
             <?php 
             if ( has_post_thumbnail() ) {
                 echo '<div class="single-post-thumbnail clear">';
-                echo '<a href="' . get_permalink() . '" title="' . __('Click to read ', 'artfolio') . get_the_title() . '" rel="bookmark">';
+                echo '<a href="' . esc_url( get_permalink() ) . '" title="' . __('Click to read ', 'artfolio') . get_the_title() . '" rel="bookmark">';
                 echo the_post_thumbnail('small-thumbnails');
                 echo '</a>';
                 echo '</div>';
@@ -64,7 +64,7 @@
         </div><!-- .entry-content -->
 
         <footer class="entry-footer continue-reading">
-            <?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'artfolio') . get_the_title() . '" rel="bookmark"> ' . __('Continue Reading ', 'artfolio') . '<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>'; ?>
+            <?php echo '<a href="' . esc_url( get_permalink() ) . '" title="' . __('Continue Reading ', 'artfolio') . get_the_title() . '" rel="bookmark"> ' . __('Continue Reading ', 'artfolio') . '<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>'; ?>
         </footer><!-- .entry-footer -->
 
     </div> <!-- .index-box -->

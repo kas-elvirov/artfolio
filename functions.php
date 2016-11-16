@@ -41,7 +41,7 @@ function artfolio_display_slider() { ?>
 
     <div data-thumb="<?php echo esc_attr( $slideImage ); ?>" data-src="<?php echo esc_attr( $slideImage ); ?>">
         <div class="camera_caption fadeFromBottom">
-            <?php echo $slideContent; ?>
+            <?php echo esc_attr( $slideContent ); ?>
         </div>
     </div>
     <?php		} ?>

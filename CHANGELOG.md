@@ -1,6 +1,7 @@
 00.00.00 / 0000-00-00
 ==================
 
+* [ x.x.1 ] Fixed some bugs for security reason ( Sanitization/Escaping )
 * [ x.x.1 ] Fixed some code issues
 * [ x.x.1 ] Fixed translated issues
 * [ x.x.1 ] Fixed preview for header_text_color in customizer

@@ -1,6 +1,7 @@
 00.00.00 / 0000-00-00
 ==================
 
+* [ x.x.1 ] Removed admin_footer_text and wp_default_scripts
 * [ x.x.1 ] Changed function for displaying archive title
 * [ x.x.1 ] Fixed error in console ( http://review.dev/undefined?1479205228901 )
 * [ x.x.1 ] Fixed some bugs for security reason ( Sanitization/Escaping )

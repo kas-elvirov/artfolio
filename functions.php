@@ -50,17 +50,6 @@ function artfolio_display_slider() { ?>
 }
 
 
-// Modify Admin Footer Text
-function modify_footer() {
-    echo __( 'Created by', 'artfolio' ) .
-        ' <a href="https://github.com/artem-solovev" target="_blank">Artem Solovev</a> ' .
-        __( 'in', 'artfolio' ) .
-        ' 2016. ' .
-        __( 'All rights reserved', 'artfolio' );
-}
-add_action( 'admin_footer_text', 'modify_footer' );
-
-
 if ( ! function_exists( 'artfolio_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

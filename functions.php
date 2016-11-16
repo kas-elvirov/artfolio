@@ -52,7 +52,11 @@ function artfolio_display_slider() { ?>
 
 // Modify Admin Footer Text
 function modify_footer() {
-    echo 'Created by <a href="https://github.com/artem-solovev" target="_blank">Artem Solovev</a> in 2016. All rights reserved';
+    echo __( 'Created by', 'artfolio' ) .
+        ' <a href="https://github.com/artem-solovev" target="_blank">Artem Solovev</a> ' .
+        __( 'in', 'artfolio' ) .
+        ' 2016. ' .
+        __( 'All rights reserved', 'artfolio' );
 }
 add_action( 'admin_footer_text', 'modify_footer' );
 

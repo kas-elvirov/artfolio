@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: artfolio 0.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-09 18:10+0000\n"
-"PO-Revision-Date: 2016-10-09 18:10+0000\n"
+"POT-Creation-Date: 2016-11-16 11:46+0000\n"
+"PO-Revision-Date: 2016-11-16 11:49+0000\n"
 "Last-Translator: root <artem.solovev.lse@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru-RU\n"
@@ -14,63 +14,133 @@ msgstr ""
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: template-parts/content-404.php:2
-msgid "Oops"
-msgstr "Упс"
+#: inc/customizer.php:25
+msgid "Slider"
+msgstr "Слайдер"
+
+#: inc/customizer.php:40
+msgid ""
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+
+#: inc/customizer.php:47
+msgid "Slide #%s Content"
+msgstr "Содержимое #%s слайда"
+
+#: inc/customizer.php:65
+msgid "Slide #%s Image"
+msgstr "Изображение #%s слайда"
+
+#: inc/template-tags.php:182
+msgid "Previous Post"
+msgstr "Предыдущий пост"
+
+#: inc/template-tags.php:183
+msgid "Next Post"
+msgstr "Следующий пост"
+
+#: template-parts/content-none.php:21
+msgid "Nothing found"
+msgstr "Ничего не найдено"
+
+#: archive.php:32
+msgid "Category"
+msgstr "Категория"
+
+#: archive.php:45
+msgid "tag"
+msgstr "тэг"
+
+#: archive.php:56
+msgid "Author"
+msgstr "Автор"
+
+#: archive.php:60 archive.php:63 archive.php:66
+msgid "Posts from %s"
+msgstr "Посты от"
+
+#: archive.php:69
+msgid "Asides"
+msgstr "Отступления"
+
+#: archive.php:72
+msgid "Archives"
+msgstr "Архивы"
 
 #: comments.php:50
 msgid "Comment navigation"
 msgstr "Навигация по комментариям"
 
 #: comments.php:51
-msgid "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
-msgstr "<i class=\"fa fa-arrow-circle-o-left\"></i> Старые комментарии"
+msgid ""
+"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Older Comments"
+msgstr ""
+"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Старые "
+"комментарии"
 
 #: comments.php:52
-msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
-msgstr "Новые комментарии <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgid ""
+"Newer Comments <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
+msgstr ""
+"Новые комментарии <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\">"
+"</i>"
 
-#: footer.php:19
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
+#: functions.php:33
+msgid ""
+"<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+"<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
 
-#: functions.php:19
-msgid "Artfolio recent posts"
-msgstr "\"Artfolio\" последние записи "
+#: functions.php:55
+msgid "Created by"
+msgstr "Создано"
 
-#: functions.php:22
-msgid "Custom widget for recent posts with image and description"
-msgstr "Пользовательский виджет для последних записей"
+#: functions.php:57
+msgid "in"
+msgstr "в"
 
-#: functions.php:87
-msgid "Recent posts"
-msgstr "Последние посты"
+#: functions.php:59
+msgid "All rights reserved"
+msgstr "Все права защищены"
 
-#: functions.php:93
-msgid "Title:"
-msgstr "Заголовок"
-
-#: functions.php:98
-msgid "Number of posts to show:"
-msgstr "Количество записей для отображения"
-
-#: functions.php:175
+#: functions.php:116
 msgid "Social Menu"
 msgstr "Социальное меню"
 
-#: functions.php:176
+#: functions.php:117
 msgid "Landing Menu"
 msgstr "Меню действия"
 
-#: functions.php:240
+#: functions.php:186
 msgid "Footer Widgets"
 msgstr "Виджеты подвала"
 
-#: functions.php:241
+#: functions.php:187
 msgid "Footer widgets area appears in the footer of the site."
 msgstr "Виджеты подвала появятся в подвале сайта."
 
-#: header.php:95
+#: functions.php:196
+msgid "Index page Widgets"
+msgstr "Виджеты индексной страницы"
+
+#: functions.php:197
+msgid ""
+"Index page widgets area appears in the index page of the site. Only for "
+"Artfolio Recent Posts widget."
+msgstr ""
+"Область виджетов индексной страницы появляется на индексной странице сайта. "
+"Только для Artfolio Recent Posts виджета."
+
+#: header.php:108
 msgid "Search"
 msgstr "Поиск"
 
@@ -81,14 +151,6 @@ msgstr "Оставьте комментарий<span class=\"screen-reader-text\
 #: inc/template-tags.php:179
 msgid "Post navigation"
 msgstr "Навигация записи"
-
-#: inc/template-tags.php:182
-msgid "Previous Post:"
-msgstr "Предыдущий пост:"
-
-#: inc/template-tags.php:183
-msgid "Next Post:"
-msgstr "Следующий пост:"
 
 #: inc/template-tags.php:227
 msgid "&larr; Previous"
@@ -121,7 +183,11 @@ msgstr[1] "У меня есть яблоки"
 msgid "yyyy-mm-dd"
 msgstr "yyyy-mm-dd"
 
-#: template-parts/content-404.php:3
+#: template-parts/content-404.php:14
+msgid "Oops"
+msgstr "Упс"
+
+#: template-parts/content-404.php:16
 msgid ""
 "You seem to be lost. To find what you are looking for try go home or try a "
 "search"
@@ -130,35 +196,31 @@ msgstr ""
 "кнопкой \"Домой\""
 
 #: template-parts/content-aside.php:32 template-parts/content-search.php:25 
-#: template-parts/content-single.php:30 template-parts/content.php:35
+#: template-parts/content-single.php:25 template-parts/content.php:35
 msgid "Leave a comment"
 msgstr "Оставить комментарий"
 
 #: template-parts/content-aside.php:36 template-parts/content-search.php:38 
-#: template-parts/content-single.php:69 template-parts/content.php:47
+#: template-parts/content-single.php:64 template-parts/content.php:47
 msgid "Edit"
 msgstr "Редактировать"
 
-#: template-parts/content-none.php:17
+#: template-parts/content-none.php:18
 msgid "Page not available"
 msgstr "Страница не доступна"
 
-#: template-parts/content-none.php:18
-msgid "Nothing found for <em>"
-msgstr "Ничего не найдено для <em>"
-
-#: template-parts/content-none.php:19
+#: template-parts/content-none.php:24
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: template-parts/content-none.php:27
+#: template-parts/content-none.php:36
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 "Готовы для публикации своей первой записи? <a href=\"%1$s\">Начните здесь</a>"
 "."
 
-#: template-parts/content-none.php:31
+#: template-parts/content-none.php:40
 msgid ""
 "You seem to be lost. To find what you are looking for check out the most "
 "recent articles below or try a search:"
@@ -166,7 +228,7 @@ msgstr ""
 "Кажется вы потерялись. Чтобы найти необходимое посмотрите последние статьи "
 "или воспользуйтесь поиском по сайту:"
 
-#: template-parts/content-none.php:36
+#: template-parts/content-none.php:45
 msgid ""
 "Nothing matched your search terms. Check out the most recent articles below "
 "or try searching for something else:"
@@ -174,14 +236,14 @@ msgstr ""
 "Ничего не соответствует критериям поиска. Проверьте последние записи или "
 "попробуйте найти что-нибудь еще:"
 
-#: template-parts/content-none.php:41
+#: template-parts/content-none.php:50
 msgid ""
 "It seems we cannot find what you are looking for. Perhaps searching can help."
 msgstr ""
 "Кажется мы не можем найти то, что вы ищите. Возможно поиск сможет вам помочь."
 
-#: template-parts/content-search.php:32 template-parts/content-single.php:36 
-#: template-parts/content.php:41
+#: template-parts/content-search.php:32 template-parts/content-single.php:31 
+#: template-parts/content.php:41 widgets/artfolio-recent-posts.php:62
 msgid ", "
 msgstr ","
 
@@ -193,6 +255,26 @@ msgstr "Нажмите чтобы читать"
 msgid "Continue Reading "
 msgstr "Продолжить чтение"
 
-#: template-parts/content-single.php:52
+#: template-parts/content-single.php:47
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Продолжить чтение %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: widgets/artfolio-recent-posts.php:12
+msgid "Artfolio recent posts"
+msgstr "\"Artfolio\" последние записи "
+
+#: widgets/artfolio-recent-posts.php:15
+msgid "Custom widget for recent posts with image and description"
+msgstr "Пользовательский виджет для последних записей"
+
+#: widgets/artfolio-recent-posts.php:88
+msgid "Recent posts"
+msgstr "Последние посты"
+
+#: widgets/artfolio-recent-posts.php:94
+msgid "Title:"
+msgstr "Заголовок"
+
+#: widgets/artfolio-recent-posts.php:99
+msgid "Number of posts to show:"
+msgstr "Количество записей для отображения"

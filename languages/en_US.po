@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: artfolio 0.1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-10-09 18:10+0000\n"
-"PO-Revision-Date: 2016-10-09 18:11+0000\n"
+"POT-Creation-Date: 2016-11-16 11:41+0000\n"
+"PO-Revision-Date: 2016-11-16 11:42+0000\n"
 "Last-Translator: root <artem.solovev.lse@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
@@ -13,63 +13,134 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: template-parts/content-404.php:2
-msgid "Oops"
-msgstr "Oops"
+#: archive.php:32
+msgid "Category"
+msgstr "Category"
+
+#: archive.php:45
+msgid "tag"
+msgstr "tag"
+
+#: archive.php:56
+msgid "Author"
+msgstr "Author"
+
+#: archive.php:60 archive.php:63 archive.php:66
+msgid "Posts from %s"
+msgstr "Posts from %s"
+
+#: archive.php:69
+msgid "Asides"
+msgstr "Asides"
+
+#: archive.php:72
+msgid "Archives"
+msgstr "Archives"
+
+#: comments.php:51
+msgid ""
+"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Older Comments"
+msgstr ""
+"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Older Comments"
+
+#: comments.php:52
+msgid ""
+"Newer Comments <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
+msgstr ""
+"Newer Comments <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
+
+#: functions.php:33
+msgid ""
+"<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+"<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+
+#: functions.php:55
+msgid "Created by"
+msgstr "Created by"
+
+#: functions.php:57
+msgid "in"
+msgstr "in"
+
+#: functions.php:59
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+#: functions.php:196
+msgid "Index page Widgets"
+msgstr "Index page Widgets"
+
+#: functions.php:197
+msgid ""
+"Index page widgets area appears in the index page of the site. Only for "
+"Artfolio Recent Posts widget."
+msgstr ""
+"Index page widgets area appears in the index page of the site. Only for "
+"Artfolio Recent Posts widget."
+
+#: inc/customizer.php:25
+msgid "Slider"
+msgstr "Slider"
+
+#: inc/customizer.php:40
+msgid ""
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+"\n"
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+
+#: inc/customizer.php:47
+msgid "Slide #%s Content"
+msgstr "Slide #%s Content"
+
+#: inc/customizer.php:65
+msgid "Slide #%s Image"
+msgstr ""
+"\n"
+"Slide #%s Image"
+
+#: inc/template-tags.php:182
+msgid "Previous Post"
+msgstr "Previous Post"
+
+#: inc/template-tags.php:183
+msgid "Next Post"
+msgstr "Next Post"
+
+#: template-parts/content-none.php:21
+msgid "Nothing found"
+msgstr "Nothing found"
 
 #: comments.php:50
 msgid "Comment navigation"
 msgstr "Comment navigation"
 
-#: comments.php:51
-msgid "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
-msgstr "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
-
-#: comments.php:52
-msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
-msgstr "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
-
-#: footer.php:19
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
-
-#: functions.php:19
-msgid "Artfolio recent posts"
-msgstr "Artfolio recent posts"
-
-#: functions.php:22
-msgid "Custom widget for recent posts with image and description"
-msgstr "Custom widget for recent posts with image and description"
-
-#: functions.php:87
-msgid "Recent posts"
-msgstr "Recent posts"
-
-#: functions.php:93
-msgid "Title:"
-msgstr "Title:"
-
-#: functions.php:98
-msgid "Number of posts to show:"
-msgstr "Number of posts to show:"
-
-#: functions.php:175
+#: functions.php:116
 msgid "Social Menu"
 msgstr "Social Menu"
 
-#: functions.php:176
+#: functions.php:117
 msgid "Landing Menu"
 msgstr "Landing Menu"
 
-#: functions.php:240
+#: functions.php:186
 msgid "Footer Widgets"
 msgstr "Footer Widgets"
 
-#: functions.php:241
+#: functions.php:187
 msgid "Footer widgets area appears in the footer of the site."
 msgstr "Footer widgets area appears in the footer of the site."
 
-#: header.php:95
+#: header.php:108
 msgid "Search"
 msgstr "Search"
 
@@ -80,14 +151,6 @@ msgstr "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 #: inc/template-tags.php:179
 msgid "Post navigation"
 msgstr "Post navigation"
-
-#: inc/template-tags.php:182
-msgid "Previous Post:"
-msgstr "Previous Post:"
-
-#: inc/template-tags.php:183
-msgid "Next Post:"
-msgstr "Next Post:"
 
 #: inc/template-tags.php:227
 msgid "&larr; Previous"
@@ -120,7 +183,11 @@ msgstr[1] "I have %d apples"
 msgid "yyyy-mm-dd"
 msgstr "yyyy-mm-dd"
 
-#: template-parts/content-404.php:3
+#: template-parts/content-404.php:14
+msgid "Oops"
+msgstr "Oops"
+
+#: template-parts/content-404.php:16
 msgid ""
 "You seem to be lost. To find what you are looking for try go home or try a "
 "search"
@@ -129,57 +196,53 @@ msgstr ""
 "search"
 
 #: template-parts/content-aside.php:32 template-parts/content-search.php:25 
-#: template-parts/content-single.php:30 template-parts/content.php:35
+#: template-parts/content-single.php:25 template-parts/content.php:35
 msgid "Leave a comment"
 msgstr "Leave a comment"
 
 #: template-parts/content-aside.php:36 template-parts/content-search.php:38 
-#: template-parts/content-single.php:69 template-parts/content.php:47
+#: template-parts/content-single.php:64 template-parts/content.php:47
 msgid "Edit"
 msgstr "Edit"
 
-#: template-parts/content-none.php:17
+#: template-parts/content-none.php:18
 msgid "Page not available"
 msgstr "Page not available"
 
-#: template-parts/content-none.php:18
-msgid "Nothing found for <em>"
-msgstr "Nothing found for <em>"
-
-#: template-parts/content-none.php:19
+#: template-parts/content-none.php:24
 msgid "Nothing Found"
 msgstr "Nothing Found"
 
-#: template-parts/content-none.php:27
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-
-#: template-parts/content-none.php:31
-msgid ""
-"You seem to be lost. To find what you are looking for check out the most "
-"recent articles below or try a search:"
-msgstr ""
-"You seem to be lost. To find what you are looking for check out the most "
-"recent articles below or try a search:"
-
 #: template-parts/content-none.php:36
 msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: template-parts/content-none.php:40
+msgid ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
+msgstr ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
+
+#: template-parts/content-none.php:45
+msgid ""
 "Nothing matched your search terms. Check out the most recent articles below "
 "or try searching for something else:"
 msgstr ""
 "Nothing matched your search terms. Check out the most recent articles below "
 "or try searching for something else:"
 
-#: template-parts/content-none.php:41
+#: template-parts/content-none.php:50
 msgid ""
 "It seems we cannot find what you are looking for. Perhaps searching can help."
 msgstr ""
 "It seems we cannot find what you are looking for. Perhaps searching can help."
 
-#: template-parts/content-search.php:32 template-parts/content-single.php:36 
-#: template-parts/content.php:41
+#: template-parts/content-search.php:32 template-parts/content-single.php:31 
+#: template-parts/content.php:41 widgets/artfolio-recent-posts.php:62
 msgid ", "
 msgstr ","
 
@@ -191,6 +254,26 @@ msgstr "Click to read "
 msgid "Continue Reading "
 msgstr "Continue Reading "
 
-#: template-parts/content-single.php:52
+#: template-parts/content-single.php:47
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: widgets/artfolio-recent-posts.php:12
+msgid "Artfolio recent posts"
+msgstr "Artfolio recent posts"
+
+#: widgets/artfolio-recent-posts.php:15
+msgid "Custom widget for recent posts with image and description"
+msgstr "Custom widget for recent posts with image and description"
+
+#: widgets/artfolio-recent-posts.php:88
+msgid "Recent posts"
+msgstr "Recent posts"
+
+#: widgets/artfolio-recent-posts.php:94
+msgid "Title:"
+msgstr "Title:"
+
+#: widgets/artfolio-recent-posts.php:99
+msgid "Number of posts to show:"
+msgstr "Number of posts to show:"

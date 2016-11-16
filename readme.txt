@@ -8,6 +8,11 @@ REQUIREMENTS ( for development )
 * node.js for ( grunt, grunt-pot )
 
 
+RECOMMENDED PLUGINS ( for developers )
+-------------------
+* Loco translate ( for translation )
+
+
 INSTALLATION
 ------------
 1. In your admin panel, go to Appearance > Themes and click the Add New button.

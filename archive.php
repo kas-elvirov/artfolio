@@ -42,7 +42,7 @@ get_header(); ?>
                 echo '<br />';
 
                 echo '<span>';
-                echo __('tag', 'artfolio');
+                echo __( 'tag', 'artfolio' );
                 echo '</span>';
 
             } else if ( is_author() ) {

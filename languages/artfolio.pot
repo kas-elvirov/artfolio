@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: artfolio 1.13.11\n"
+"Project-Id-Version: artfolio 1.13.12\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-11-03 10:05+0300\n"
+"POT-Creation-Date: 2016-11-16 14:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,27 +64,39 @@ msgid ""
 "aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:55
+msgid "Created by"
+msgstr ""
+
+#: functions.php:57
+msgid "in"
+msgstr ""
+
+#: functions.php:59
+msgid "All rights reserved"
+msgstr ""
+
+#: functions.php:116
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:117
 msgid "Landing Menu"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:186
 msgid "Footer Widgets"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:187
 msgid "Footer widgets area appears in the footer of the site."
 msgstr ""
 
-#: functions.php:192
+#: functions.php:196
 msgid "Index page Widgets"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:197
 msgid ""
 "Index page widgets area appears in the index page of the site. Only for "
 "Artfolio Recent Posts widget."
@@ -164,11 +176,11 @@ msgstr[1] ""
 msgid "yyyy-mm-dd"
 msgstr ""
 
-#: template-parts/content-404.php:4
+#: template-parts/content-404.php:14
 msgid "Oops"
 msgstr ""
 
-#: template-parts/content-404.php:5
+#: template-parts/content-404.php:16
 msgid ""
 "You seem to be lost. To find what you are looking for try go home or try a "
 "search"

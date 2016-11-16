@@ -23,15 +23,12 @@ get_header(); ?>
             ?>
 
             <?php
+            echo '<span>';
+            echo the_archive_title();
+            echo '</span>';
+            echo '<br />';
+
             if ( is_category() ) {
-                echo '<h1 class="page-title">';
-                single_cat_title();
-                echo '</h1>';
-
-                echo '<span>';
-                echo __( 'Category', 'artfolio' );
-                echo '</span>';
-
                 the_archive_description( '<div class="taxonomy-description">', '</div>' );
 
             } else if ( is_tag() ) {
@@ -39,39 +36,11 @@ get_header(); ?>
                 single_tag_title();
                 echo '</h1>';
 
-                echo '<br />';
-
-                echo '<span>';
-                echo __( 'tag', 'artfolio' );
-                echo '</span>';
-
             } else if ( is_author() ) {
                 echo '<div class="post-author">' . get_avatar( get_the_author_meta( 'ID' ) ) . '</div>';
 
-                echo '<h1 class="page-title">';
-                echo get_the_author();
-                echo '</h1>';
-
-                echo '<span>';
-                echo __( 'Author', 'artfolio' );
-                echo '</span>';
-
-            }else if ( is_day() ) {
-                printf( __( 'Posts from %s', 'artfolio' ), '<span>' . get_the_date() . '</span>' );
-
-            } else if ( is_month() ) {
-                printf( __( 'Posts from %s', 'artfolio' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'artfolio' ) ) . '</span>' );
-
-            } else if ( is_year() ) {
-                printf( __( 'Posts from %s', 'artfolio' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'artfolio' ) ) . '</span>' );
-
-            } else if ( is_tax( 'post_format', 'post-format-aside' ) )  {
-                _e( 'Asides', 'artfolio' );
-
-            } else {
-                _e( 'Archives', 'artfolio' );
-
             }
+
             ?>
         </header><!-- .page-header -->
 

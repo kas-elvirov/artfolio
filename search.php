@@ -38,7 +38,7 @@ get_header(); ?>
 
         endwhile;
 
-        artfolio_paging_nav();
+        the_posts_pagination( $args );
 
         else :
 

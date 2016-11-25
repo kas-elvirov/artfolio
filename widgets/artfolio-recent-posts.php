@@ -74,7 +74,7 @@ class artfolio_recent_posts extends WP_Widget {
         /*
         *  reset the query
         */
-        php wp_reset_postdata();
+        wp_reset_postdata();
 
         echo $args['after_widget'];
     }

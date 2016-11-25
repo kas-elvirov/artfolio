@@ -920,7 +920,7 @@ footer .menu-social ul {
 }
 
 .site-main .comment-navigation,
-.site-main .paging-navigation,
+.site-main .pagination,
 .site-main .post-navigation {
     font-size: 18px;
     font-size: 1.8rem;
@@ -929,7 +929,7 @@ footer .menu-social ul {
 }
 
 .comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
+.pagination .nav-previous,
 .post-navigation .nav-previous {
     float: left;
     padding-right: 15%;
@@ -937,44 +937,38 @@ footer .menu-social ul {
 }
 
 .comment-navigation .nav-next,
-.paging-navigation .nav-next,
+.pagination .nav-next,
 .post-navigation .nav-next {
-    width: 50%;	
+    width: 50%;
     float: right;
     padding-left: 15%;
     text-align: right;
 }
 
-.nav-indicator { 
-    margin-bottom: 1em; 
-}
+.nav-indicator { margin-bottom: 1em; }
 
 .nav-previous h1,
 .nav-next h1 {
     font-size: 18px;
     font-size: 1.8rem;
-    font-weight: 900; 
+    font-weight: 900;
 }
 
 .post-nav-box {
     padding: 2em 0;
     margin-bottom: 4em;
     border-top: #D7D3C9 solid 1px;
-    border-bottom: #D7D3C9 solid 1px; 
+    border-bottom: #D7D3C9 solid 1px;
 }
 
 .comment-navigation {
     padding: 1em 0;
     margin: 3em 0;
     border-top: #D7D3C9 solid 1px;
-    border-bottom: #D7D3C9 solid 1px;  
+    border-bottom: #D7D3C9 solid 1px;
 }
 
 .comment-navigation i { margin: 0 1em; }
-
-.paging-navigation ul { margin: 0; }
-
-.paging-navigation li { display: inline; }
 
 a.page-numbers,
 span.page-numbers {
@@ -987,7 +981,7 @@ a:hover.page-numbers {
     color: #fff;
 }
 
-.paging-navigation .current {
+.pagination .current {
     font-weight: bold;
     color: #fff;
     background-color: #3B9C61;

@@ -46,7 +46,7 @@
 .tag-links,
 .post-navigation,
 .comments-area,
-.paging-navigation,
+.pagination,
 .page-header {
     position: relative;
     max-width: 780px;
@@ -114,7 +114,7 @@
     .tag-links,
     .post-navigation,
     .comments-area,
-    .paging-navigation,
+    .pagination,
     .index-box,
     .page-header { margin-right: 0; }
 
@@ -134,11 +134,11 @@
     .tag-links,
     .post-navigation,
     .comments-area,
-    .paging-navigation { padding: 0 2rem; }
+    .pagination { padding: 0 2rem; }
 }
 
 .page-header,
-.paging-navigation {
+.pagination {
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 2em;
@@ -148,6 +148,6 @@
     text-align: center;
 }
 
-.paging-navigation { border-bottom: none; }
+.pagination { border-bottom: none; }
 
 .search-no-results .page-header { border-bottom: none; }

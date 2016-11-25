@@ -14,12 +14,6 @@
 require get_template_directory() . '/widgets/artfolio-recent-posts.php';
 
 
-/*
-* Page for theme settings
-*/
-require get_template_directory() . '/artfolio-settings.php';
-
-
 /**
  * Displays the slider
  */

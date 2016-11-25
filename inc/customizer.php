@@ -157,6 +157,23 @@ function artfolio_customize_register( $wp_customize ) {
     );
 
 
+    /*
+    * Show / hide WordPress link
+    */
+    $wp_customize->add_setting(
+        'hide_wordpress_link'
+    );
+
+    $wp_customize->add_control(
+        'hide_wordpress_link',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Hide WordPress link', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+        )
+    );
+
+
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

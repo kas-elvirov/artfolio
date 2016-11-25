@@ -140,6 +140,23 @@ function artfolio_customize_register( $wp_customize ) {
     );
 
 
+    /*
+    * Show / hide social menu
+    */
+    $wp_customize->add_setting(
+        'hide_developer_link'
+    );
+
+    $wp_customize->add_control(
+        'hide_developer_link',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Hide developer link', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+        )
+    );
+
+
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

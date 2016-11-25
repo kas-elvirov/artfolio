@@ -25,15 +25,6 @@ add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 
 
 /*
-    Show / hide developer link in footer
-*/
-function artfolio_developer_link() { ?>
-<input type="checkbox" name="developerLink" id="developerLink" value="1" <?php checked( 1, get_option( 'developerLink' ) ) ?> />
-<?php
-                                   }
-
-
-/*
     Show / hide wordpress link in footer
 */
 function artfolio_wordpress_link() { ?>
@@ -67,12 +58,10 @@ function artfolio_settings_page_setup() {
     add_settings_field( 'mainSlider', 'Show slider ( image with logo by default ) ?', 'artfolio_slider', 'theme-options', 'main' );
 
     /* Footer settings */
-    add_settings_field( 'developerLink', 'Show developer link ?', 'artfolio_developer_link', 'theme-options', 'main' );
     add_settings_field( 'wordpressLink', 'Show wordpress link ?', 'artfolio_wordpress_link', 'theme-options', 'main' );
     add_settings_field( 'heartAnimation', 'Show heart animation ?', 'artfolio_heart', 'theme-options', 'main' );
 
     register_setting( 'main', 'mainSlider' );
-    register_setting( 'main', 'developerLink' );
     register_setting( 'main', 'wordpressLink' );
     register_setting( 'main', 'heartAnimation' );
 }

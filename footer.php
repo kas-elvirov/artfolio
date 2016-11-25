@@ -30,7 +30,7 @@
 
         <?php get_option( 'wordpressLink' ) ? printf( esc_html__( 'Proudly powered by %s.', 'artfolio' ), '<a href="https://wordpress.org">WordPress</a>' ) : "" ?>
 
-        <?php get_option( 'developerLink' ) ? printf( esc_html__( 'Theme: %1$s by %2$s', 'artfolio' ), 'Artfolio', '<a href="https://github.com/artem-solovev" rel="developer">Artem Solovev</a>' ) : "" ?>
+        <?php get_theme_mod( 'hide_developer_link' ) == '' ? printf( esc_html__( 'Theme: %1$s by %2$s', 'artfolio' ), 'Artfolio', '<a href="https://github.com/artem-solovev" rel="developer">Artem Solovev</a>' ) : "" ?>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->

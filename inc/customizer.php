@@ -72,6 +72,39 @@ function artfolio_customize_register( $wp_customize ) {
                                                                   )
                                   );
     }
+
+    /*
+    * Add Footer Section
+    */
+    $wp_customize->add_section(
+        'artfolio_footer_section',
+        array(
+            'title'       => __( 'Footer', 'artfolio' ),
+            'description'       => __( 'Settings for the footer of the website', 'artfolio' ),
+            'capability'  => 'edit_theme_options',
+        )
+    );
+
+
+    /*
+    * Copyright text
+    */
+    $wp_customize->add_setting(
+        'copyright_textbox',
+        array(
+            'default' => __( 'All rights reserved by Artem Solovev', 'artfolio' ),
+        )
+    );
+
+    $wp_customize->add_control(
+        'copyright_textbox',
+        array(
+            'label' => __( 'Copyright text', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+            'type' => 'text',
+        )
+    );
+
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

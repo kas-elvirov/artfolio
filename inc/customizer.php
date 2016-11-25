@@ -105,7 +105,7 @@ function artfolio_customize_register( $wp_customize ) {
         )
     );
 
-    
+
     /*
     * Show / hide copyright text
     */
@@ -118,6 +118,23 @@ function artfolio_customize_register( $wp_customize ) {
         array(
             'type' => 'checkbox',
             'label' => __( 'Hide copyright text', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+        )
+    );
+
+
+    /*
+    * Show / hide social menu
+    */
+    $wp_customize->add_setting(
+        'hide_socialmenu'
+    );
+
+    $wp_customize->add_control(
+        'hide_socialmenu',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Hide social menu', 'artfolio' ),
             'section' => 'artfolio_footer_section',
         )
     );

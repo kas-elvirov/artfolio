@@ -25,15 +25,6 @@ add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 
 
 /*
-    Show / hide social menu in footer
-*/
-function artfolio_footer_social_menu() { ?>
-<input type="checkbox" name="socialMenu" id="socialMenu" value="1" <?php checked( 1, get_option( 'socialMenu' ) ) ?> />
-<?php
-                                       }
-
-
-/*
     Show / hide developer link in footer
 */
 function artfolio_developer_link() { ?>
@@ -76,13 +67,11 @@ function artfolio_settings_page_setup() {
     add_settings_field( 'mainSlider', 'Show slider ( image with logo by default ) ?', 'artfolio_slider', 'theme-options', 'main' );
 
     /* Footer settings */
-    add_settings_field( 'socialMenu', 'Show social-menu ?', 'artfolio_footer_social_menu', 'theme-options', 'main' );
     add_settings_field( 'developerLink', 'Show developer link ?', 'artfolio_developer_link', 'theme-options', 'main' );
     add_settings_field( 'wordpressLink', 'Show wordpress link ?', 'artfolio_wordpress_link', 'theme-options', 'main' );
     add_settings_field( 'heartAnimation', 'Show heart animation ?', 'artfolio_heart', 'theme-options', 'main' );
 
     register_setting( 'main', 'mainSlider' );
-    register_setting( 'main', 'socialMenu' );
     register_setting( 'main', 'developerLink' );
     register_setting( 'main', 'wordpressLink' );
     register_setting( 'main', 'heartAnimation' );

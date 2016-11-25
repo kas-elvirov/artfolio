@@ -46,11 +46,13 @@ if ( post_password_required() ) {
     </ol><!-- .comment-list -->
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+
     <nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
         <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'artfolio' ); ?></h1>
         <div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-long-arrow-left" aria-hidden="true"></i> Older Comments', 'artfolio' ) ); ?></div>
         <div class="nav-next"><?php next_comments_link( __( 'Newer Comments <i class="fa fa-long-arrow-right" aria-hidden="true"></i>', 'artfolio' ) ); ?></div>
     </nav><!-- #comment-nav-below -->
+
     <?php
     endif; // Check for comment navigation.
 
@@ -58,7 +60,9 @@ if ( post_password_required() ) {
 
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+
     <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'artfolio' ); ?></p>
+
     <?php
     endif;
 

@@ -6,20 +6,20 @@ class artfolio_recent_posts extends WP_Widget {
     function __construct() {
         parent::__construct(
             // Widget ID
-            'artfolio_widget', 
+            'artfolio_widget',
 
             // Name of the widget
-            __('Artfolio recent posts', 'artfolio'), 
+            __( 'Artfolio recent posts', 'artfolio' ),
 
             // Description of the widget
-            array( 'description' => __( 'Custom widget for recent posts with image and description', 'artfolio' ), ) 
+            array( 'description' => __( 'Custom widget for recent posts with image and description', 'artfolio' ), )
         );
     }
 
     // Open code for widget
     public function widget( $args, $instance ) {
         $title = apply_filters( 'widget_title', $instance['title'] );
-        $number = apply_filters( 'widget_number', absint( $instance['number']  ));
+        $number = apply_filters( 'widget_number', absint( $instance['number'] ) );
 
         echo $args['before_widget'];
 
@@ -28,7 +28,7 @@ class artfolio_recent_posts extends WP_Widget {
         }
 
         $art_recent_posts = new WP_Query();
-        $art_recent_posts->query('showposts='.$number);
+        $art_recent_posts->query( 'showposts=' . $number );
 
         while ( $art_recent_posts->have_posts() ) {
             $art_recent_posts->the_post();
@@ -57,14 +57,14 @@ class artfolio_recent_posts extends WP_Widget {
         <?php esc_html( the_author() ); ?>
     </a>
 </div> <!-- .arp-meta-->
-    <?php
+<?php
             /* translators: used between list items, there is a space after the comma */
             $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
 
             if ( artfolio_categorized_blog() ) {
                 echo '<div class="category-list">' . $category_list . '</div>';
             }
-    ?>
+?>
 </header> <!-- .arp-header-->
 </li>
 </ul>

@@ -19,8 +19,8 @@
             <div class="entry-meta">
                 <?php artfolio_posted_on(); ?>
 
-                <?php 
-                if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
+                <?php
+                if ( !post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
                     echo '<span class="comments-link">';
                     comments_popup_link( __( 'Leave a comment', 'artfolio' ),  '1 <i class="fa fa-comment-o"></i>', '% <i class="fa fa-comment-o"></i>', 'artfolio' );
                     echo '</span>';
@@ -28,7 +28,9 @@
                 ?>
 
                 <?php
-                /* translators: used between list items, there is a space after the comma */
+                /*
+                * translators: used between list items, there is a space after the comma
+                */
                 $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
 
                 if ( artfolio_categorized_blog() ) {
@@ -40,7 +42,7 @@
 
             <?php endif; ?>
 
-            <?php 
+            <?php
             if ( has_post_thumbnail() ) {
                 echo '<div class="single-post-thumbnail clear">';
                 echo '<a href="' . esc_url( get_permalink() ) . '" title="' . __( 'Click to read ', 'artfolio' ) . get_the_title() . '" rel="bookmark">';
@@ -49,6 +51,7 @@
                 echo '</div>';
             }
             ?>
+            
         </header><!-- .entry-header -->
 
         <div class="entry-content">

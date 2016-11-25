@@ -14,9 +14,9 @@ get_header(); ?>
         <?php
 
         if ( is_404 ) {
-            get_template_part('template-parts/content', '404');
+            get_template_part( 'template-parts/content', '404' );
         } else {
-            get_template_part('template-parts/content', 'none');
+            get_template_part( 'template-parts/content', 'none' );
 
         }
 

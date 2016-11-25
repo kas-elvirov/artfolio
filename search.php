@@ -17,20 +17,23 @@ get_header(); ?>
 
         <header class="page-header">
             <h1 class="page-title"><?php echo esc_html__( 'Search Results', 'artfolio' ) ?></h1>
-            <span><?php echo 'for '.get_search_query(); ?></span>
+            <span><?php echo 'for ' . get_search_query(); ?></span>
             <br />
             <span><?php echo $GLOBALS['wp_query']->found_posts . ' Results found'; ?></span>
         </header><!-- .page-header -->
 
         <?php
-        /* Start the Loop */
+
+        /**
+        * Start the Loop
+        */
         while ( have_posts() ) : the_post();
 
         /**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
+        * Run the loop for the search to output the results.
+        * If you want to overload this in a child theme then include a file
+        * called content-search.php and that will be used instead.
+        */
         get_template_part( 'template-parts/content', 'search' );
 
         endwhile;

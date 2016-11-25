@@ -19,28 +19,35 @@
 
         <div class="entry-meta">
             <?php artfolio_posted_on(); ?>
-            <?php 
-            if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
+
+            <?php
+            if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
                 echo '<span class="comments-link">';
                 comments_popup_link( __( 'Leave a comment', 'artfolio' ),  '1 <i class="fa fa-comment-o"></i>', '% <i class="fa fa-comment-o"></i>', 'artfolio' );
                 echo '</span>';
             }
             ?>
+
             <?php
-            /* translators: used between list items, there is a space after the comma */
+            /*
+            * translators: used between list items, there is a space after the comma
+            */
             $category_list = get_the_category_list( __( ', ', 'artfolio' ) );
 
             if ( artfolio_categorized_blog() ) {
                 echo '<div class="category-list">' . $category_list . '</div>';
             }
             ?>
+
         </div><!-- .entry-meta -->
 
         <?php
         endif; ?>
+
     </header><!-- .entry-header -->
 
     <div class="entry-content">
+
         <?php
         the_content( sprintf(
             /* translators: %s: Name of current post. */
@@ -53,6 +60,7 @@
             'after'  => '</div>',
         ) );
         ?>
+
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">

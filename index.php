@@ -31,7 +31,9 @@ get_header(); ?>
         <?php
         endif;
 
-        /* Start the Loop */
+        /*
+        * Start the Loop
+        */
         while ( have_posts() ) : the_post();
 
         /*
@@ -58,4 +60,5 @@ get_header(); ?>
 <?php
 
 get_sidebar();
+
 get_footer();

@@ -15,11 +15,12 @@
  * @package Artfolio
  */
 
-/**
- * Set up the WordPress core custom header feature.
- *
- * @uses artfolio_header_style()
- */
+
+/*
+* Set up the WordPress core custom header feature.
+*
+* @uses artfolio_header_style()
+*/
 function artfolio_custom_header_setup() {
         add_theme_support( 'custom-header', apply_filters( 'artfolio_custom_header_args', array(
             'default-image'          => '',
@@ -32,24 +33,27 @@ function artfolio_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'artfolio_custom_header_setup' );
 
+
 if ( ! function_exists( 'artfolio_header_style' ) ) :
-/**
- * Styles the header image and text displayed on the blog.
- *
- * @see artfolio_custom_header_setup().
- */
+/*
+* Styles the header image and text displayed on the blog.
+*
+* @see artfolio_custom_header_setup().
+*/
 function artfolio_header_style() {
         $header_text_color = get_header_textcolor();
 
         /*
-       * If no custom options for text are set, let's bail.
-       * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: HEADER_TEXTCOLOR.
-       */
+        * If no custom options for text are set, let's bail.
+        * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: HEADER_TEXTCOLOR.
+        */
         if ( HEADER_TEXTCOLOR === $header_text_color ) {
             return;
         }
 
-        // If we get this far, we have custom styles. Let's do this.
+        /*
+        * If we get this far, we have custom styles. Let's do this
+        */
     ?>
     <style type="text/css">
         <?php

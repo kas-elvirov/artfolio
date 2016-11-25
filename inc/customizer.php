@@ -174,6 +174,23 @@ function artfolio_customize_register( $wp_customize ) {
     );
 
 
+    /*
+    * Show / hide heart animation
+    */
+    $wp_customize->add_setting(
+        'hide_heart_animation'
+    );
+
+    $wp_customize->add_control(
+        'hide_heart_animation',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Hide heart animation', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+        )
+    );
+
+
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

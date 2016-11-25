@@ -25,15 +25,6 @@ add_action( 'admin_menu', 'artfolio_settings_add_menu' );
 
 
 /*
-    Show / hide heart in footer
-*/
-function artfolio_heart() { ?>
-<input type="checkbox" name="heartAnimation" id="heartAnimation" value="1" <?php checked( 1, get_option( 'heartAnimation' ) ) ?> />
-<?php
-                          }
-
-
-/*
     Show/hide slider/background-image in main section ( slider by default )
 */
 function artfolio_slider() { ?>
@@ -48,11 +39,7 @@ function artfolio_settings_page_setup() {
     /* Header settings */
     add_settings_field( 'mainSlider', 'Show slider ( image with logo by default ) ?', 'artfolio_slider', 'theme-options', 'main' );
 
-    /* Footer settings */
-    add_settings_field( 'heartAnimation', 'Show heart animation ?', 'artfolio_heart', 'theme-options', 'main' );
-
     register_setting( 'main', 'mainSlider' );
-    register_setting( 'main', 'heartAnimation' );
 }
 add_action( 'admin_init', 'artfolio_settings_page_setup' );
 

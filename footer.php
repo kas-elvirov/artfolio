@@ -18,7 +18,7 @@
     <div class="site-info">
         <span><?php get_theme_mod( 'hide_socialmenu' ) == '' ? artfolio_social_menu() : "" ?></span>
 
-        <span class="<?php get_option( 'heartAnimation' ) ? printf( 'fa heart pulseHeart' ) : "" ?>"></span>
+        <span class="<?php get_theme_mod( 'hide_heart_animation' ) == '' ? printf( 'fa heart pulseHeart' ) : "" ?>"></span>
         <br />
 
         <?php if ( get_theme_mod( 'hide_copyright' ) == '' ) { ?>

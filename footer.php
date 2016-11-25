@@ -21,8 +21,12 @@
         <span class="<?php get_option( 'heartAnimation' ) ? printf( 'fa heart pulseHeart' ) : "" ?>"></span>
         <br />
 
+        <?php if( get_theme_mod( 'hide_copyright' ) == '') { ?>
+
         <?php echo get_theme_mod( 'copyright_textbox', 'No information about copyright' ); ?>
+
         <br />
+        <?php } // end if ?>
 
         <?php get_option( 'wordpressLink' ) ? printf( esc_html__( 'Proudly powered by %s.', 'artfolio' ), '<a href="https://wordpress.org">WordPress</a>' ) : "" ?>
 

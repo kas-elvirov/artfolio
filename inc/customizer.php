@@ -105,6 +105,24 @@ function artfolio_customize_register( $wp_customize ) {
         )
     );
 
+    
+    /*
+    * Show / hide copyright text
+    */
+    $wp_customize->add_setting(
+        'hide_copyright'
+    );
+
+    $wp_customize->add_control(
+        'hide_copyright',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Hide copyright text', 'artfolio' ),
+            'section' => 'artfolio_footer_section',
+        )
+    );
+
+
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

@@ -28,11 +28,43 @@ function artfolio_customize_register( $wp_customize ) {
         )
     );
 
+
+    /*
+    * Show / hide slider
+    */
+    $wp_customize->add_setting(
+        'show_slider'
+    );
+
+    $wp_customize->add_control(
+        'show_slider',
+        array(
+            'type' => 'checkbox',
+            'label' => __( 'Show slider', 'artfolio' ),
+            'section' => 'artfolio_slider_section',
+        )
+    );
+
     for ($i = 1; $i <= 3; ++$i) {
 
-        $slideContentId = 'artfolio_slide'.$i.'_content';
-        $slideImageId = 'artfolio_slide'.$i.'_image';
-        $defaultSliderImagePath = get_template_directory_uri().'/images/slider/'.$i.'.jpg';
+        $slideTitleId = 'artfolio_slide' . $i . '_title';
+        $slideContentId = 'artfolio_slide' . $i . '_content';
+        $slideReadmoreLinkId = 'artfolio_slide' . $i . '_readmorelink';
+        $slideImageId = 'artfolio_slide' . $i .'_image';
+        $defaultSliderImagePath = get_template_directory_uri() . '/images/slider/' . $i . '.jpg';
+
+
+        /*
+        * Add Slide title
+        */
+        $wp_customize->add_setting(
+            $slideTitleId,
+            array(
+                'default' => __( 'Some title', 'artfolio' ),
+                'sanitize_callback' => 'sanitize_text_field',
+            )
+        );
+
 
         /*
         * Add Slide Content
@@ -40,11 +72,51 @@ function artfolio_customize_register( $wp_customize ) {
         $wp_customize->add_setting(
             $slideContentId,
             array(
-                'default' => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'artfolio' ),
+                'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'artfolio' ),
                 'sanitize_callback' => 'sanitize_text_field',
             )
         );
 
+        /*
+        * Add Slide Read more link
+        */
+        $wp_customize->add_setting(
+            $slideReadmoreLinkId,
+            array(
+                'default' => __( '#', 'artfolio' ),
+                'sanitize_callback' => 'sanitize_text_field',
+            )
+        );
+
+
+        /*
+            Add Slide Background Image
+        */
+        $wp_customize->add_setting( $slideImageId,
+                                   array(
+                                       'default' => $defaultSliderImagePath,
+                                       'sanitize_callback' => 'esc_url_raw'
+                                   )
+                                  );
+
+
+        /*
+            Slider's title
+        */
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideTitleId,
+                                                             array(
+                                                                 'label' => sprintf( __( 'Slide #%s title', 'artfolio' ), $i ),
+                                                                 'section' => 'artfolio_slider_section',
+                                                                 'settings' => $slideTitleId,
+                                                                 'type' => 'text',
+                                                             )
+                                                            )
+                                  );
+
+
+        /*
+            Slider's content
+        */
         $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideContentId,
                                                              array(
                                                                  'label' => sprintf( __( 'Slide #%s Content', 'artfolio' ), $i ),
@@ -55,14 +127,24 @@ function artfolio_customize_register( $wp_customize ) {
                                                             )
                                   );
 
-        // Add Slide Background Image
-        $wp_customize->add_setting( $slideImageId,
-                                   array(
-                                       'default' => $defaultSliderImagePath,
-                                       'sanitize_callback' => 'esc_url_raw'
-                                   )
+
+        /*
+            Slider's read more link
+        */
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideReadmoreLinkId,
+                                                             array(
+                                                                 'label' => sprintf( __( 'Slide #%s read more link', 'artfolio' ), $i ),
+                                                                 'section' => 'artfolio_slider_section',
+                                                                 'settings' => $slideReadmoreLinkId,
+                                                                 'type' => 'text',
+                                                             )
+                                                            )
                                   );
 
+
+        /*
+            Background Image
+        */
         $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $slideImageId,
                                                                    array(
                                                                        'label'   	 => sprintf( __( 'Slide #%s Image', 'artfolio' ), $i ),
@@ -189,8 +271,6 @@ function artfolio_customize_register( $wp_customize ) {
             'section' => 'artfolio_footer_section',
         )
     );
-
-
 }
 add_action( 'customize_register', 'artfolio_customize_register' );
 

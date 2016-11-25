@@ -24,18 +24,28 @@ function artfolio_display_slider() { ?>
     // display slides
     for ( $i = 1; $i <= 3; ++$i ) {
 
-        $defaultSlideContent = __( '<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'artfolio' );
-
+        $defaultSlideTitle = __( 'Some title', 'artfolio' );
+        $defaultSlideContent = __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'artfolio' );
+        $defaultSlideReadMoreLink = __( '#', 'artfolio' );
         $defaultSlideImage = get_template_directory_uri().'/images/slider/' . $i .'.jpg';
 
-        $slideContent = get_theme_mod( 'artfolio_slide'.$i.'_content', html_entity_decode( $defaultSlideContent ) );
-        $slideImage = get_theme_mod( 'artfolio_slide'.$i.'_image', $defaultSlideImage );
+        $slideTitle = get_theme_mod( 'artfolio_slide' . $i . '_title', html_entity_decode( $defaultSlideTitle ) );
+        $slideContent = get_theme_mod( 'artfolio_slide' . $i . '_content', html_entity_decode( $defaultSlideContent ) );
+        $slideReadMoreLink = get_theme_mod( 'artfolio_slide' . $i . '_readmorelink', html_entity_decode( $defaultSlideReadMoreLink ) );
+        $slideImage = get_theme_mod( 'artfolio_slide' . $i . '_image', $defaultSlideImage );
 
     ?>
 
     <div data-thumb="<?php echo esc_attr( $slideImage ); ?>" data-src="<?php echo esc_attr( $slideImage ); ?>">
         <div class="camera_caption fadeFromBottom">
-            <?php echo esc_attr( $slideContent ); ?>
+            <h2>
+                <?php echo esc_attr( $slideTitle ); ?>
+            </h2>
+            <p>
+                <?php echo esc_attr( $slideContent ); ?>
+            </p>
+            <a href="<?php echo 'http://' . esc_attr( $slideReadMoreLink ); ?>" target="_blank">Read more</a>
+
         </div>
     </div>
     <?php		} ?>

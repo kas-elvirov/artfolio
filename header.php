@@ -26,7 +26,7 @@
             <?php if ( !is_404() ) { ?>
 
             <header id="masthead" class="site-header" role="banner">
-                <?php if ( is_front_page() && is_home() && get_option( "mainSlider" ) ) { ?>
+                <?php if ( is_front_page() && is_home() && get_theme_mod( "show_slider" ) != '' ) { ?>
 
                 <div class="site-branding header-background-image-for-single" style="height:<?php echo esc_attr( get_custom_header()->height ); ?>px">
 

@@ -1,6 +1,8 @@
 00.00.00 / 0000-00-00
 ==================
 
+* [ x.x.1 ] Added animation for single-post-thumbnail by hovering
+* [ x.x.1 ] Formatted code. Added prefixes, indents, comments etc.
 * [ x.x.1 ] Changed style for widget-title
 * [ x.x.1 ] Replaced paging navigation
 * [ x.x.1 ] Formatted indents

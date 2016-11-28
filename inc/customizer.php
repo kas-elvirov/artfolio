@@ -25,6 +25,7 @@ function artfolio_customize_register( $wp_customize ) {
         array(
             'title'       => __( 'Slider', 'artfolio' ),
             'capability'  => 'edit_theme_options'
+            )
     );
 
 
@@ -33,7 +34,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'show_slider',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(
@@ -194,7 +197,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'hide_copyright',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(
@@ -212,7 +217,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'hide_socialmenu',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(
@@ -230,7 +237,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'hide_developer_link',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(
@@ -248,7 +257,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'hide_wordpress_link',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(
@@ -266,7 +277,9 @@ function artfolio_customize_register( $wp_customize ) {
     */
     $wp_customize->add_setting(
         'hide_heart_animation',
-        'sanitize_callback' => 'sanitize_text_field'
+        array(
+            'sanitize_callback' => 'sanitize_text_field',
+        )
     );
 
     $wp_customize->add_control(

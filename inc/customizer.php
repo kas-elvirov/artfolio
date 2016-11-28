@@ -25,6 +25,7 @@ function artfolio_customize_register( $wp_customize ) {
         array(
             'title'       => __( 'Slider', 'artfolio' ),
             'capability'  => 'edit_theme_options',
+            'sanitize_callback' => 'sanitize_text_field'
         )
     );
 
@@ -33,7 +34,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide slider
     */
     $wp_customize->add_setting(
-        'show_slider'
+        'show_slider',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(
@@ -61,7 +63,7 @@ function artfolio_customize_register( $wp_customize ) {
             $artfolio_slideTitleId,
             array(
                 'default' => __( 'Some title', 'artfolio' ),
-                'sanitize_callback' => 'sanitize_text_field',
+                'sanitize_callback' => 'sanitize_text_field'
             )
         );
 
@@ -84,7 +86,7 @@ function artfolio_customize_register( $wp_customize ) {
             $artfolio_slideReadmoreLinkId,
             array(
                 'default' => '#',
-                'sanitize_callback' => 'sanitize_text_field',
+                'sanitize_callback' => 'esc_url_raw',
             )
         );
 

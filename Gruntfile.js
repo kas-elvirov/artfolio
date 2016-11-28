@@ -6,14 +6,14 @@ module.exports = function ( grunt ) {
         pot: {
             options: {
                 package_name: 'artfolio',
-                package_version: '1.13.12',
+                package_version: '1.16.28',
                 msgid_bugs_address: "https://github.com/artem-solovev/artfolio/issues",
-                text_domain: 'artfolio', //Your text domain. Produces my-text-domain.pot
-                dest: 'languages/', //directory to place the pot file
-                keywords: [ '_e', '__' ], //functions to look for
+                text_domain: 'artfolio',
+                dest: 'languages/',
+                keywords: [ '_e', '__' ],
             },
             files: {
-                src:  [ '**/*.php' ], //Parse all php files
+                src:  [ '**/*.php' ],
                 expand: true,
             }
         }

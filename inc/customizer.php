@@ -83,7 +83,7 @@ function artfolio_customize_register( $wp_customize ) {
         $wp_customize->add_setting(
             $artfolio_slideReadmoreLinkId,
             array(
-                'default' => __( '#', 'artfolio' ),
+                'default' => '#',
                 'sanitize_callback' => 'sanitize_text_field',
             )
         );

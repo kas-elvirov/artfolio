@@ -1,6 +1,15 @@
 00.00.00 / 0000-00-00
 ==================
 
+* [ x.x.x ]
+
+
+1.16.28 / 2016-11-28
+==================
+
+* [ x.1.x ] Moved settings to customizer
+* [ x.1.x ] Improved slider settings page
+* [ x.x.1 ] Fixed problems with animation at the sidebar recent posts widget section
 * [ x.x.1 ] Added animation for single-post-thumbnail by hovering
 * [ x.x.1 ] Formatted code. Added prefixes, indents, comments etc.
 * [ x.x.1 ] Changed style for widget-title
@@ -15,7 +24,7 @@
 * [ x.x.1 ] Fixed translated issues
 * [ x.x.1 ] Fixed preview for header_text_color in customizer
 * [ x.x.1 ] Fixed problems with index-widget on small screens
-* [ x.x.1 ] Changed icon for sticky post
+* [ x.1.x ] Changed icon for sticky post
 * [ x.x.1 ] Fixed style for edit button
 
 

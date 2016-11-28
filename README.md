@@ -6,7 +6,7 @@ ___
 
 
 # WordPress theme [Arfolio](https://themes.trac.wordpress.org/ticket/33947#no0)
-## **Current version: 1.16.28** ( 2016, 28 nov )
+## **Current version: 1.16.29** ( 2016, 28 nov )
 ===========================
 
 ## Description

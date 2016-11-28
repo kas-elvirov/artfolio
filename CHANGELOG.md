@@ -4,6 +4,12 @@
 * [ x.x.x ]
 
 
+1.16.29 / 2016-11-28
+==================
+
+* [ x.x.1 ] Added sanitization callback functions to every call add_setting()
+
+
 1.16.28 / 2016-11-28
 ==================
 

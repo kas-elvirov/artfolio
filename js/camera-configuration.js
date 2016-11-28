@@ -3,10 +3,10 @@
  *
  *
  */
-jQuery(document).ready( function($){
+jQuery( document ).ready( function( $ ) {
 
-    if ( $('#camera_wrap').length ) {
-        $('#camera_wrap').camera({
+    if ( $( '#camera_wrap' ).length ) {
+        $( '#camera_wrap' ).camera( {
             height: artfolio_IsLargeResolution() ? '500px' : '300px',
             loader: 'bar',
             loaderColor: '#75BA8E',
@@ -21,5 +21,5 @@ jQuery(document).ready( function($){
 
 function artfolio_IsLargeResolution() {
 
-    return (jQuery(window).width() >= 800);
+    return ( jQuery( window ).width() >= 800 );
 }

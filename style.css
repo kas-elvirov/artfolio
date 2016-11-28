@@ -2400,20 +2400,20 @@ input[type="search"] {
 --------------------------------------------------------------*/
 /* For sidebar */
 #artfolio_widget-2 li,
-.arp-header { text-align: center; }
+.artfolio-posts-widget-header { text-align: center; }
 
-.arp-thumbnail {
+.artfolio-posts-widget-thumbnail {
     display: inline-block;
     position: relative;
     margin-right: 0;
 }
 
-.arp-thumbnail img {
+.artfolio-posts-widget-thumbnail img {
     width: 100px;
     height: 100px;
 }
 
-.arp-header {
+.artfolio-posts-widget-header {
     display: block;
     position: relative;
     width: 100%;
@@ -2421,33 +2421,33 @@ input[type="search"] {
     border-bottom: 1px solid rgb(101, 98, 93);
 }
 
-.arp-title {
+.artfolio-posts-widget-title {
     display: block;
     position: relative;
     margin-bottom: 0.5em !important;
 }
 
-.arp-meta {
+.artfolio-posts-widget-meta {
     display: none;
     position: relative;
     font-size: 12px;
 }
 
-.arp-author { display: none; }
+.artfolio-posts-widget-author { display: none; }
 
-.arp-time {
+.artfolio-posts-widget-time {
     display: inline-block;
     position: relative;
     margin-bottom: 0;
 }
 
 #secondary .attachment-artfolio-recent-thumbnails,
-#secondary .imagePlugWrapper:hover { transition: border-radius 0.5s; }
+#secondary .artfolio-posts-widget-image-plug-wrapper:hover { transition: border-radius 0.5s; }
 
 #secondary .attachment-artfolio-recent-thumbnails:hover,
-#secondary .imagePlugWrapper:hover { border-radius: 50%; }
+#secondary .artfolio-posts-widget-image-plug-wrapper:hover { border-radius: 50%; }
 
-.imagePlugWrapper {
+.artfolio-posts-widget-image-plug-wrapper {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -2455,7 +2455,7 @@ input[type="search"] {
     text-align: center;
 }
 
-.imagePlug {
+.artfolio-posts-widget-image-plug {
     font-size: 50px;
     line-height: 100px !important;
     color: #fff;
@@ -2463,17 +2463,17 @@ input[type="search"] {
 
 @media screen and ( min-width: 400px ) {
     #artfolio_widget-2 li,
-    .arp-header { text-align: left; }
+    .artfolio-posts-widget-header { text-align: left; }
 
-    .arp-thumbnail { margin-right: 1em; }
+    .artfolio-posts-widget-thumbnail { margin-right: 1em; }
 
-    .arp-header {
+    .artfolio-posts-widget-header {
         display: inline-block;
         width: 61%;
         border-bottom: none;
     }
 
-    .arp-meta {
+    .artfolio-posts-widget-meta {
         display: block;
         font-size: inherit;
     }
@@ -2499,46 +2499,46 @@ input[type="search"] {
 }
 
 
-.index-widgets .widget_artfolio_widget .arp-thumbnail,
-.index-widgets .widget_artfolio_widget .arp-header {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-thumbnail,
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-header {
     display: block;
     overflow: hidden;
     margin-right: 0;
 }
-.index-widgets .widget_artfolio_widget .arp-thumbnail {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-thumbnail {
     max-height: 220px;
     -webkit-transform:scale(1.0);
 }
 
-.index-widgets .widget_artfolio_widget .arp-thumbnail img {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-thumbnail img {
     width: 100%;
     height: auto;
     transition: all 0.5s ease;
 }
 
-.index-widgets .widget_artfolio_widget .arp-thumbnail img:hover {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-thumbnail img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.index-widgets .widget_artfolio_widget .arp-header {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-header {
     width: 100%;
     height: 180px;
     padding: 16px;
     background-color: #262626;
 }
 
-.index-widgets .widget_artfolio_widget .arp-title {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-title {
     text-transform: uppercase;
     color: #D3D3D3;
     transition: color .5s;
 }
 
-.index-widgets .widget_artfolio_widget .arp-title:hover {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-title:hover {
     color: #3B9C61;
 }
 
-.index-widgets .widget_artfolio_widget .arp-author {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-author {
     display: block;
     color: #65625D;
 }
@@ -2566,12 +2566,12 @@ input[type="search"] {
 }
 
 /* For posts wihout image */
-.index-widgets .widget_artfolio_widget .imagePlugWrapper {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-image-plug-wrapper {
     height: 220px;
     width: 100%;
 }
 
-.index-widgets .widget_artfolio_widget .imagePlug {
+.index-widgets .widget_artfolio_widget .artfolio-posts-widget-image-plug {
     font-size: 130px;
     line-height: 220px !important;
     color: #fff;

@@ -6,25 +6,25 @@
  *
  */
 
-jQuery(document).ready(function($){
+jQuery( document ).ready( function( $ ){
     var breakpoint = 600;
-    var navigation = $('ul.nav-menu');
+    var navigation = $( 'ul.nav-menu' );
 
-    if($(document).width() >= breakpoint){
-        navigation.superfish({
+    if( $( document ).width() >= breakpoint ){
+        navigation.superfish( {
             delay: 50,
             speed: 'fast'
-        });
+        } );
     }
 
-    $(window).resize(function(){
-        if($(document).width() >= breakpoint & !navigation.hasClass('sf-js-enabled')){
-            navigation.superfish({
+    $( window ).resize( function() {
+        if( $( document ).width() >= breakpoint & !navigation.hasClass( 'sf-js-enabled' ) ) {
+            navigation.superfish( {
                 delay: 200,
                 speed: 'fast'
-            });
-        } else if($(document).width() < breakpoint) {
-            navigation.superfish('destroy');
+            } );
+        } else if( $( document ).width() < breakpoint ) {
+            navigation.superfish( 'destroy' );
         }
     });
 });

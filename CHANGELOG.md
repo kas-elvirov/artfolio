@@ -1,8 +1,7 @@
 00.00.00 / 0000-00-00
 ==================
 
-* [ x.1.x ] Added new fields for slider settings
-* [ x.1.x ] Moved all settings to customizer
+* [ x.x.1 ] Changed style for widget-title
 * [ x.x.1 ] Replaced paging navigation
 * [ x.x.1 ] Formatted indents
 * [ x.x.1 ] Fixed tag panel for both parts ( posts and headers )

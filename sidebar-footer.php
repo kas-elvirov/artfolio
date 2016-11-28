@@ -1,7 +1,10 @@
 <?php
 /**
  * The footer sidebar
+ *
+ * @package Artfolio
  */
+
 
 if ( ! is_active_sidebar( 'sidebar-2' ) ) {
     return;

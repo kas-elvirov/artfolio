@@ -47,18 +47,18 @@ function artfolio_customize_register( $wp_customize ) {
 
     for ($i = 1; $i <= 3; ++$i) {
 
-        $slideTitleId = 'artfolio_slide' . $i . '_title';
-        $slideContentId = 'artfolio_slide' . $i . '_content';
-        $slideReadmoreLinkId = 'artfolio_slide' . $i . '_readmorelink';
-        $slideImageId = 'artfolio_slide' . $i .'_image';
-        $defaultSliderImagePath = get_template_directory_uri() . '/images/slider/' . $i . '.jpg';
+        $artfolio_slideTitleId = 'artfolio_slide' . $i . '_title';
+        $artfolio_slideContentId = 'artfolio_slide' . $i . '_content';
+        $artfolio_slideReadmoreLinkId = 'artfolio_slide' . $i . '_readmorelink';
+        $artfolio_slideImageId = 'artfolio_slide' . $i .'_image';
+        $artfolio_defaultSliderImagePath = get_template_directory_uri() . '/images/slider/' . $i . '.jpg';
 
 
         /*
         * Add Slide title
         */
         $wp_customize->add_setting(
-            $slideTitleId,
+            $artfolio_slideTitleId,
             array(
                 'default' => __( 'Some title', 'artfolio' ),
                 'sanitize_callback' => 'sanitize_text_field',
@@ -70,7 +70,7 @@ function artfolio_customize_register( $wp_customize ) {
         * Add Slide Content
         */
         $wp_customize->add_setting(
-            $slideContentId,
+            $artfolio_slideContentId,
             array(
                 'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'artfolio' ),
                 'sanitize_callback' => 'sanitize_text_field',
@@ -81,7 +81,7 @@ function artfolio_customize_register( $wp_customize ) {
         * Add Slide Read more link
         */
         $wp_customize->add_setting(
-            $slideReadmoreLinkId,
+            $artfolio_slideReadmoreLinkId,
             array(
                 'default' => __( '#', 'artfolio' ),
                 'sanitize_callback' => 'sanitize_text_field',
@@ -92,9 +92,9 @@ function artfolio_customize_register( $wp_customize ) {
         /*
             Add Slide Background Image
         */
-        $wp_customize->add_setting( $slideImageId,
+        $wp_customize->add_setting( $artfolio_slideImageId,
                                    array(
-                                       'default' => $defaultSliderImagePath,
+                                       'default' => $artfolio_defaultSliderImagePath,
                                        'sanitize_callback' => 'esc_url_raw'
                                    )
                                   );
@@ -103,11 +103,11 @@ function artfolio_customize_register( $wp_customize ) {
         /*
             Slider's title
         */
-        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideTitleId,
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideTitleId,
                                                              array(
                                                                  'label' => sprintf( __( 'Slide #%s title', 'artfolio' ), $i ),
                                                                  'section' => 'artfolio_slider_section',
-                                                                 'settings' => $slideTitleId,
+                                                                 'settings' => $artfolio_slideTitleId,
                                                                  'type' => 'text',
                                                              )
                                                             )
@@ -117,11 +117,11 @@ function artfolio_customize_register( $wp_customize ) {
         /*
             Slider's content
         */
-        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideContentId,
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideContentId,
                                                              array(
                                                                  'label' => sprintf( __( 'Slide #%s Content', 'artfolio' ), $i ),
                                                                  'section' => 'artfolio_slider_section',
-                                                                 'settings' => $slideContentId,
+                                                                 'settings' => $artfolio_slideContentId,
                                                                  'type' => 'textarea',
                                                              )
                                                             )
@@ -131,11 +131,11 @@ function artfolio_customize_register( $wp_customize ) {
         /*
             Slider's read more link
         */
-        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $slideReadmoreLinkId,
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideReadmoreLinkId,
                                                              array(
                                                                  'label' => sprintf( __( 'Slide #%s read more link', 'artfolio' ), $i ),
                                                                  'section' => 'artfolio_slider_section',
-                                                                 'settings' => $slideReadmoreLinkId,
+                                                                 'settings' => $artfolio_slideReadmoreLinkId,
                                                                  'type' => 'text',
                                                              )
                                                             )
@@ -145,11 +145,11 @@ function artfolio_customize_register( $wp_customize ) {
         /*
             Background Image
         */
-        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $slideImageId,
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $artfolio_slideImageId,
                                                                    array(
                                                                        'label'   	 => sprintf( __( 'Slide #%s Image', 'artfolio' ), $i ),
                                                                        'section' 	 => 'artfolio_slider_section',
-                                                                       'settings'   => $slideImageId,
+                                                                       'settings'   => $artfolio_slideImageId,
                                                                    )
                                                                   )
                                   );

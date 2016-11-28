@@ -51,7 +51,7 @@
                 echo '</div>';
             }
             ?>
-            
+
         </header><!-- .entry-header -->
 
         <div class="entry-content">

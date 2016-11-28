@@ -2,7 +2,9 @@
 /**
  * The index sidebar
  *
+ * @package Artfolio
  */
+
 
 if ( ! is_active_sidebar( 'sidebar-3' ) ) {
     return;

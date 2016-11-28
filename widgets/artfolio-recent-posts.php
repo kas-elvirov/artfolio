@@ -1,11 +1,10 @@
+<?php
 /**
  * Custom widget with recent posts links, images and meta-info
  *
  * @package Artfolio
  */
 
-
-<?php
 
 // Widget for recent posts with image, title, date and author
 class artfolio_recent_posts extends WP_Widget {

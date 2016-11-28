@@ -2289,7 +2289,7 @@ input[type="search"] {
 
 .widget-title {
     margin-bottom: 1em;
-    border-bottom: 2px solid #231E1A;
+    border-bottom: 7px solid #3B9C61;
     font-size: 24px;
     font-size: 2.4rem;
 }
@@ -2371,8 +2371,6 @@ input[type="search"] {
 .footer-widgets .widget a:hover {
     color: #fff;
     color: hsl(0, 0%, 100%);
-    border-color: #fff;
-    border-color: hsl(0, 0%, 100%);
 }
 
 .footer-widgets .widget {

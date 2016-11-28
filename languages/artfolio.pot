@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: artfolio 1.13.12\n"
+"Project-Id-Version: artfolio 1.16.28\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
-"POT-Creation-Date: 2016-11-16 14:35+0300\n"
+"POT-Creation-Date: 2016-11-28 10:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,62 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: archive.php:32
-msgid "Category"
-msgstr ""
-
-#: archive.php:45
-msgid "tag"
-msgstr ""
-
-#: archive.php:56
-msgid "Author"
-msgstr ""
-
-#: archive.php:60 archive.php:63 archive.php:66
-#, php-format
-msgid "Posts from %s"
-msgstr ""
-
-#: archive.php:69
-msgid "Asides"
-msgstr ""
-
-#: archive.php:72
-msgid "Archives"
-msgstr ""
-
-#: comments.php:50
-msgid "Comment navigation"
-msgstr ""
-
 #: comments.php:51
-msgid ""
-"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Older Comments"
+msgid "Comment navigation"
 msgstr ""
 
 #: comments.php:52
 msgid ""
+"<i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"></i> Older Comments"
+msgstr ""
+
+#: comments.php:53
+msgid ""
 "Newer Comments <i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"></i>"
 msgstr ""
 
-#: functions.php:33
+#: functions.php:27 inc/customizer.php:63
+msgid "Some title"
+msgstr ""
+
+#: functions.php:28 inc/customizer.php:75
 msgid ""
-"<h3>Lorem ipsum dolor</h3><p>Lorem ipsum dolor sit amet, consectetur "
-"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
-"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua"
 msgstr ""
 
-#: functions.php:55
-msgid "Created by"
-msgstr ""
-
-#: functions.php:57
-msgid "in"
-msgstr ""
-
-#: functions.php:59
-msgid "All rights reserved"
+#: functions.php:29
+msgid "#"
 msgstr ""
 
 #: functions.php:116
@@ -106,54 +76,85 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: inc/customizer.php:25
+#: inc/customizer.php:26
 msgid "Slider"
 msgstr ""
 
-#: inc/customizer.php:40
-msgid ""
-"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
-"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
-"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+#: inc/customizer.php:43
+msgid "Show slider"
 msgstr ""
 
-#: inc/customizer.php:47
+#: inc/customizer.php:108
+#, php-format
+msgid "Slide #%s title"
+msgstr ""
+
+#: inc/customizer.php:122
 #, php-format
 msgid "Slide #%s Content"
 msgstr ""
 
-#: inc/customizer.php:65
+#: inc/customizer.php:136
+#, php-format
+msgid "Slide #%s read more link"
+msgstr ""
+
+#: inc/customizer.php:150
 #, php-format
 msgid "Slide #%s Image"
 msgstr ""
 
-#: inc/template-tags.php:64
+#: inc/customizer.php:164
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Settings for the footer of the website"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid "All rights reserved by Artem Solovev"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "Copyright text"
+msgstr ""
+
+#: inc/customizer.php:202
+msgid "Hide copyright text"
+msgstr ""
+
+#: inc/customizer.php:219
+msgid "Hide social menu"
+msgstr ""
+
+#: inc/customizer.php:236
+msgid "Hide developer link"
+msgstr ""
+
+#: inc/customizer.php:253
+msgid "Hide WordPress link"
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "Hide heart animation"
+msgstr ""
+
+#: inc/template-tags.php:75
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:179
+#: inc/template-tags.php:208
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:182
+#: inc/template-tags.php:211
 msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:183
+#: inc/template-tags.php:212
 msgid "Next Post"
-msgstr ""
-
-#: inc/template-tags.php:227
-msgid "&larr; Previous"
-msgstr ""
-
-#: inc/template-tags.php:228
-msgid "Next &rarr;"
-msgstr ""
-
-#: inc/template-tags.php:236
-msgid "Posts navigation"
 msgstr ""
 
 #: node_modules/grunt-pot/test/fixtures/some-file.php:3
@@ -186,13 +187,13 @@ msgid ""
 "search"
 msgstr ""
 
-#: template-parts/content-aside.php:32 template-parts/content-search.php:25
-#: template-parts/content-single.php:25 template-parts/content.php:35
+#: template-parts/content-aside.php:34 template-parts/content-search.php:25
+#: template-parts/content-single.php:26 template-parts/content.php:37
 msgid "Leave a comment"
 msgstr ""
 
-#: template-parts/content-aside.php:36 template-parts/content-search.php:38
-#: template-parts/content-single.php:64 template-parts/content.php:47
+#: template-parts/content-aside.php:39 template-parts/content-search.php:40
+#: template-parts/content-single.php:72 template-parts/content.php:54
 msgid "Edit"
 msgstr ""
 
@@ -231,40 +232,40 @@ msgid ""
 "It seems we cannot find what you are looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content-search.php:32 template-parts/content-single.php:31
-#: template-parts/content.php:41 widgets/artfolio-recent-posts.php:62
+#: template-parts/content-search.php:34 template-parts/content-single.php:35
+#: template-parts/content.php:47 widgets/artfolio-recent-posts.php:68
 msgid ", "
 msgstr ""
 
-#: template-parts/content-search.php:46 template-parts/content.php:52
+#: template-parts/content-search.php:48 template-parts/content.php:61
 msgid "Click to read "
 msgstr ""
 
-#: template-parts/content-search.php:59 template-parts/content.php:67
+#: template-parts/content-search.php:62 template-parts/content.php:79
 msgid "Continue Reading "
 msgstr ""
 
-#: template-parts/content-single.php:47
+#: template-parts/content-single.php:54
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: widgets/artfolio-recent-posts.php:12
+#: widgets/artfolio-recent-posts.php:18
 msgid "Artfolio recent posts"
 msgstr ""
 
-#: widgets/artfolio-recent-posts.php:15
+#: widgets/artfolio-recent-posts.php:21
 msgid "Custom widget for recent posts with image and description"
 msgstr ""
 
-#: widgets/artfolio-recent-posts.php:88
+#: widgets/artfolio-recent-posts.php:100
 msgid "Recent posts"
 msgstr ""
 
-#: widgets/artfolio-recent-posts.php:94
+#: widgets/artfolio-recent-posts.php:106
 msgid "Title:"
 msgstr ""
 
-#: widgets/artfolio-recent-posts.php:99
+#: widgets/artfolio-recent-posts.php:111
 msgid "Number of posts to show:"
 msgstr ""

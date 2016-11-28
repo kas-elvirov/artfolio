@@ -131,6 +131,15 @@ function artfolio_setup() {
     ) );
 
 
+    add_theme_support( 'custom-background', array(
+        'default-color'          => '',
+        'default-image'          => '',
+        'wp-head-callback'       => '_custom_background_cb',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => ''
+    ) );
+
+
     /*
     * Enable support for Post Formats.
     * See https://developer.wordpress.org/themes/functionality/post-formats/

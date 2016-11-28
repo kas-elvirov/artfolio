@@ -2441,11 +2441,11 @@ input[type="search"] {
     margin-bottom: 0;
 }
 
-#secondary .attachment-artfolio-recent-thumbnails,
-#secondary .artfolio-posts-widget-image-plug-wrapper:hover { transition: border-radius 0.5s; }
-
-#secondary .attachment-artfolio-recent-thumbnails:hover,
-#secondary .artfolio-posts-widget-image-plug-wrapper:hover { border-radius: 50%; }
+.artfolio-posts-widget-image-plug {
+    font-size: 50px;
+    line-height: 100px !important;
+    color: #fff;
+}
 
 .artfolio-posts-widget-image-plug-wrapper {
     display: inline-block;
@@ -2455,11 +2455,24 @@ input[type="search"] {
     text-align: center;
 }
 
+.attachment-artfolio-posts-widget-thumbnails,
+.attachment-artfolio-posts-widget-thumbnail,
+.artfolio-posts-widget-image-plug-wrapper,
 .artfolio-posts-widget-image-plug {
-    font-size: 50px;
-    line-height: 100px !important;
-    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
 }
+
+#secondary .attachment-artfolio-posts-widget-thumbnails:hover,
+#secondary .attachment-artfolio-posts-widget-thumbnail:hover,
+#secondary .artfolio-posts-widget-image-plug-wrapper:hover,
+#secondary .artfolio-posts-widget-image-plug:hover { border-radius: 50%; }
+
+
 
 @media screen and ( min-width: 400px ) {
     #artfolio_widget-2 li,

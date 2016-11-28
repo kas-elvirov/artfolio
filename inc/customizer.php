@@ -24,9 +24,7 @@ function artfolio_customize_register( $wp_customize ) {
         'artfolio_slider_section',
         array(
             'title'       => __( 'Slider', 'artfolio' ),
-            'capability'  => 'edit_theme_options',
-            'sanitize_callback' => 'sanitize_text_field'
-        )
+            'capability'  => 'edit_theme_options'
     );
 
 
@@ -177,6 +175,7 @@ function artfolio_customize_register( $wp_customize ) {
         'copyright_textbox',
         array(
             'default' => __( 'All rights reserved by Artem Solovev', 'artfolio' ),
+            'sanitize_callback' => 'sanitize_text_field'
         )
     );
 
@@ -194,7 +193,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide copyright text
     */
     $wp_customize->add_setting(
-        'hide_copyright'
+        'hide_copyright',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(
@@ -211,7 +211,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide social menu
     */
     $wp_customize->add_setting(
-        'hide_socialmenu'
+        'hide_socialmenu',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(
@@ -228,7 +229,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide social menu
     */
     $wp_customize->add_setting(
-        'hide_developer_link'
+        'hide_developer_link',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(
@@ -245,7 +247,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide WordPress link
     */
     $wp_customize->add_setting(
-        'hide_wordpress_link'
+        'hide_wordpress_link',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(
@@ -262,7 +265,8 @@ function artfolio_customize_register( $wp_customize ) {
     * Show / hide heart animation
     */
     $wp_customize->add_setting(
-        'hide_heart_animation'
+        'hide_heart_animation',
+        'sanitize_callback' => 'sanitize_text_field'
     );
 
     $wp_customize->add_control(

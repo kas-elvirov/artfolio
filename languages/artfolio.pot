@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: artfolio 1.16.29\n"
+"Project-Id-Version: artfolio 1.17.29\n"
 "Report-Msgid-Bugs-To: https://github.com/artem-solovev/artfolio/issues\n"
 "POT-Creation-Date: 2016-11-28 10:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"

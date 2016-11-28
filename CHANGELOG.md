@@ -4,9 +4,10 @@
 * [ x.x.x ]
 
 
-1.16.29 / 2016-11-28
+1.17.29 / 2016-11-28
 ==================
 
+* [ x.1.x ] Added support for custom-background-image
 * [ x.x.1 ] Added sanitization callback functions to every call add_setting()
 
 

@@ -56,7 +56,7 @@ get_header(); ?>
 
         endwhile;
 
-        the_posts_pagination( $args );
+        the_posts_pagination();
 
         else :
         get_template_part( 'template-parts/content', 'none' );

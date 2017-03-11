@@ -24,9 +24,7 @@ get_header(); ?>
             ?>
 
             <?php
-            echo '<span>';
-            echo the_archive_title();
-            echo '</span>';
+            the_archive_title( '<h1 class="page-title">', '</h1>' );
             echo '<br />';
 
             if ( is_category() ) {

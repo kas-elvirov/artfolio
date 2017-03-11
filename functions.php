@@ -257,12 +257,7 @@ function artfolio_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'artfolio_scripts' );
 
-add_action( 'wp_default_scripts', function( $scripts ) {
-    if ( ! empty( $scripts->registered['jquery'] ) ) {
-        $jquery_dependencies = $scripts->registered['jquery']->deps;
-        $scripts->registered['jquery']->deps = array_diff( $jquery_dependencies, array( 'jquery-migrate' ) );
-    }
-} );
+
 
 
 /*

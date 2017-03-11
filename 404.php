@@ -13,7 +13,7 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
         <?php
 
-        if ( is_404 ) {
+        if ( is_404() ) {
             get_template_part( 'template-parts/content', '404' );
         } else {
             get_template_part( 'template-parts/content', 'none' );
@@ -26,6 +26,6 @@ get_header(); ?>
 
 <?php
 
-if ( !is_404 ) {
+if ( !is_404() ) {
     get_footer();
 }

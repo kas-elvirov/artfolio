@@ -68,7 +68,7 @@ function artfolio_setup() {
     /*
     * This theme styles the visual editor to resemble the theme style.
     */
-    $font_url = 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic';
+    $font_url = get_template_directory_uri() . 'inc/editor-font.css';
     add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
 
 

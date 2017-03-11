@@ -32,7 +32,7 @@ get_header(); ?>
 
             } else if ( is_tag() ) {
                 echo '<h1 class="tagWord">';
-                single_tag_title();
+                the_archive_title();
                 echo '</h1>';
 
             } else if ( is_author() ) {

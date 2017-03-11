@@ -44,7 +44,7 @@ function artfolio_display_slider() { ?>
             <p>
                 <?php echo esc_attr( $slideContent ); ?>
             </p>
-            <a href="<?php echo esc_attr( $slideReadMoreLink ); ?>" target="_blank">Read more</a>
+            <a href="<?php echo esc_attr( $slideReadMoreLink ); ?>" target="_blank"><?php echo __( 'Read more', 'artfolio' ); ?></a>
 
         </div>
     </div>

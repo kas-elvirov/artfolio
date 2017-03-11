@@ -226,30 +226,30 @@ function artfolio_scripts() {
         wp_enqueue_style( 'artfolio-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css' );
     }
 
-    wp_enqueue_style( 'artfolio-google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic' );
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,900,900italic|Open+Sans:400,400italic,700,700italic' );
 
-    wp_enqueue_style( 'artfolio-fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css' );
+    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.css' );
 
-    wp_enqueue_script( 'artfolio-superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery' ), '20160503', true );
+    wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery' ), '20160503', true );
 
-    wp_enqueue_script( 'artfolio-superfish-configuration', get_template_directory_uri() . '/js/superfish-configuration.js', array( 'artfolio-superfish' ), '20160601', true );
+    wp_enqueue_script( 'superfish-configuration', get_template_directory_uri() . '/js/superfish-configuration.js', array( 'superfish' ), '20160601', true );
 
-    wp_enqueue_script( 'artfolio-hide-search-panel', get_template_directory_uri() . '/js/hide-search-panel.js', array( 'jquery' ), '20160601', true );
+    wp_enqueue_script( 'hide-search-panel', get_template_directory_uri() . '/js/hide-search-panel.js', array( 'jquery' ), '20160601', true );
 
     wp_enqueue_script( 'artfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
     wp_enqueue_script( 'artfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-    wp_enqueue_script( 'artfolio-masonry', get_template_directory_uri() . '/js/masonry-configuration.js', array( 'masonry' ), '20160601', true );
+    wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry-configuration.js', array( 'masonry' ), '20160601', true );
 
     /* Slider scripts */
-    wp_enqueue_script( 'artfolio-camera', get_template_directory_uri() . '/js/camera.min.js' );
+    wp_enqueue_script( 'camera', get_template_directory_uri() . '/js/camera.js' );
 
-    wp_enqueue_script( 'artfolio-camera-configuration', get_template_directory_uri() . '/js/camera-configuration.js' );
+    wp_enqueue_script( 'camera-configuration', get_template_directory_uri() . '/js/camera-configuration.js' );
 
-    wp_enqueue_script( 'artfolio-jquery-mobile-customized', get_template_directory_uri() . '/js/jquery.mobile.customized.min.js', array( 'jquery' ) );
+    wp_enqueue_script( 'jquery-mobile-customized', get_template_directory_uri() . '/js/jquery.mobile.customized.js', array( 'jquery' ) );
 
-    wp_enqueue_script( 'artfolio-jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
+    wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

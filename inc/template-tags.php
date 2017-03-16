@@ -78,12 +78,12 @@ function artfolio_entry_footer() {
 
     edit_post_link(
         sprintf(
-            /*
+        /*
             * translators: %s: Name of current post
             */
-            esc_html__( 'Edit %s', 'artfolio' ),
-            the_title( '<span class="screen-reader-text">"', '"</span>', false )
-        ),
+        esc_html__( 'Edit %s', 'artfolio' ),
+        the_title( '<span class="screen-reader-text">"', '"</span>', false )
+    ),
         '<span class="edit-link">',
         '</span>'
     );
@@ -97,6 +97,8 @@ endif;
 * @return bool
 */
 function artfolio_categorized_blog() {
+    $all_the_cool_cats = null;
+
     if ( false === ( $all_the_cool_cats = get_transient( 'artfolio_categories' ) ) ) {
         /*
         * Create an array of all the categories that are attached to posts
@@ -151,17 +153,17 @@ function artfolio_social_menu() {
     if ( has_nav_menu( 'social' ) ) {
         wp_nav_menu(
             array(
-                'theme_location'  => 'social',
-                'container'       => 'div',
-                'container_id'    => 'menu-social',
-                'container_class' => 'menu-social',
-                'menu_id'         => 'menu-social-items',
-                'menu_class'      => 'menu-items',
-                'depth'           => 1,
-                'link_before'     => '<span class="screen-reader-text">',
-                'link_after'      => '</span>',
-                'fallback_cb'     => '',
-            )
+            'theme_location'  => 'social',
+            'container'       => 'div',
+            'container_id'    => 'menu-social',
+            'container_class' => 'menu-social',
+            'menu_id'         => 'menu-social-items',
+            'menu_class'      => 'menu-items',
+            'depth'           => 1,
+            'link_before'     => '<span class="screen-reader-text">',
+            'link_after'      => '</span>',
+            'fallback_cb'     => '',
+        )
         );
     }
 }
@@ -174,13 +176,13 @@ function artfolio_landing_menu() {
     if ( has_nav_menu( 'landing' ) ) {
         wp_nav_menu(
             array(
-                'theme_location'  => 'landing',
-                'container'       => 'div',
-                'container_id'    => 'menu-landing',
-                'container_class' => 'menu-landing',
-                'depth'           => 1,
-                'fallback_cb'     => '',
-            )
+            'theme_location'  => 'landing',
+            'container'       => 'div',
+            'container_id'    => 'menu-landing',
+            'container_class' => 'menu-landing',
+            'depth'           => 1,
+            'fallback_cb'     => '',
+        )
         );
     }
 }

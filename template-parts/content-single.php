@@ -23,7 +23,7 @@
             <?php
             if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
                 echo '<span class="comments-link">';
-                comments_popup_link( __( 'Leave a comment', 'artfolio' ),  '1 <i class="fa fa-comment-o"></i>', '% <i class="fa fa-comment-o"></i>', 'artfolio' );
+                comments_popup_link( __( 'Leave a comment', 'artfolio' ),  __( '1 <i class="fa fa-comment-o"></i>', 'artfolio' ), __( '% <i class="fa fa-comment-o"></i>', 'artfolio' ), 'artfolio' );
                 echo '</span>';
             }
             ?>

@@ -116,11 +116,13 @@
     .comments-area,
     .pagination,
     .index-box,
-    .page-header { margin-right: 0; }
+    .page-header {
+        margin-right: 0;
+    }
 
 }
 
-@media screen and (max-width: 1249px) {  
+@media screen and (max-width: 1249px) {
     .site-content .widget-area {
         margin: 1em auto 0;
         float: none;
@@ -134,7 +136,9 @@
     .tag-links,
     .post-navigation,
     .comments-area,
-    .pagination { padding: 0 2rem; }
+    .pagination {
+        padding: 0 2rem;
+    }
 }
 
 .page-header,

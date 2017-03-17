@@ -23,7 +23,7 @@
         <?php } // end if ?>
 
 
-        <?php if ( get_theme_mod( 'hide_socialmenu' ) == '' ) { ?>
+        <?php if ( get_theme_mod( 'hide_heart_animation' ) == '' ) { ?>
         <!-- Heart animation -->
         <span class="fa heart pulseHeart"></span>
         <br />

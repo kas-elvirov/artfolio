@@ -54,10 +54,15 @@ Does this theme support any plugins?
 
 ## Credits
 
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
-* Header image by [Omar Yassen](https://www.instagram.com/haveyouseenomar/)
-* Icon image by [Crumbs + Pixels](https://www.iconfinder.com/Ikonografia)
+* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., GPLv2 or later
+* Camera slideshow http://www.pixedelic.com/plugins/camera/
+* Font awesome http://fontawesome.io/
+* jQuery easing http://gsgd.co.uk/sandbox/jquery/easing/
+* jQuery mobile customized https://github.com/pixedelic/Camera/tree/master/scripts
+* Superfich https://github.com/joeldbirch/superfish
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, MIT
+* Header image by Omar Yassen, (C) https://www.instagram.com/haveyouseenomar
+* Icon image by Crumbs + Pixels, (C) https://www.iconfinder.com/Ikonografia
 
 
 ===========================

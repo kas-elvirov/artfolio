@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found.
+ * Template part for displaying a message that posts cannot be found or if website hasn't potst yet
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

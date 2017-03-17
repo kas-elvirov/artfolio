@@ -25,7 +25,7 @@
 
         <?php if ( get_theme_mod( 'hide_socialmenu' ) == '' ) { ?>
         <!-- Heart animation -->
-        <span class="<?php printf( 'fa heart pulseHeart' ); ?>"></span>
+        <span class="fa heart pulseHeart"></span>
         <br />
         <?php } // end if ?>
 

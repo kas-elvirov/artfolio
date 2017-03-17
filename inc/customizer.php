@@ -23,9 +23,9 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'artfolio_slider_section',
         array(
-            'title'       => __( 'Slider', 'artfolio' ),
-            'capability'  => 'edit_theme_options'
-            )
+        'title'       => __( 'Slider', 'artfolio' ),
+        'capability'  => 'edit_theme_options'
+    )
     );
 
 
@@ -35,17 +35,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'show_slider',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'show_slider',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Show slider', 'artfolio' ),
-            'section' => 'artfolio_slider_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Show slider', 'artfolio' ),
+        'section' => 'artfolio_slider_section',
+    )
     );
 
     for ($i = 1; $i <= 3; ++$i) {
@@ -63,9 +63,9 @@ function artfolio_customize_register( $wp_customize ) {
         $wp_customize->add_setting(
             $artfolio_slideTitleId,
             array(
-                'default' => __( 'Some title', 'artfolio' ),
-                'sanitize_callback' => 'sanitize_text_field'
-            )
+            'default' => __( 'Some title', 'artfolio' ),
+            'sanitize_callback' => 'sanitize_text_field'
+        )
         );
 
 
@@ -75,9 +75,9 @@ function artfolio_customize_register( $wp_customize ) {
         $wp_customize->add_setting(
             $artfolio_slideContentId,
             array(
-                'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'artfolio' ),
-                'sanitize_callback' => 'sanitize_text_field',
-            )
+            'default' => __( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'artfolio' ),
+            'sanitize_callback' => 'sanitize_text_field',
+        )
         );
 
         /*
@@ -86,9 +86,9 @@ function artfolio_customize_register( $wp_customize ) {
         $wp_customize->add_setting(
             $artfolio_slideReadmoreLinkId,
             array(
-                'default' => '#',
-                'sanitize_callback' => 'esc_url_raw',
-            )
+            'default' => '#',
+            'sanitize_callback' => 'esc_url_raw',
+        )
         );
 
 
@@ -97,23 +97,22 @@ function artfolio_customize_register( $wp_customize ) {
         */
         $wp_customize->add_setting( $artfolio_slideImageId,
                                    array(
-                                       'default' => $artfolio_defaultSliderImagePath,
-                                       'sanitize_callback' => 'esc_url_raw'
-                                   )
+            'default' => $artfolio_defaultSliderImagePath,
+            'sanitize_callback' => 'esc_url_raw'
+        )
                                   );
 
 
         /*
             Slider's title
         */
-        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideTitleId,
-                                                             array(
-                                                                 'label' => sprintf( __( 'Slide #%s title', 'artfolio' ), $i ),
-                                                                 'section' => 'artfolio_slider_section',
-                                                                 'settings' => $artfolio_slideTitleId,
-                                                                 'type' => 'text',
-                                                             )
-                                                            )
+        $wp_customize->add_control( $artfolio_slideTitleId,
+                                   array(
+            'label' => sprintf( __( 'Slide #%s title', 'artfolio' ), $i ),
+            'section' => 'artfolio_slider_section',
+            'settings' => $artfolio_slideTitleId,
+            'type' => 'text'
+        )
                                   );
 
 
@@ -122,11 +121,11 @@ function artfolio_customize_register( $wp_customize ) {
         */
         $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideContentId,
                                                              array(
-                                                                 'label' => sprintf( __( 'Slide #%s Content', 'artfolio' ), $i ),
-                                                                 'section' => 'artfolio_slider_section',
-                                                                 'settings' => $artfolio_slideContentId,
-                                                                 'type' => 'textarea',
-                                                             )
+            'label' => sprintf( __( 'Slide #%s Content', 'artfolio' ), $i ),
+            'section' => 'artfolio_slider_section',
+            'settings' => $artfolio_slideContentId,
+            'type' => 'textarea',
+        )
                                                             )
                                   );
 
@@ -136,11 +135,11 @@ function artfolio_customize_register( $wp_customize ) {
         */
         $wp_customize->add_control( new WP_Customize_Control( $wp_customize, $artfolio_slideReadmoreLinkId,
                                                              array(
-                                                                 'label' => sprintf( __( 'Slide #%s read more link', 'artfolio' ), $i ),
-                                                                 'section' => 'artfolio_slider_section',
-                                                                 'settings' => $artfolio_slideReadmoreLinkId,
-                                                                 'type' => 'text',
-                                                             )
+            'label' => sprintf( __( 'Slide #%s read more link', 'artfolio' ), $i ),
+            'section' => 'artfolio_slider_section',
+            'settings' => $artfolio_slideReadmoreLinkId,
+            'type' => 'text',
+        )
                                                             )
                                   );
 
@@ -150,10 +149,10 @@ function artfolio_customize_register( $wp_customize ) {
         */
         $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $artfolio_slideImageId,
                                                                    array(
-                                                                       'label'   	 => sprintf( __( 'Slide #%s Image', 'artfolio' ), $i ),
-                                                                       'section' 	 => 'artfolio_slider_section',
-                                                                       'settings'   => $artfolio_slideImageId,
-                                                                   )
+            'label'   	 => sprintf( __( 'Slide #%s Image', 'artfolio' ), $i ),
+            'section' 	 => 'artfolio_slider_section',
+            'settings'   => $artfolio_slideImageId,
+        )
                                                                   )
                                   );
     }
@@ -164,10 +163,10 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_section(
         'artfolio_footer_section',
         array(
-            'title'       => __( 'Footer', 'artfolio' ),
-            'description'       => __( 'Settings for the footer of the website', 'artfolio' ),
-            'capability'  => 'edit_theme_options',
-        )
+        'title'       => __( 'Footer', 'artfolio' ),
+        'description'       => __( 'Settings for the footer of the website', 'artfolio' ),
+        'capability'  => 'edit_theme_options',
+    )
     );
 
 
@@ -177,18 +176,18 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'copyright_textbox',
         array(
-            'default' => __( 'All rights reserved by Artem Solovev', 'artfolio' ),
-            'sanitize_callback' => 'sanitize_text_field'
-        )
+        'default' => __( 'All rights reserved by Artem Solovev', 'artfolio' ),
+        'sanitize_callback' => 'sanitize_text_field'
+    )
     );
 
     $wp_customize->add_control(
         'copyright_textbox',
         array(
-            'label' => __( 'Copyright text', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-            'type' => 'text',
-        )
+        'label' => __( 'Copyright text', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+        'type' => 'text',
+    )
     );
 
 
@@ -198,17 +197,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'hide_copyright',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'hide_copyright',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Hide copyright text', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Hide copyright text', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+    )
     );
 
 
@@ -218,17 +217,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'hide_socialmenu',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'hide_socialmenu',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Hide social menu', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Hide social menu', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+    )
     );
 
 
@@ -238,17 +237,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'hide_developer_link',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'hide_developer_link',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Hide developer link', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Hide developer link', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+    )
     );
 
 
@@ -258,17 +257,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'hide_wordpress_link',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'hide_wordpress_link',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Hide WordPress link', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Hide WordPress link', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+    )
     );
 
 
@@ -278,17 +277,17 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'hide_heart_animation',
         array(
-            'sanitize_callback' => 'sanitize_text_field',
-        )
+        'sanitize_callback' => 'sanitize_text_field',
+    )
     );
 
     $wp_customize->add_control(
         'hide_heart_animation',
         array(
-            'type' => 'checkbox',
-            'label' => __( 'Hide heart animation', 'artfolio' ),
-            'section' => 'artfolio_footer_section',
-        )
+        'type' => 'checkbox',
+        'label' => __( 'Hide heart animation', 'artfolio' ),
+        'section' => 'artfolio_footer_section',
+    )
     );
 }
 add_action( 'customize_register', 'artfolio_customize_register' );

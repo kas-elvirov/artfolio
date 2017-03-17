@@ -35,6 +35,7 @@ function artfolio_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'show_slider',
         array(
+        'default' => __( 'Some slider', 'artfolio' ),
         'sanitize_callback' => 'sanitize_text_field',
     )
     );

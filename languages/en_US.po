@@ -127,10 +127,6 @@ msgstr "Hide copyright text"
 msgid "Hide social menu"
 msgstr "Hide social menu"
 
-#: inc/customizer.php:236
-msgid "Hide developer link"
-msgstr "Hide developer link"
-
 #: inc/customizer.php:253
 msgid "Hide WordPress link"
 msgstr "Hide WordPress link"

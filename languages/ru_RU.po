@@ -18,10 +18,6 @@ msgstr ""
 msgid "Hide social menu"
 msgstr "Скрыть социальное меню"
 
-#: inc/customizer.php:236
-msgid "Hide developer link"
-msgstr "Скрыть ссылку разработчика"
-
 #: inc/customizer.php:253
 msgid "Hide WordPress link"
 msgstr "Скрыть WordPress ссылку"

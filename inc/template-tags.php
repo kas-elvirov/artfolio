@@ -29,7 +29,7 @@ function artfolio_posted_on() {
 
     $posted_on = sprintf(
         esc_html_x( '%s', 'post date', 'artfolio' ),
-        '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+        '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . __( $time_string, 'artfolio' ) . '</a>'
     );
 
     $byline = sprintf(

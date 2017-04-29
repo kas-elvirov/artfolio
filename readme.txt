@@ -40,7 +40,8 @@ CREDITS
 -------
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., GPLv2 or later
 * Camera slideshow http://www.pixedelic.com/plugins/camera/
-* Font awesome http://fontawesome.io/
+* Font awesome (Font license) http://scripts.sil.org/OFL, SIL OFL 1.1
+* Font awesome (Code license) http://opensource.org/licenses/mit-license.html, MIT License
 * jQuery easing http://gsgd.co.uk/sandbox/jquery/easing/
 * jQuery mobile customized https://github.com/pixedelic/Camera/tree/master/scripts
 * Superfich https://github.com/joeldbirch/superfish

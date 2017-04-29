@@ -51,3 +51,6 @@ CREDITS
 LICENSE
 -------
 * GPLv3 - https://www.gnu.org/licenses/gpl-3.0.en.html
+
+Artfolio WordPress Theme, Copyright 2017 Artem Solovev
+Artfolio is distributed under the terms of the GNU GPL

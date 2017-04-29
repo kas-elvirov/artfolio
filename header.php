@@ -52,7 +52,7 @@
                 * */
                               if ( ( is_single() || is_page() ) && has_post_thumbnail() ) {
                                   echo '<div class="site-branding header-background-image-for-single" style="background-image: url(' . 
-                                      get_the_post_thumbnail_url( null, 'large-thumbnails' ) . ');>';
+                                      get_the_post_thumbnail_url( null, 'artfolio-large-thumbnails' ) . ');>';
                               } else {
                                   if ( get_header_image() && !( 'blank' == get_header_textcolor() ) ) {
                                       echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">';

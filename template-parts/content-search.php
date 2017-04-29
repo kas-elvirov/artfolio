@@ -46,7 +46,7 @@
             if ( has_post_thumbnail() ) {
                 echo '<div class="single-post-thumbnail clear">';
                 echo '<a href="' . esc_url( get_permalink() ) . '" title="' . __( 'Click to read ', 'artfolio' ) . get_the_title() . '" rel="bookmark">';
-                echo the_post_thumbnail( 'small-thumbnails' );
+                echo the_post_thumbnail( 'artfolio-small-thumbnails' );
                 echo '</a>';
                 echo '</div>';
             }

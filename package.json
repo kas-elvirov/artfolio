@@ -1,6 +1,6 @@
 {
     "name": "artfolio",
-    "version": "1.21.65",
+    "version": "1.21.66",
     "description": "WordPress theme",
     "devDependencies" : {
         "grunt" : "~1.0.1",

@@ -47,9 +47,9 @@
                 <?php } // End header image check. ?>
 
                 <?php
-                              /**
-                * If page has a thumbnail, it is displayed in the header
-                * */
+                /**
+                 * If page has a thumbnail, it is displayed in the header
+                 **/
                               if ( ( is_single() || is_page() ) && has_post_thumbnail() ) {
                                   echo '<div class="site-branding header-background-image-for-single" style="background-image: url(' . 
                                       get_the_post_thumbnail_url( null, 'artfolio-large-thumbnails' ) . ');>';

@@ -14,13 +14,13 @@ if ( !function_exists( 'artfolio_posted_on' ) ) :
 */
 function artfolio_posted_on() {
 
-    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    $text = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-        $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+        $text = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
     }
 
-    $time_string = sprintf( $time_string,
+    $text = sprintf( $text,
                            esc_attr( get_the_date( 'c' ) ),
                            esc_html( get_the_date() ),
                            esc_attr( get_the_modified_date( 'c' ) ),
@@ -28,8 +28,8 @@ function artfolio_posted_on() {
                           );
 
     $posted_on = sprintf(
-        esc_html_x( '%s', 'post date', 'artfolio' ),
-        '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . __( $time_string, 'artfolio' ) . '</a>'
+        __( '%s', 'post date', 'artfolio' ),
+        '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . __( $text, 'artfolio' ) . '</a>'
     );
 
     $byline = sprintf(

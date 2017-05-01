@@ -6,7 +6,7 @@ module.exports = function ( grunt ) {
         pot: {
             options: {
                 package_name: 'artfolio',
-                package_version: '1.21.66',
+                package_version: '1.21.69',
                 msgid_bugs_address: "https://github.com/artem-solovev/artfolio/issues",
                 text_domain: 'artfolio',
                 dest: 'languages/',

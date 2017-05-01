@@ -32,7 +32,7 @@
 
         <?php if ( get_theme_mod( 'hide_copyright' ) == '' ) { ?>
         <!-- Copyright text -->
-        <?php echo get_theme_mod( 'copyright_textbox' ); ?>
+        <?php echo esc_html__( get_theme_mod( 'copyright_textbox', 'artfolio' ) ); ?>
         <br />
         <?php } // end if ?>
 
